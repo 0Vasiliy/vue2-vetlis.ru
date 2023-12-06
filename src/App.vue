@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <v-main/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VMain from './components/v-main.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    VMain    
   }
 }
 </script>
@@ -24,5 +24,27 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+*{
+    margin: 0 auto;
+    padding: 0;   
+   
+}
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
 }
 </style>
