@@ -77,8 +77,7 @@
                             <img src="@/assets/icons/services/oftalmogia.svg">                             
                         </a>
                     </div>
-            </div>
-            
+            </div>           
         </div>
     </div>
 </template>
@@ -94,12 +93,12 @@ export default {
     display: flex;
     flex-direction: row;
     margin-top: 100px; 
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 50px;
     max-width: 1920px;
     }
     .container{
-        max-width: 1920px;
+        max-width: 1900px;
     }
     .v-services_item{    
         margin-top: 30px;  

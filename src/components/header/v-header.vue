@@ -1,26 +1,24 @@
 <template>
      <div class="v-header">
-       <div class="row">
-        <div class="container">
-            <div class="col v-header_block col-lg-12">
-                <div class="v-header_block_logo">
-                    <img src="@/assets/icons/logo/logo.jpg" alt="logo" class="v-header_block_logo_img">
-                    <h1 class="v-header_block_subtitle">ЛИС</h1>
-                    <h4 class="v-header_block_title">Ветеринарная клиника</h4>                   
-                </div>
-                <div class="v-header_block_phone">
-                    <div class="v-header_block_phone_link">
-                        <a class="col v-header_block_phone_link_old" href="tel:+79112598384"><img src="@/assets/icons/phone.png" alt="#">+7 (911) 259 83 84</a>
-                        <a class="col v-header_block_phone_link_new" href="tel:+79313732942"><img src="@/assets/icons/phone.png" alt="#">+7 (931) 373 29 42</a>
+            <div class="row">
+                <div class="v-header_block">
+                    <div class="v-header_block_logo">
+                        <img src="@/assets/icons/logo/logo.jpg" alt="logo" class="v-header_block_logo_img">
+                        <h1 class="v-header_block_subtitle ">ЛИС</h1>
+                        <h4 class="v-header_block_title">Ветеринарная клиника</h4>                   
                     </div>
-                    <button type="button" class="col v-header_block_phone_btn" id="phone_btn">
-                        <h1 class="v-header_block_phone_btn_title">Запись на приём</h1>
-                    </button>
+                    <div class="v-header_block_phone">
+                        <div class="v-header_block_phone_link">
+                            <a class="col v-header_block_phone_link_old" href="tel:+79112598384"><img src="@/assets/icons/phone.png" alt="#">+7 (911) 259 83 84</a>
+                            <a class="col v-header_block_phone_link_new" href="tel:+79313732942"><img src="@/assets/icons/phone.png" alt="#">+7 (931) 373 29 42</a>
+                        </div>
+                        <button type="button" class="col v-header_block_phone_btn" id="phone_btn">
+                            <h1 class="v-header_block_phone_btn_title">Запись на приём</h1>
+                        </button>
+                    </div>
                 </div>
-           </div>
+            </div>
         </div>
-       </div>
-    </div>
 </template>
 
 <script>
@@ -34,18 +32,24 @@ export default {
     .v-header{
     height: 170px;
     max-width: 1920px;
-    margin-left: 100px;
-    margin-right: 100px;
-    &_block{
+    margin-left: 120px;
+    margin-right: 120px;
+    &_block{   
         display: flex;
         justify-content: space-between;
-        margin-top: 40px;
-       
+        margin-top: 40px;      
         max-height: 160px;
+        width: 1920px;
         &_title{
             margin-left: 50px;
         }
     }
+}
+.v-header_block_logo_img{
+    animation: flip;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
 }
 .v-header_block_logo{
     display: flex;

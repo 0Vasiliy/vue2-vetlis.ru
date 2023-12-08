@@ -1,12 +1,13 @@
 <template>
-    <div class="v-carousel col-md-4 col-sm-8 col-8">
-        <div class="v-carousel-slide" :style="{'margin-left': '-' + (100 * currentSlideindex) + '%'}">
+    <div class="v-carousel col-4">
+        <div class="v-carousel-heading"> Специализированная ветеринарная помощь для вашего питомца</div>
+            <div class="v-carousel-slide" :style="{'margin-left': '-' + (100 * currentSlideindex) + '%'}">
             <vCarouselItem
             v-for="item in carousel_data"
             :key="item.id"
             :item_data="item"
         />
-        </div>            
+            </div> 
     </div>
 </template>
 
@@ -74,13 +75,22 @@ export default {
     }
    
     .v-carousel-slide{
-        margin-top: 100px;
+        // margin-top: 100px;
         margin-bottom: 100px; 
         img{         
             width: 600px;
             height: 400px;
             border-radius: 20px;
         }
+    }
+    .v-carousel-heading{
+        margin-top: 100px;
+        font-size: 34px;
+        text-align: center;
+        line-height: 35px;
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 700;
+        color: #757575;
     }
 
 </style>

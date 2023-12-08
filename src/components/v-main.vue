@@ -14,6 +14,7 @@ import vNews from './news/v-news.vue'
 import vSidepanel from './sidepanel/v-sidepanel.vue'
 import vCarouselMain from './slider/v-Carousel-main.vue'
 import vServices from './services/v-services.vue'
+
 export default {
   name: 'v-main',
   components:{
@@ -29,6 +30,7 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
+ @import '@/assets/css/media.css';
+ @import '@/assets/css/animate.css';
 </style>

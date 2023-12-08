@@ -1,6 +1,6 @@
 <template>
-     <div class="v-news" id="news_action">       
-        <div class="v-news_block">             
+     <div class="v-news col-xxl-11 col-xl-10 col-md-10 col-8" id="news_action">             
+            <div class="v-news_block">             
             <div class="v-news_title">
                 <h1>ВНИМАНИЕ!
                     Уважаемые посетители!
@@ -13,8 +13,8 @@
                     -в клинике с одним животным должен находится один посетитель.
                 </h1>
             </div>               
-        </div>       
-    </div>
+        </div> 
+        </div>     
 </template>
 <script>
 export default {
@@ -22,8 +22,10 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-    .v-news{
+    .v-news{      
         max-width: 1920px;
+        // margin-right: 150px;
+        // margin-left: 150px;
     }
     .v-news_block{
     background: url(../../assets/images/news/fon_vet2.jpg) center (center/cover) no-repeat;

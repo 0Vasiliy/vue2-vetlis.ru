@@ -1,13 +1,13 @@
 <template>
-      <div class="v-carousel-main">
-    <v-carousel
-        :carousel_data="sliderItems"
-        :interval="2000"
-   />
-   <v-carousel-item/>
-   <div class="col-md-4 col-6 v-carousel-title">
-        <h1 class="slider_subtitle">Ветеринарная клиника "ЛИС" предлагает полный комплекс ветеринарных услуг для поддержания здоровья и красоты Ваших питомцев.Регулярное посещение ветеринарного врача позволит следить за здоровьем Вашего питомца и диагностировать заболевания на ранних стадиях развития для начала своевременного лечения.</h1>
-    </div>
+      <div class="v-carousel-main">      
+            <v-carousel
+                :carousel_data="sliderItems"
+                :interval="2000"
+          />
+          <v-carousel-item/>
+          <div class="v-carousel-title col-xxl-4 col-xl-6 col-md-8">
+                <h1 class="slider_subtitle">Ветеринарная клиника "ЛИС" предлагает полный комплекс ветеринарных услуг для поддержания здоровья и красоты Ваших питомцев.Регулярное посещение ветеринарного врача позволит следить за здоровьем Вашего питомца и диагностировать заболевания на ранних стадиях развития для начала своевременного лечения.</h1>
+            </div>
   </div>
 </template>
 
@@ -36,6 +36,7 @@ export default {
 
 </script>
 <style scoped lang="scss">
+
   .v-carousel-main{
     max-width: 1920px;
     display: flex;
@@ -52,7 +53,6 @@ export default {
     background-size: auto 100%;
   }
   .v-carousel-title{
-    margin-top: 100px;
     max-width: 100%;
     h1{
         font-size: 24px;
