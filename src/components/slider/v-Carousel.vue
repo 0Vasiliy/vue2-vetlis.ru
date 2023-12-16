@@ -1,5 +1,5 @@
 <template>
-    <div class="v-carousel col-4">
+    <div class="v-carousel col-md-4 col-sm-8">
         <div class="v-carousel-heading"> Специализированная ветеринарная помощь для вашего питомца</div>
             <div class="v-carousel-slide" :style="{'margin-left': '-' + (100 * currentSlideindex) + '%'}">
             <vCarouselItem
@@ -75,7 +75,6 @@ export default {
     }
    
     .v-carousel-slide{
-        // margin-top: 100px;
         margin-bottom: 100px; 
         img{         
             width: 600px;

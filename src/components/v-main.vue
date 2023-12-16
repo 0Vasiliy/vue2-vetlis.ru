@@ -2,6 +2,7 @@
   <div class="v-main">
       <v-sidepanel/>
       <v-header/>
+      <v-menu/>
       <v-carousel-main/>
       <v-news/>
       <v-services/>
@@ -14,6 +15,7 @@ import vNews from './news/v-news.vue'
 import vSidepanel from './sidepanel/v-sidepanel.vue'
 import vCarouselMain from './slider/v-Carousel-main.vue'
 import vServices from './services/v-services.vue'
+import vMenu from './menu/v-menu.vue'
 
 export default {
   name: 'v-main',
@@ -22,7 +24,8 @@ export default {
     vSidepanel,
     vCarouselMain,
     vNews,
-    vServices 
+    vServices,
+    vMenu 
   },
   props: {
    

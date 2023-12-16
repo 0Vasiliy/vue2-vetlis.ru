@@ -1,24 +1,29 @@
 <template>
-     <div class="v-header">
-            <div class="row">
-                <div class="v-header_block">
-                    <div class="v-header_block_logo">
-                        <img src="@/assets/icons/logo/logo.jpg" alt="logo" class="v-header_block_logo_img">
-                        <h1 class="v-header_block_subtitle ">ЛИС</h1>
-                        <h4 class="v-header_block_title">Ветеринарная клиника</h4>                   
-                    </div>
-                    <div class="v-header_block_phone">
-                        <div class="v-header_block_phone_link">
-                            <a class="col v-header_block_phone_link_old" href="tel:+79112598384"><img src="@/assets/icons/phone.png" alt="#">+7 (911) 259 83 84</a>
-                            <a class="col v-header_block_phone_link_new" href="tel:+79313732942"><img src="@/assets/icons/phone.png" alt="#">+7 (931) 373 29 42</a>
-                        </div>
-                        <button type="button" class="col v-header_block_phone_btn" id="phone_btn">
-                            <h1 class="v-header_block_phone_btn_title">Запись на приём</h1>
-                        </button>
-                    </div>
+    <section class="v-header">
+       <!-- <div class="row"> -->
+        <div class="container">
+            <div class="col-xl-12 col-md-12 col-sm-12 v-header_block">
+                <div class=" col v-header_block_logo">
+                    <img src="@/assets/icons/logo/logo.jpg" alt="logo" class="v-header_bkock_logo_img">
+                    <h1 class="v-header_block_subtitle">ЛИС</h1>
+                    <h4 class="v-header_block_title">Ветеринарная клиника</h4>                   
                 </div>
-            </div>
+                <div class="col v-header_adress">
+                    <h1 class="v-header_block_adress_title">ул.Русановская д.19.к.4</h1>
+                </div>
+                <div class="col v-header_block_phone">
+                    <div class="v-header_block_phone_link">
+                        <a class=" v-header_block_phone_link_old" href="tel:+79112598384"><img src="@/assets/icons/phone.png" alt="#">+7 (911) 259 83 84</a>
+                        <a class=" v-header_block_phone_link_new" href="tel:+79313732942"><img src="@/assets/icons/phone.png" alt="#">+7 (931) 373 29 42</a>
+                    </div>
+                    <button type="button" class="v-header_block_phone_btn" id="phone_btn">
+                        <h1 class="v-header_block_phone_btn_title">Запись на приём</h1>
+                    </button>
+                </div>
+           </div>
         </div>
+       <!-- </div> -->
+    </section>
 </template>
 
 <script>
@@ -30,16 +35,15 @@ export default {
 
 <style scoped lang="scss">
     .v-header{
-    height: 170px;
     max-width: 1920px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 150px;
+    margin-right: 150px;
+    max-height: 170px; 
     &_block{   
         display: flex;
-        justify-content: space-between;
-        margin-top: 40px;      
-        max-height: 160px;
-        width: 1920px;
+        margin-top: 40px;
+        max-width: 1920px;
+        max-height: 170px;
         &_title{
             margin-left: 50px;
         }
@@ -54,7 +58,7 @@ export default {
 .v-header_block_logo{
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 0px;
     max-width: 800px;
     height: 80px;
     img{
@@ -86,7 +90,7 @@ export default {
     align-items: center;
     max-width: 600px;
     max-height: 80px;
-    margin-right: 50px;
+    margin-right: 0px;
     &_link{
         display: flex;
         flex-direction: column;
@@ -133,6 +137,22 @@ export default {
 }
 .v-header_block_phone_link_new{
     margin-top: 10px;
+}
+.v-header_block_adress{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    &_title{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 21px;
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 300;
+        color: #757575;;
+    }
 }
 
 </style>
