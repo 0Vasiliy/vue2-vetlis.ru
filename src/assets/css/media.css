@@ -1,58 +1,3 @@
-/* @media (max-width: 1400px){
-    .v-carousel-main{
-        display: flex;
-        flex-direction: column;
-    }
-    .v-carousel{
-        max-width: 600px;
-        max-height: 600px;
-        margin-top: 0;
-    }
-    .v-carousel-slide{
-        margin-top: none;
-        margin-bottom: none;    
-    }
-    .v-carousel-slide img{
-        max-width: 600px;
-    }
-    .v-carousel-title{
-        align-items: center;
-        margin-top: 50px;
-        max-width: 600px;
-    }
-}
-@media (max-width: 1200px){
-    .v-carousel{
-        max-width: 500px;
-        max-height: 500px;
-    }
-    .v-carousel-slide img{
-        max-width: 500px;
-    }
-}
-@media (max-width: 1100px){
-    .v-header{    
-        max-height: 300px;  
-    }
-    .v-header_block{ 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-    .v-header_block_phone{
-        margin-top: 15px;
-    }
-    .v-header_block_logo{
-       margin-right: 100px;
-    }
-} */
-
-
-
 @media (min-width: 1920px){
     .sidepanel{
         right: 75%;
@@ -63,14 +8,11 @@
         max-width: 1434px;
     }
 }
-
   
 @media (max-width: 1630px){
 
     .v-header{
         height: auto;
-        /* margin-left: 100px;
-        margin-right: 100px; */
     }
     .v-header_block {
        display: flex;
@@ -79,6 +21,35 @@
        align-content: center;
        align-items: center;
        height: auto;
+    }
+    .v-header_block_phone{
+        margin-top: 40px;
+    }
+    .v-header_adress{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 1100px){
+    .v-carousel{
+        max-width: 600px;
+        width: 100%;
+        max-height: 600px;
+        margin-top: 0;
+    }
+    .v-carousel-slide{
+        margin-top: none;
+        margin-bottom: none;    
+    }
+    .v-carousel-slide img{
+        max-width: 600px;
+    }
+    .v-carousel-item img{
+        width: 600px;
+    }
+    .v-carousel-title{
+        align-items: center;
+        margin-top: 50px;
+        max-width: 600px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){

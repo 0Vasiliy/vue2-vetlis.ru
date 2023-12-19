@@ -1,15 +1,15 @@
 <template>
     <section class="v-carousel-main  col-xl-9 col-md-9 col-10">      
-      <!-- <div class="container"> -->
+      <div class="container">
         <v-carousel
                 :carousel_data="sliderItems"
                 :interval="2000"
           />
           <v-carousel-item/>
-          <div class="v-carousel-title col-xxl-4 col-xl-6 col-md-8">
+          <div class="v-carousel-title col-md-8">
                 <h1 class="slider_subtitle">Ветеринарная клиника "ЛИС" предлагает полный комплекс ветеринарных услуг для поддержания здоровья и красоты Ваших питомцев.Регулярное посещение ветеринарного врача позволит следить за здоровьем Вашего питомца и диагностировать заболевания на ранних стадиях развития для начала своевременного лечения.</h1>
           </div>
-      <!-- </div> -->
+      </div>
   </section>
 </template>
 
@@ -55,6 +55,8 @@ export default {
   .v-carousel-title{
     max-width: 100%;
     h1{
+        margin-top: 50px;
+        margin-bottom: 50px;
         font-size: 24px;
         text-align: center;
         line-height: 35px;

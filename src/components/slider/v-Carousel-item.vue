@@ -28,7 +28,7 @@ export default {
    
 }
 img{
-  width: 600px;
+  width: 800px;
   height: 400px;  
   border-radius: 20px;
   overflow: hidden;

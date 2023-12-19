@@ -139,6 +139,7 @@ export default {
 .v-header_block_adress{ 
     display: flex;
     max-width: 200px;
+    max-height: 80px;
     &_title{
         margin-top: 20px;
         text-decoration: none;

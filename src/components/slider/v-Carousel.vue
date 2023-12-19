@@ -65,8 +65,9 @@ export default {
 
 <style  scoped lang="scss">
     .v-carousel{
-        max-width: 600px;
+        max-width: 800px;
         width: 100%;
+        max-height: 700px;
         overflow: hidden;
         border-radius: 20px;
     }
@@ -78,7 +79,7 @@ export default {
     .v-carousel-slide{
         margin-bottom: 100px; 
         img{         
-            width: 600px;
+            width: 800px;
             height: 400px;
             border-radius: 20px;
         }
@@ -87,7 +88,7 @@ export default {
         margin-top: 100px;
         font-size: 34px;
         text-align: center;
-        line-height: 35px;
+        line-height: 45px;
         font-family: 'Museo Sans Cyrl';
         font-weight: 700;
         color: #757575;
