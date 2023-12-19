@@ -2,7 +2,7 @@
      <section class="v-menu">
         <div class="container">
             <div class="row">
-                <div class="col menu_block">                   
+                <div class="col  menu_block">                   
                     <ul class="col  menu_block_list">
                         <li class="menu_block_item"><a href="#" class="menu_block_link ">О нас</a></li>
                         <li class="menu_block_item"><a href="#servis" class="menu_block_link ">Услуги</a></li>
@@ -53,7 +53,12 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-    .menu_section{  
+    .v-menu{ 
+    // max-width:1620px;
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-top: 50px; 
+    padding-left: 0px;
     height: 75px;
     border: 1px solid #723030;
     border-left: none;
@@ -63,13 +68,16 @@ export default {
 .menu_block{
     display: flex;
     margin-top: 23px;
-    margin-left: 0px;
+    justify-content: space-between;
     max-width: 100%;
     transition: all .3s linear;
+  
     &_list {
         margin-left: 0;
         list-style: none;
         display: flex;
+        align-items: center;
+        padding-left: 0px;
         max-width: 900px;
     }
     &_item {
@@ -110,7 +118,7 @@ export default {
 }
 //
 .menu_block_hamburger {
-    margin-right: 50px;
+    margin-right: 0px;
     height: 21px;
     display: flex;
     flex-direction: column;
@@ -215,5 +223,12 @@ export default {
         background-color: #723030;
         opacity: .75;
     }
+}
+.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1620px;
+    }
+.container{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 </style>

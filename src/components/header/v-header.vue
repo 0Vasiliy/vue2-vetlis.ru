@@ -1,9 +1,9 @@
 <template>
     <section class="v-header">
-       <!-- <div class="row"> -->
+       <div class="row">
         <div class="container">
-            <div class="col-xl-12 col-md-12 col-sm-12 v-header_block">
-                <div class=" col v-header_block_logo">
+            <div class="col-md-11 col-sm-12 v-header_block">
+                <div class="col v-header_block_logo">
                     <img src="@/assets/icons/logo/logo.jpg" alt="logo" class="v-header_bkock_logo_img">
                     <h1 class="v-header_block_subtitle">ЛИС</h1>
                     <h4 class="v-header_block_title">Ветеринарная клиника</h4>                   
@@ -22,7 +22,7 @@
                 </div>
            </div>
         </div>
-       <!-- </div> -->
+       </div>
     </section>
 </template>
 
@@ -37,13 +37,11 @@ export default {
     .v-header{
     max-width: 1920px;
     margin-left: 150px;
-    margin-right: 150px;
-    max-height: 170px; 
+    margin-right: 200px;  
     &_block{   
         display: flex;
         margin-top: 40px;
         max-width: 1920px;
-        max-height: 170px;
         &_title{
             margin-left: 50px;
         }
@@ -138,14 +136,13 @@ export default {
 .v-header_block_phone_link_new{
     margin-top: 10px;
 }
-.v-header_block_adress{
+.v-header_block_adress{ 
     display: flex;
-    align-items: center;
-    text-align: center;
     max-width: 200px;
     &_title{
+        margin-top: 20px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 36px;
         font-weight: 300;
         text-align: center;
         line-height: 21px;
