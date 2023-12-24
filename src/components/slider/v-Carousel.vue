@@ -93,5 +93,20 @@ export default {
         font-weight: 700;
         color: #757575;
     }
+    @media (max-width: 1100px){
+    .v-carousel{
+        max-width: 600px;
+        width: 100%;
+        max-height: 600px;
+        margin-top: 0;
+    }
+    .v-carousel-slide{
+        margin-top: none;
+        margin-bottom: none;    
+    }
+    .v-carousel-slide img{
+        max-width: 600px;
+    }
 
+}
 </style>

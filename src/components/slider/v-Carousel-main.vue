@@ -65,4 +65,11 @@ export default {
         color: #757575;
     }
   }
+  @media (max-width: 1100px){
+    .v-carousel-title{
+        align-items: center;
+        margin-top: 50px;
+        max-width: 600px;
+    }
+}
 </style>

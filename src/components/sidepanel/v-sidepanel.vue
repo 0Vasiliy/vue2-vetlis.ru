@@ -40,4 +40,28 @@ export default {
         }
     }
 }
+@media (min-width: 1920px){
+    .sidepanel{
+        right: 75%;
+    }
+}
+@media (max-width: 991px){
+
+.v-sidepanel img{
+    width: 30px;
+    height: auto;
+}
+}
+@media (max-width: 620px){
+    .v-sidepanel img{
+        width: 25px;
+    }
+}
+@media (max-width: 576px){
+    .v-sidepanel img{
+        width: 20px;
+    }
+    
+ }
+
 </style>

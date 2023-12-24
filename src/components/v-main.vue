@@ -34,6 +34,5 @@ export default {
 </script>
 
 <style>
- @import '@/assets/css/media.css';
  @import '@/assets/css/animate.css';
 </style>

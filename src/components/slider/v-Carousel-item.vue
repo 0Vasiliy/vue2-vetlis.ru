@@ -33,5 +33,9 @@ img{
   border-radius: 20px;
   overflow: hidden;
 }
-
+@media (max-width: 1100px){
+    .v-carousel-item img{
+        width: 600px;
+    }
+}
 </style>

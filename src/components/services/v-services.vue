@@ -93,9 +93,9 @@ export default {
     display: flex;
     flex-direction: row;
     margin-top: 100px; 
-    margin-left: 100px;
-    margin-right: 50px;
-    max-width: 1920px;
+    margin-left: 130px;
+    margin-right: 130px;
+    max-width: 1620px;
     }
     .container{
         max-width: 1900px;
@@ -139,6 +139,34 @@ export default {
             max-width: 45px;
             margin-left: 5px;
         }
+}
+@media (min-width: 1600px){
+    .container {
+        max-width: 1434px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1100px){
+    .col-3{
+        flex: 0 0 30%;
+        max-width: 35%;
+    }
+}
+@media (max-width: 860px){
+    .col-3{
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+    .v-services{
+        margin-right: 10%;
+        margin-left: 12%;
+    }
+}
+@media (max-width: 767px){
+    .col-3 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 </style>

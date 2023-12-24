@@ -16,9 +16,10 @@
                         <a class=" v-header_block_phone_link_old" href="tel:+79112598384"><img src="@/assets/icons/phone.png" alt="#">+7 (911) 259 83 84</a>
                         <a class=" v-header_block_phone_link_new" href="tel:+79313732942"><img src="@/assets/icons/phone.png" alt="#">+7 (931) 373 29 42</a>
                     </div>
-                    <button type="button" class="v-header_block_phone_btn" id="phone_btn">
+                   <vButton/>
+                    <!-- <button type="button" class="v-header_block_phone_btn" id="phone_btn">
                         <h1 class="v-header_block_phone_btn_title">Запись на приём</h1>
-                    </button>
+                    </button> -->
                 </div>
            </div>
         </div>
@@ -27,9 +28,13 @@
 </template>
 
 <script>
+import vButton from '@/components/buttons/v-button.vue'
 
 export default {
-    name: 'v-header'
+    name: 'v-header',
+    components:{
+        vButton
+    }
 }
 </script>
 
@@ -107,31 +112,31 @@ export default {
         font-weight: 300;
         color: #757575;;
     }
-    &_btn{
-        display: flex;
-        align-items: center;
-        margin-left: 20px;
-        width: 200px;
-        height: 40px;        
-        border: none;
-        background: hsla(221, 45%, 73%, 1);
-        background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-        background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-        background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-        filter: gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
-        border-radius: 4px;
-        cursor: pointer;
-        &_title{
-            margin-top: 3%;
-            font-size: 18px;
-            align-items: center;
-            text-align: center;
-            line-height: 21px;
-            font-family: 'Museo Sans Cyrl';
-            font-weight: 300;
-            color: white;
-        }
-    }
+    // &_btn{
+    //     display: flex;
+    //     align-items: center;
+    //     margin-left: 20px;
+    //     width: 200px;
+    //     height: 40px;        
+    //     border: none;
+    //     background: hsla(221, 45%, 73%, 1);
+    //     background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    //     background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    //     background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    //     filter: gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
+    //     border-radius: 4px;
+    //     cursor: pointer;
+    //     &_title{
+    //         margin-top: 3%;
+    //         font-size: 18px;
+    //         align-items: center;
+    //         text-align: center;
+    //         line-height: 21px;
+    //         font-family: 'Museo Sans Cyrl';
+    //         font-weight: 300;
+    //         color: white;
+    //     }
+    // }
 }
 .v-header_block_phone_link_new{
     margin-top: 10px;
@@ -152,5 +157,24 @@ export default {
         color: #757575;;
     }
 }
+@media (max-width: 1630px){
 
+.v-header{
+    height: auto;
+}
+.v-header_block {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+   align-items: center;
+   height: auto;
+}
+.v-header_block_phone{
+    margin-top: 40px;
+}
+.v-header_adress{
+    margin-top: 20px;
+}
+}
 </style>

@@ -13,14 +13,20 @@
                             -просьба находиться в зале на расстоянии, соблюдать физическую дистанцию с другими посетителями.
                             -в клинике с одним животным должен находится один посетитель.
                         </h1>
+                        <vButton class="button-news"/>
                     </div>
+                  
                 </div>
             </div>
     </section>   
 </template>
 <script>
+import vButton from '@/components/buttons/v-button.vue'
 export default {
     name: 'v-news',
+    components:{
+        vButton
+    }
 }
 </script>
 <style scoped lang="scss">
@@ -45,5 +51,11 @@ export default {
         font-weight: 700;
         color: #757575;
     }
+}
+.button-news{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 </style>
