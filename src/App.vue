@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import VMain from './components/v-main.vue'
+import vMain from './components/v-main.vue'
 
 
 export default {
   name: 'App',
   components: {
-    VMain    
+    vMain    
   }
 }
 </script>
@@ -27,9 +27,9 @@ export default {
 }
 *{
     margin: 0 auto;
-    padding: 0;   
-   
+    padding: 0;      
 }
+
 html {
     box-sizing: border-box;
     height: 100%;

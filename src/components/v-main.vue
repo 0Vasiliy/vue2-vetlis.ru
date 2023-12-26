@@ -6,6 +6,9 @@
       <v-carousel-main/>
       <v-news/>
       <v-services/>
+      <v-vetarticles/>
+      <!-- <router-link to="/vVomitingCats"></router-link>
+      <router-view></router-view> -->
   </div>
 </template>
 
@@ -16,6 +19,7 @@ import vSidepanel from './sidepanel/v-sidepanel.vue'
 import vCarouselMain from './slider/v-Carousel-main.vue'
 import vServices from './services/v-services.vue'
 import vMenu from './menu/v-menu.vue'
+import vVetarticles from './vetarticles/v-vetarticles.vue'
 
 export default {
   name: 'v-main',
@@ -25,7 +29,8 @@ export default {
     vCarouselMain,
     vNews,
     vServices,
-    vMenu 
+    vMenu,
+    vVetarticles,
   },
   props: {
    

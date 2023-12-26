@@ -1,5 +1,5 @@
 <template>
-    <div class="v-services" id="servis">
+    <section class="v-services" id="servis">
         <div class="container">
             <div class="row">
                 <h1 class="v-services_title">Наши услуги</h1>
@@ -79,7 +79,7 @@
                     </div>
             </div>           
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -93,24 +93,23 @@ export default {
     display: flex;
     flex-direction: row;
     margin-top: 100px; 
-    margin-left: 130px;
-    margin-right: 130px;
-    max-width: 1620px;
+    margin-right: 11%;
+    margin-left: 11.5%;
+    max-width: 1550px;
     }
-    .container{
-        max-width: 1900px;
-    }
-    .v-services_item{    
+
+
+    .v-services_item{   
+        box-sizing: content-box; 
+        display: flex;
         margin-top: 30px;  
         max-width: 20%;
-        margin-right: 20px;
+        padding: 10px 10px;
         height: 100px;
         border-radius: 20px;  
         border: 1px solid #723030;
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        
+        align-items: center;       
     }
     .v-services_title{
         font-size: 36px;
@@ -147,7 +146,7 @@ export default {
 }
 @media (min-width: 768px) and (max-width: 1100px){
     .col-3{
-        flex: 0 0 30%;
+        flex: 0 0 35%;
         max-width: 35%;
     }
 }

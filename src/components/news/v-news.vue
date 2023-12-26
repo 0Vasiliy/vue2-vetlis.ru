@@ -1,6 +1,7 @@
 <template>
     <section class="v-news col-xl-9 col-md-9 col-10" id="news_action">
             <div class="v-news_block">
+               <div class="container">
                 <div class="row"> 
                     <div class="v-news_title">
                         <h1>ВНИМАНИЕ!
@@ -17,6 +18,7 @@
                     </div>
                   
                 </div>
+               </div>
             </div>
     </section>   
 </template>
