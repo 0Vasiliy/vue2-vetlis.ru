@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-      <v-main/>
+      <v-main/>    
+      <router-view/>  
   </div>
 </template>
 
 <script>
-import vMain from './components/v-main.vue'
-
 
 export default {
   name: 'App',
-  components: {
-    vMain    
-  }
+
 }
 </script>
 

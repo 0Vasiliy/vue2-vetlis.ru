@@ -17,9 +17,6 @@
                         <a class=" v-header_block_phone_link_new" href="tel:+79313732942"><img src="@/assets/icons/phone.png" alt="#">+7 (931) 373 29 42</a>
                     </div>
                    <vButton/>
-                    <!-- <button type="button" class="v-header_block_phone_btn" id="phone_btn">
-                        <h1 class="v-header_block_phone_btn_title">Запись на приём</h1>
-                    </button> -->
                 </div>
            </div>
         </div>
@@ -74,7 +71,7 @@ export default {
         line-height: 21px;
         font-family: 'Museo Sans Cyrl';
         font-weight: 700;
-        color: #757575;;
+        color: #757575;
         margin-left: 30px;
     }
     h4{
@@ -112,31 +109,6 @@ export default {
         font-weight: 300;
         color: #757575;;
     }
-    // &_btn{
-    //     display: flex;
-    //     align-items: center;
-    //     margin-left: 20px;
-    //     width: 200px;
-    //     height: 40px;        
-    //     border: none;
-    //     background: hsla(221, 45%, 73%, 1);
-    //     background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-    //     background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-    //     background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-    //     filter: gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
-    //     border-radius: 4px;
-    //     cursor: pointer;
-    //     &_title{
-    //         margin-top: 3%;
-    //         font-size: 18px;
-    //         align-items: center;
-    //         text-align: center;
-    //         line-height: 21px;
-    //         font-family: 'Museo Sans Cyrl';
-    //         font-weight: 300;
-    //         color: white;
-    //     }
-    // }
 }
 .v-header_block_phone_link_new{
     margin-top: 10px;

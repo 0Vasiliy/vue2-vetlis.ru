@@ -1,5 +1,5 @@
 <template>
-  <div class="v-main">
+  <div class="v-mainapp">
       <v-sidepanel/>
       <v-header/>
       <v-menu/>
@@ -7,8 +7,6 @@
       <v-news/>
       <v-services/>
       <v-vetarticles/>
-      <!-- <router-link to="/vVomitingCats"></router-link>
-      <router-view></router-view> -->
   </div>
 </template>
 
@@ -22,7 +20,7 @@ import vMenu from './menu/v-menu.vue'
 import vVetarticles from './vetarticles/v-vetarticles.vue'
 
 export default {
-  name: 'v-main',
+  name: 'v-mainapp',
   components:{
     vHeader,
     vSidepanel,

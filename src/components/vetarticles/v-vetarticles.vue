@@ -8,31 +8,27 @@
                 <div class="card-body">
                     <h5 class="card-title">Рвота у кошек</h5>
                     <p class="card-text">Рвота у кошек — достаточно распространенное явление, вызываемое различными факторами. Рефлекторное извержение содержимого желудка через рот — не болезнь, а симптом, указывающий на нарушение...</p>
-                    <!-- <router-link to="/vVomitingCats">
-                        <button @click="goVomitingCats" class="buttons-card btn btn-primary" ></button>
-                    </router-link> -->
-                    <!-- <button @click="goVomitingCats" class="buttons-card btn btn-primary" ></button> -->
                     <router-link  tag="a" to="/vVomitingCats"  class="buttons-card btn btn-primary">Подробнее</router-link>
                 </div>   
             </div>
             <div class="card v-vetarticles-card col">           
-                <img src="../../assets/images/vetarticles/kot-23.png" class="card-img-top" alt="kot-23">
+                <img src="../../assets/images/vetarticles/dog-22.png" class="card-img-top" alt="dog-22">
                 <div class="card-body">
-                    <h5 class="card-title">Рвота у кошек</h5>
-                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
-                    <a href="#" class="buttons-card btn btn-primary">Подробнее</a>
+                    <h5 class="card-title">Рвота у собак</h5>
+                    <p class="card-text">Рвота у собак — достаточно распространенное явление, с которым сталкиваются многие владельцы. Она может быть вызвана различными причинами, от простого переедания до серьезных заболеваний. Если ...</p>
+                    <router-link  tag="a" to="/vVomitingDogs"  class="buttons-card btn btn-primary">Подробнее</router-link>
                 </div>   
             </div>
             <div class="card v-vetarticles-card col">           
-                <img src="../../assets/images/vetarticles/kot-23.png" class="card-img-top" alt="kot-23">
+                <img src="../../assets/images/vetarticles/pets.png" class="card-img-top" alt="pets">
                 <div class="card-body">
-                    <h5 class="card-title">Рвота у кошек</h5>
-                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
-                    <a href="#" class="buttons-card btn btn-primary">Подробнее</a>
+                    <h5 class="card-title">Готовимся к появлению домашнего питомца</h5>
+                    <p class="card-text">Маленькие четвероногие друзья — полноправные члены нашей семьи. Если семейный совет одобрил нового жителя, на примете есть хороший ветеринар, самое время заняться подготовкой ...</p>
+                    <router-link  tag="a" to="/vPets"  class="buttons-card btn btn-primary">Подробнее</router-link>
                 </div>   
             </div>
            </div>
-        <a href="#" class="buttons-cards btn btn-primary">Больше интересных статей</a>  
+        <!-- <a href="#" class="buttons-cards btn btn-primary">Больше интересных статей</a>   -->
        </div>
     </div>
 
@@ -41,11 +37,6 @@
 
 export default {
     name: 'vVetarticles',
-    // methods:{
-    //     goVomitingCats(){
-    //         this.$router.push('/vVomitingCats');
-    //     }
-    // }
 }
 </script>
 <style scoped lang="scss">
@@ -84,6 +75,4 @@ export default {
          max-width: 1420px;
     }
     }
-
-
 </style>
