@@ -1,7 +1,8 @@
 <template>
     <div class="v-vomiting-dogs">
         <div class="container">
-            <div class="v-vomiting-dogs-left">
+            <div class="v-vomiting-dogs-block">
+                <div class="v-vomiting-dogs-left">
                 <img src="@/assets/images/vetarticles/dog-22.png" class="card-img-top" alt="kot-23">
                 <h1 class="v-vomiting-dogs-title">Рвота у собак</h1>
                 <div class="v-vomiting-dogs-subtitle">
@@ -151,17 +152,29 @@
                    </ul>
                    <h2>Контролируйте активность и поведение питомца, не допускайте, чтобы собака бегала без присмотра по улице, грызла и глотала различные предметы, ела с земли или из мусорных баков, контактировала с больными или неизвестными животными. Соблюдение простых правил помогает избежать травм, отравлений, инфекций и стресса. Также это позволяет воспитать пса, улучшить его социализацию и обучение.</h2>
                 </div>
-            </div>
+                </div>
+            <v-side/>
+            </div>          
         </div>
     </div>
 </template>
+
 <script>
+import vSide from '@/components/side/v-side.vue'
 export default {
-    name: 'vVomitingDogs'
+    name: 'vVomitingDogs',
+    components: {
+        vSide
+    },
 }
 </script>
+
 <style scoped lang="scss">
+  .v-vomiting-dogs-block{
+        display: flex;
+    }
        .v-vomiting-dogs-left{
+        margin-right: 20px;
         margin-left: 0;
         flex: 0 0 70%;
         max-width: 70%;
@@ -209,7 +222,7 @@ export default {
         }   
     }
     .v-vomiting-dogs-subtitle li::marker {
-	color: teal;
-	font-size: 24px;
+    color: teal;
+    font-size: 24px;
     }
 </style>

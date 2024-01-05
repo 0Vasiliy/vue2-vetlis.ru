@@ -152,8 +152,8 @@
                  </ul>
                     <h2>Зная, как оказать первую помощь кошке при рвоте и придерживаясь мер профилактики владельцы смогут предупредить или свести к минимуму риск ее возникновения.</h2>
                 </div>                               
-            </div>         
-            <v-side/>
+                </div>         
+                <v-side/>
             </div>
         </div>    
     </div>
@@ -163,7 +163,7 @@ import vSide from '@/components/side/v-side.vue'
 export default {
     name: 'vVomitingCats',
     components: {
-        vSide
+        vSide,
     },
 }
 </script>
@@ -220,8 +220,8 @@ export default {
         }   
     }
     .v-vomiting-cats-subtitle li::marker {
-	color: teal;
-	font-size: 24px;
+    color: teal;
+    font-size: 24px;
     }
     
 </style>

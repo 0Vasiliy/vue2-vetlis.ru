@@ -4,17 +4,17 @@
         <div class="container">
             <div class="col-md-11 col-sm-12 v-header_block">
                 <div class="col v-header_block_logo">
-                    <img src="@/assets/icons/logo/logo.jpg" alt="logo" class="v-header_bkock_logo_img">
-                    <h1 class="v-header_block_subtitle">ЛИС</h1>
-                    <h4 class="v-header_block_title">Ветеринарная клиника</h4>                   
+                    <v-header-logo/>
+                    <v-header-lis/>
+                    <v-header-vet/>
                 </div>
                 <div class="col v-header_adress">
-                    <h1 class="v-header_block_adress_title">ул.Русановская д.19.к.4</h1>
+                    <v-header-adress class="h-adress"/>
+                    <v-header-adress-num class="h-adress"/>
                 </div>
                 <div class="col v-header_block_phone">
                     <div class="v-header_block_phone_link">
-                        <a class=" v-header_block_phone_link_old" href="tel:+79112598384"><img src="@/assets/icons/phone.png" alt="#">+7 (911) 259 83 84</a>
-                        <a class=" v-header_block_phone_link_new" href="tel:+79313732942"><img src="@/assets/icons/phone.png" alt="#">+7 (931) 373 29 42</a>
+                        <v-header-phone/>
                     </div>
                    <vButton/>
                 </div>
@@ -26,11 +26,24 @@
 
 <script>
 import vButton from '@/components/buttons/v-button.vue'
+import vHeaderLogo from '@/components/header/header-logo/v-header-logo.vue'
+import vHeaderLis from '@/components/header/header-lis/v-header-lis.vue'
+import vHeaderVet from '@/components/header/header-vet/v-header-vet.vue'
+import vHeaderAdress from '@/components/header/header-adress/v-header-adress.vue'
+import vHeaderAdressNum from '@/components/header/header-adress-num/v-header-adress-num.vue'
+import vHeaderPhone from '@/components/header/header-phone/v-header-phone.vue'
+
 
 export default {
     name: 'v-header',
     components:{
-        vButton
+        vButton,
+        vHeaderLogo,
+        vHeaderLis,
+        vHeaderVet,
+        vHeaderAdress,
+        vHeaderAdressNum,
+        vHeaderPhone
     }
 }
 </script>
@@ -49,41 +62,15 @@ export default {
         }
     }
 }
-.v-header_block_logo_img{
-    animation: flip;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-}
+
 .v-header_block_logo{
     display: flex;
     align-items: center;
     margin-left: 0px;
     max-width: 800px;
     height: 80px;
-    img{
-        width: 80px;
-        height: 80px;
-    }
-    h1{
-        font-size: 24px;
-        text-align: center;
-        line-height: 21px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 700;
-        color: #757575;
-        margin-left: 30px;
-    }
-    h4{
-        margin-left: 10px;
-        font-size: 18px;
-        font-weight: 300;
-        text-align: center;
-        line-height: 21px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 300;
-        color: #757575;;
-    }
+    color: #757575;;
+    
 }
 .v-header_block_phone{
     display: flex;
@@ -91,44 +78,9 @@ export default {
     max-width: 600px;
     max-height: 80px;
     margin-right: 0px;
-    &_link{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    img{
-        margin-right: 10px;
-    }
-    a{
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 300;
-        text-align: center;
-        line-height: 21px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 300;
-        color: #757575;;
-    }
+  
 }
-.v-header_block_phone_link_new{
-    margin-top: 10px;
-}
-.v-header_block_adress{ 
-    display: flex;
-    max-width: 200px;
-    max-height: 80px;
-    &_title{
-        margin-top: 20px;
-        text-decoration: none;
-        font-size: 36px;
-        font-weight: 300;
-        text-align: center;
-        line-height: 21px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 300;
-        color: #757575;;
-    }
-}
+
 @media (max-width: 1630px){
 
 .v-header{
@@ -144,9 +96,6 @@ export default {
 }
 .v-header_block_phone{
     margin-top: 40px;
-}
-.v-header_adress{
-    margin-top: 20px;
 }
 }
 </style>

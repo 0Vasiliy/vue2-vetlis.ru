@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Рвота у кошек</h5>
                     <p class="card-text">Рвота у кошек — достаточно распространенное явление, вызываемое различными факторами. Рефлекторное извержение содержимого желудка через рот — не болезнь, а симптом, указывающий на нарушение...</p>
-                    <router-link  tag="a" to="/vVomitingCats"  class="buttons-card btn btn-primary">Подробнее</router-link>
+                    <router-link  tag="a" to="/vVomitingCats"  class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
                 </div>   
             </div>
             <div class="card v-vetarticles-card col">           
@@ -16,7 +16,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Рвота у собак</h5>
                     <p class="card-text">Рвота у собак — достаточно распространенное явление, с которым сталкиваются многие владельцы. Она может быть вызвана различными причинами, от простого переедания до серьезных заболеваний. Если ...</p>
-                    <router-link  tag="a" to="/vVomitingDogs"  class="buttons-card btn btn-primary">Подробнее</router-link>
+                    <router-link  tag="a" to="/vVomitingDogs"  class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
                 </div>   
             </div>
             <div class="card v-vetarticles-card col">           
@@ -24,7 +24,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Готовимся к появлению домашнего питомца</h5>
                     <p class="card-text">Маленькие четвероногие друзья — полноправные члены нашей семьи. Если семейный совет одобрил нового жителя, на примете есть хороший ветеринар, самое время заняться подготовкой ...</p>
-                    <router-link  tag="a" to="/vPets"  class="buttons-card btn btn-primary">Подробнее</router-link>
+                    <router-link  tag="a" to="/vPets"  class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
                 </div>   
             </div>
            </div>
@@ -40,6 +40,31 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+    .v-button-card{
+        display: flex;
+        align-items: center;
+        max-width: 150px;
+        height: 40px;        
+        border: none;
+        background: hsla(221, 45%, 73%, 1);
+        background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+        background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+        background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+        filter: gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
+        border-radius: 4px;
+        cursor: pointer;
+        p{
+            margin-top: 10%;
+            font-size: 18px;
+            align-items: center;
+            text-align: center;
+            line-height: 21px;
+            font-family: 'Museo Sans Cyrl';
+            font-weight: 300;
+            color: white; 
+        }
+        
+    }
     .v-vetarticles{
         margin-left: 11%;
         margin-right: 11%;

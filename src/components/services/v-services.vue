@@ -6,10 +6,11 @@
             </div>
             <div class="row">              
                     <div class="v-services_item col-3 col">
-                        <a class="v-services_block">
+                        <!-- <a class="v-services_block">
                             <span>Терапия</span>
                             <img src="@/assets/icons/services/therapy.svg">
-                        </a>
+                        </a> -->
+                    <router-link  tag="a" to="/vTherapy" class="v-services_block"><span>Терапия</span><img src="@/assets/icons/services/therapy.svg"></router-link>    
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
@@ -134,7 +135,7 @@ export default {
             font-weight: 300;
             color: #757575;
         }
-        img{
+        img{          
             max-width: 45px;
             margin-left: 5px;
         }

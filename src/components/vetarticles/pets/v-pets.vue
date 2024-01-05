@@ -1,7 +1,8 @@
 <template>
     <div class="v-pets">
         <div class="container">
-            <div class="v-vomiting-pets-left">
+            <div class="v-vomiting-pets-block">
+                <div class="v-vomiting-pets-left">
                 <img src="@/assets/images/vetarticles/pets.png" class="card-img-top" alt="pets">
                 <h1 class="v-vomiting-pets-title">Готовимся к появлению домашнего питомца</h1>
                 <div class="v-vomiting-pets-subtitle">Маленькие четвероногие друзья — полноправные члены нашей семьи. Если семейный совет одобрил нового жителя, на примете есть хороший ветеринар, самое время заняться подготовкой дома к приходу котенка или щенка.                  
@@ -36,17 +37,29 @@
                    <h2>И будьте готовы к маленьким, а иногда и к масштабным погромам. Ну а чтобы не расстраиваться, спрячьте все дорогие сердцу сувениры, дизайнерские аксессуары подальше. Помните о природном любопытстве малышей. К общей подготовке домашнего пространства подходите индивидуально. Обдумайте, с какими опасностями может столкнуться новый житель, и сделайте все для недопущения неприятной ситуации.</h2>
                    <h2>Таких правил вполне достаточно, чтобы щенок или котенок, придя в дом, быстро акклиматизировались и привыкли к владельцам. Но если животное показывает проблемы в социализации, стоит обратиться за помощью к зоопсихологам. Профессионалы помогут откорректировать нюансы поведения и посодействуют в воспитании.</h2>
                 </div>     
+                </div>
+                <v-side/>
             </div>
         </div>
     </div>
 </template>
+
 <script>
+import vSide from '@/components/side/v-side.vue'
 export default {
-    name: 'v-pets'
+    name: 'v-pets',
+    components: {
+        vSide
+    },
 }
 </script>
+
 <style scoped lang="scss">
+    .v-vomiting-pets-block{
+        display: flex;
+    }
     .v-vomiting-pets-left{
+        margin-right: 20px;
         margin-left: 0;
         flex: 0 0 70%;
         max-width: 70%;
