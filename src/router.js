@@ -7,7 +7,7 @@ import vTherapy from '@/components/services/therapy/v-therapy.vue'
 import vRespiratorySystem from '@/components/services/therapy/respiratory-system/v-respiratory-system.vue'
 import vDiseases from '@/components/services/therapy/diseases/v-diseases.vue'
 import vStomach from '@/components/services/therapy/stomach/v-stomach.vue'
-
+import vUrinary from '@/components/services/therapy/urinary/v-urinary.vue'
 export default new VueRouter({
     routes:[   
         {
@@ -47,6 +47,11 @@ export default new VueRouter({
         {
             path: '/vStomach',
             component: vStomach,
+           
+        },
+        {
+            path: '/vUrinary',
+            component: vUrinary,
            
         },
     ],

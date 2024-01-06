@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-         .v-stomach-block-left{
+    .v-stomach-block-left{
         margin-right: 20px;
         margin-left: 0;
         flex: 0 0 70%;

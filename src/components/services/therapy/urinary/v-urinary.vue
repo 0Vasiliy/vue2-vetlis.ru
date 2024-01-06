@@ -1,38 +1,34 @@
 <template>
-    <div class="v-therapy">
+    <div class="v-urinary">
         <div class="container">
-           <div class="v-therapy-block">
-               <div class="v-therapy-block-left">
-                <h1 class="v-therapy_title">Терапия</h1> 
-                <div class="v-therapy-subtitle">Терапия домашних животных – это диагностика и лечение заболеваний животных без хирургического вмешательства. Терапия (синоним: лечение) - процесс, целью которого является облегчение, снятие или устранение проявлений того или иного патологического состояния организма (нарушенного, ненормального), нормализация нарушенных процессов жизнедеятельности и выздоровление. Терапией также называют «все, что не хирургия», то есть методы нехирургического, или консервативного лечения заболеваний. Терапевтическое лечение может также проводиться до хирургического вмешательства (предоперационная терапия) и после операции - послеоперационная терапия.
-                    <h2>Ветеринарная терапия – это лечение собак, кошек и других животных консервативными, медикаментозными или другими, например, физиотерапевтическими методами.</h2>
+           <div class="v-urinary-block">
+               <div class="v-urinary-block-left">
+                <h1 class="v-urinary_title">Болезни почек и мочевого пузыря</h1> 
+                <div class="v-urinary-subtitle">
+                    <h2>Распространенной проблемой является мочекаменная болезнь у котов. Камни в мочевом пузыре у кота доставляют ему много неприятностей и болевых ощущений. Мы предлагаем современные эффективные способы лечения этой болезни. Также наши врачи помогут вашему животному, если у него цистит или пиелонефрит. В нашей ветеринарной клинике можно сделать биохимический анализ крови для диагностики болезней почек.</h2>
+                    <img src="../../../../assets/images/therapy/urinary.jpeg" class="card-img-top" alt="urinary">
+                    <h1>Болезни половой системы</h1>
+                    <h2>В нашей ветеринарной клинике лечат эндометрит, венерическую саркому, аденому простаты, опухоли матки, опухоли семенников и другие заболевания половой сферы. У нас можно сделать УЗИ матки и яичников собакам и кошкам. Возможно удаление пиометры у кошек, пиометры у собак.Наши врачи осуществляют родовспоможение собакам и кошкам, в том числе мы занимаемся наблюдением и помощью при патологических родах. В нашей ветеринарной клинике проводится кесарево сечение собак и кошек.</h2>
                 </div>                                        
-                <div class="row">
-                    <router-link  tag="a" to="/vRespiratorySystem" class="v-therapy_block v-therapy_item col-3 col"><span>Дыхательная система</span></router-link>
-                    <router-link  tag="a" to="/vDiseases" class="v-therapy_block v-therapy_item col-3 col"><span>Болезни ушей</span></router-link>
-                    <router-link  tag="a" to="/vStomach" class="v-therapy_block v-therapy_item col-3 col"><span>Болезни желудка и кишечника</span></router-link>
-                    <router-link  tag="a" to="/vUrinary" class="v-therapy_block v-therapy_item col-3 col"><span>Болезни почек и мочевого пузыря</span></router-link>      
-                </div>
                 </div>               
                 <v-side/>
             </div>
              
-        </div>       
+        </div> 
     </div>
 </template>
 
 <script>
 import vSide from '@/components/side/v-side.vue'
 export default {
-    name: 'vTherapy',
+    name: 'vUrinary',
     components: {
         vSide,
     },
 }
 </script>
-
 <style scoped lang="scss">
-    .v-therapy-block-left{
+    .v-urinary-block-left{
         margin-right: 20px;
         margin-left: 0;
         flex: 0 0 70%;
@@ -41,11 +37,11 @@ export default {
         border-radius: 20px;
         padding: 30px;
     }
-    .v-therapy-block{
+    .v-urinary-block{
         display: flex;
     }
 
-    .v-therapy_item{   
+    .v-urinary_item{   
         box-sizing: content-box; 
         display: flex;
         margin-top: 50px;  
@@ -57,7 +53,7 @@ export default {
         cursor: pointer;
         align-items: center;       
     }
-    .v-therapy_title{
+    .v-urinary_title{
         font-size: 36px;
         font-weight: 300;
         text-align: center;
@@ -66,7 +62,7 @@ export default {
         font-weight: 700;
         color: #757575;
     }
-    .v-therapy_block{
+    .v-urinary_block{
         text-decoration: none;
         cursor: pointer;
         display: flex;
@@ -84,9 +80,9 @@ export default {
             max-width: 45px;
             margin-left: 5px;
         }
-}
+    }
 
-    .v-therapy-title{
+    .v-urinary-title{
         text-align: left;
         margin-top: 40px;
         font-size: 42px;
@@ -95,7 +91,7 @@ export default {
         font-weight: 700;
         color: #757575;
     }
-    .v-therapy-subtitle{
+    .v-urinary-subtitle{
         margin-top: 30px;
         text-align: left;
         font-size: 24px;
@@ -122,7 +118,7 @@ export default {
             color: #757575;
         }   
     }
-    .v-therapy-subtitle li::marker {
+    .v-urinary-subtitle li::marker {
     color: teal;
     font-size: 24px;
     }
