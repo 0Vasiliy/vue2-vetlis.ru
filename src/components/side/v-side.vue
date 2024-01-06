@@ -7,8 +7,8 @@
             <v-header-adress class="side-comp"/>
             <v-header-adress-num class="side-comp"/>
             <v-header-phone class="side-comp"/>
-            <v-button class="side-comp"/>
-        </div>       
+            <v-button class="side-comp"/>           
+        </div>      
     </div>
 </template>
 <script>

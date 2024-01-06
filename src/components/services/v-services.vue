@@ -74,7 +74,7 @@
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
-                            <span>Офтальмогия</span>
+                            <span>Офтальмология</span>
                             <img src="@/assets/icons/services/oftalmogia.svg">                             
                         </a>
                     </div>
