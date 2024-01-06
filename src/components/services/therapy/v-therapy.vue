@@ -9,7 +9,8 @@
                 </div>                                        
                 <div class="row">
                     <router-link  tag="a" to="/vRespiratorySystem" class="v-therapy_block v-therapy_item col-3 col"><span>Дыхательная система</span></router-link>
-                <router-link  tag="a" to="/vDiseases" class="v-therapy_block v-therapy_item col-3 col"><span>Болезни ушей</span></router-link>    
+                    <router-link  tag="a" to="/vDiseases" class="v-therapy_block v-therapy_item col-3 col"><span>Болезни ушей</span></router-link>
+                    <router-link  tag="a" to="/vStomach" class="v-therapy_block v-therapy_item col-3 col"><span>Болезни желудка и кишечника</span></router-link>    
                 </div>
                 </div>               
                 <v-side/>
