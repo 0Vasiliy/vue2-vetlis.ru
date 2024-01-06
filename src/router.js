@@ -9,6 +9,7 @@ import vDiseases from '@/components/services/therapy/diseases/v-diseases.vue'
 import vStomach from '@/components/services/therapy/stomach/v-stomach.vue'
 import vUrinary from '@/components/services/therapy/urinary/v-urinary.vue'
 import vPancreas from '@/components/services/therapy/pancreas/v-pancreas.vue'
+import vInfection from '@/components/services/therapy/infection/v-infection.vue'
 
 export default new VueRouter({
     routes:[   
@@ -59,6 +60,11 @@ export default new VueRouter({
         {
             path: '/vPancreas',
             component: vPancreas,
+           
+        },
+        {
+            path: '/vInfection',
+            component: vInfection,
            
         },
     ],
