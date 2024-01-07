@@ -12,7 +12,7 @@ export default {
 </script>
 <style scoped lang="scss">
   .v-hamburger-close{
-    position: absolute;
+        position: absolute;
         top: 25px;
         right: 25px;
         cursor: pointer;
