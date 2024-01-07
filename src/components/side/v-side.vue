@@ -7,8 +7,8 @@
             <v-header-adress class="side-comp"/>
             <v-header-adress-num class="side-comp"/>
             <v-header-phone class="side-comp"/>
-            <v-button class="side-comp"/>           
-        </div>      
+            <v-button class="side-comp"/>
+        </div>       
     </div>
 </template>
 <script>
@@ -47,12 +47,13 @@ export default {
         }
     }
    .v-side-right{
+    margin-top: 50px;
     position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 30px;
+    margin-left: 50px;
    }
    .side-comp{
     margin-top: 10px;

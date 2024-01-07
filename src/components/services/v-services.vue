@@ -61,10 +61,11 @@
                         </a>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <a class="v-services_block">
+                        <!-- <a class="v-services_block">
                             <span>Ультразвуковая чистка зубов</span>
                             <img src="@/assets/icons/services/canin.svg">                             
-                        </a>
+                        </a> -->
+                        <router-link  tag="a" to="/vTeeth" class="v-services_block"><span>Ультразвуковая чистка зубов</span><img src="@/assets/icons/services/canin.svg"></router-link>       
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
