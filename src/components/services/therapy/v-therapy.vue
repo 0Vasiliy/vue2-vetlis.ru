@@ -17,8 +17,7 @@
                 </div>
                 </div>               
                 <v-side/>
-            </div>
-             
+            </div>            
         </div>       
     </div>
 </template>

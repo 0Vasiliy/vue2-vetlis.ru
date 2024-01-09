@@ -10,7 +10,7 @@
                             <span>Терапия</span>
                             <img src="@/assets/icons/services/therapy.svg">
                         </a> -->
-                    <router-link  tag="a" to="/vTherapy" class="v-services_block"><span>Терапия</span><img src="@/assets/icons/services/therapy.svg"></router-link>    
+                    <router-link  tag="a" to="/vTherapy" class="v-services_block"><span>Терапия</span><img src="@/assets/icons/services/therapy.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
@@ -19,10 +19,11 @@
                         </a>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <a class="v-services_block">
+                        <!-- <a class="v-services_block">
                             <span>Визуальная диагностика</span>
                             <img src="@/assets/icons/services/visual.svg">
-                        </a>
+                        </a> -->
+                        <router-link  tag="a" to="/vUzi" class="v-services_block"><span>Узи диагностика</span><img src="@/assets/icons/services/visual.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
@@ -65,7 +66,7 @@
                             <span>Ультразвуковая чистка зубов</span>
                             <img src="@/assets/icons/services/canin.svg">                             
                         </a> -->
-                        <router-link  tag="a" to="/vTeeth" class="v-services_block"><span>Ультразвуковая чистка зубов</span><img src="@/assets/icons/services/canin.svg"></router-link>       
+                        <router-link  tag="a" to="/vTeeth" class="v-services_block"><span>Ультразвуковая чистка зубов</span><img src="@/assets/icons/services/canin.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
@@ -75,7 +76,7 @@
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
-                            <span>Офтальмология</span>
+                            <span>Офтальмогия</span>
                             <img src="@/assets/icons/services/oftalmogia.svg">                             
                         </a>
                     </div>
@@ -99,7 +100,6 @@ export default {
     margin-left: 11.5%;
     max-width: 1550px;
     }
-
 
     .v-services_item{   
         box-sizing: content-box; 

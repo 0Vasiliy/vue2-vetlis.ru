@@ -11,6 +11,7 @@ import vUrinary from '@/components/services/therapy/urinary/v-urinary.vue'
 import vPancreas from '@/components/services/therapy/pancreas/v-pancreas.vue'
 import vInfection from '@/components/services/therapy/infection/v-infection.vue'
 import vTeeth from '@/components/services/teeth/v-teeth.vue'
+import vUzi from '@/components/services/uzi/v-uzi.vue'
 
 export default new VueRouter({
     routes:[   
@@ -71,6 +72,11 @@ export default new VueRouter({
         {
             path: '/vTeeth',
             component: vTeeth,
+           
+        },
+        {
+            path: '/vUzi',
+            component: vUzi,
            
         },
     ],
