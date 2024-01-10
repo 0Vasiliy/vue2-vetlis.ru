@@ -14,6 +14,8 @@ import vTeeth from '@/components/services/teeth/v-teeth.vue'
 import vUzi from '@/components/services/uzi/v-uzi.vue'
 
 export default new VueRouter({
+    mode: 'history',
+    base:"/",
     routes:[   
         {
             path: '/',
@@ -37,49 +39,38 @@ export default new VueRouter({
         {
             path: '/vTherapy',
             component: vTherapy,
-           
         },
         {
             path: '/vRespiratorySystem',
-            component: vRespiratorySystem,
-           
+            component: vRespiratorySystem,           
         },
         {
             path: '/vDiseases',
-            component: vDiseases,
-           
+            component: vDiseases,           
         },
         {
             path: '/vStomach',
-            component: vStomach,
-           
+            component: vStomach,          
         },
         {
             path: '/vUrinary',
-            component: vUrinary,
-           
+            component: vUrinary,           
         },
         {
             path: '/vPancreas',
-            component: vPancreas,
-           
+            component: vPancreas,          
         },
         {
             path: '/vInfection',
-            component: vInfection,
-           
+            component: vInfection,          
         },
         {
             path: '/vTeeth',
-            component: vTeeth,
-           
+            component: vTeeth,          
         },
         {
             path: '/vUzi',
-            component: vUzi,
-           
+            component: vUzi,          
         },
     ],
-    mode: 'history',
-    base:"/",
 })

@@ -10,7 +10,7 @@
                             <span>Терапия</span>
                             <img src="@/assets/icons/services/therapy.svg">
                         </a> -->
-                    <router-link  tag="a" to="/vTherapy" class="v-services_block"><span>Терапия</span><img src="@/assets/icons/services/therapy.svg"></router-link>
+                    <router-link tag="a" to="/vTherapy" class="v-services_block"><span>Терапия</span><img src="@/assets/icons/services/therapy.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
@@ -23,7 +23,7 @@
                             <span>Визуальная диагностика</span>
                             <img src="@/assets/icons/services/visual.svg">
                         </a> -->
-                        <router-link  tag="a" to="/vUzi" class="v-services_block"><span>Узи диагностика</span><img src="@/assets/icons/services/visual.svg"></router-link>
+                        <router-link tag="a" to="/vUzi" class="v-services_block"><span>Узи диагностика</span><img src="@/assets/icons/services/visual.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
@@ -141,33 +141,33 @@ export default {
             margin-left: 5px;
         }
 }
-@media (min-width: 1600px){
-    .container {
-        max-width: 1434px;
+    @media (min-width: 1600px){
+        .container {
+            max-width: 1434px;
+        }
     }
-}
-@media (min-width: 768px) and (max-width: 1100px){
-    .col-3{
-        flex: 0 0 35%;
-        max-width: 35%;
+    @media (min-width: 768px) and (max-width: 1100px){
+        .col-3{
+            flex: 0 0 35%;
+            max-width: 35%;
+        }
     }
-}
-@media (max-width: 860px){
-    .col-3{
-        flex: 0 0 45%;
-        max-width: 45%;
+    @media (max-width: 860px){
+        .col-3{
+            flex: 0 0 45%;
+            max-width: 45%;
+        }
+        .v-services{
+            margin-right: 10%;
+            margin-left: 12%;
+        }
     }
-    .v-services{
-        margin-right: 10%;
-        margin-left: 12%;
+    @media (max-width: 767px){
+        .col-3 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
     }
-}
-@media (max-width: 767px){
-    .col-3 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
 
 </style>
