@@ -12,8 +12,9 @@ import vPancreas from '@/components/services/therapy/pancreas/v-pancreas.vue'
 import vInfection from '@/components/services/therapy/infection/v-infection.vue'
 import vTeeth from '@/components/services/teeth/v-teeth.vue'
 import vUzi from '@/components/services/uzi/v-uzi.vue'
+import vLab from '@/components/services/lab/v-lab.vue'
 
-export default new VueRouter({
+    export default new VueRouter({  
     mode: 'history',
     base:"/",
     routes:[   
@@ -37,7 +38,7 @@ export default new VueRouter({
            
         },
         {
-            path: '/vTherapy',
+            path: '/vTerapy',
             component: vTherapy,
         },
         {
@@ -70,7 +71,12 @@ export default new VueRouter({
         },
         {
             path: '/vUzi',
-            component: vUzi,          
+            component: vUzi         
+        },
+        {
+            path: '/vLab',
+            component: vLab         
         },
     ],
 })
+

@@ -5,12 +5,8 @@
                 <h1 class="v-services_title">Наши услуги</h1>
             </div>
             <div class="row">              
-                    <div class="v-services_item col-3 col">
-                        <!-- <a class="v-services_block">
-                            <span>Терапия</span>
-                            <img src="@/assets/icons/services/therapy.svg">
-                        </a> -->
-                    <router-link tag="a" to="/vTherapy" class="v-services_block"><span>Терапия</span><img src="@/assets/icons/services/therapy.svg"></router-link>
+                    <div class="v-services_item col-3 col">                  
+                        <router-link tag="a" to="/vTherapy" class="v-services_block"><span>Терапия</span><img src="@/assets/icons/services/therapy.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
@@ -19,10 +15,6 @@
                         </a>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <!-- <a class="v-services_block">
-                            <span>Визуальная диагностика</span>
-                            <img src="@/assets/icons/services/visual.svg">
-                        </a> -->
                         <router-link tag="a" to="/vUzi" class="v-services_block"><span>Узи диагностика</span><img src="@/assets/icons/services/visual.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
@@ -32,10 +24,11 @@
                         </a>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <a class="v-services_block">
+                        <!-- <a class="v-services_block">
                             <span>Лаборатория</span>
                             <img src="@/assets/icons/services/lab.svg">                             
-                        </a>
+                        </a> -->
+                        <router-link tag="a" to="/vLab" class="v-services_block"><span>Лабораторная диагностика</span><img src="@/assets/icons/services/lab.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
@@ -62,10 +55,6 @@
                         </a>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <!-- <a class="v-services_block">
-                            <span>Ультразвуковая чистка зубов</span>
-                            <img src="@/assets/icons/services/canin.svg">                             
-                        </a> -->
                         <router-link  tag="a" to="/vTeeth" class="v-services_block"><span>Ультразвуковая чистка зубов</span><img src="@/assets/icons/services/canin.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
@@ -140,7 +129,7 @@ export default {
             max-width: 45px;
             margin-left: 5px;
         }
-}
+    }
     @media (min-width: 1600px){
         .container {
             max-width: 1434px;

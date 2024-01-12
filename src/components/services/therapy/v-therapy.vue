@@ -45,7 +45,6 @@ export default {
     .v-therapy-block{
         display: flex;
     }
-
     .v-therapy_item{   
         box-sizing: content-box; 
         display: flex;
