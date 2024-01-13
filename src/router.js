@@ -13,6 +13,7 @@ import vInfection from '@/components/services/therapy/infection/v-infection.vue'
 import vTeeth from '@/components/services/teeth/v-teeth.vue'
 import vUzi from '@/components/services/uzi/v-uzi.vue'
 import vLab from '@/components/services/lab/v-lab.vue'
+import vStom from '@/components/services/stom/v-stom.vue'
 
     export default new VueRouter({  
     mode: 'history',
@@ -76,6 +77,10 @@ import vLab from '@/components/services/lab/v-lab.vue'
         {
             path: '/vLab',
             component: vLab         
+        },
+        {
+            path: '/vStom',
+            component: vStom         
         },
     ],
 })
