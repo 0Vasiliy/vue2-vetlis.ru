@@ -38,7 +38,7 @@ import vLab from '@/components/services/lab/v-lab.vue'
            
         },
         {
-            path: '/vTerapy',
+            path: '/vTherapy',
             component: vTherapy,
         },
         {

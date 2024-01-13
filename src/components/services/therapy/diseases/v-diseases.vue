@@ -7,9 +7,9 @@
                 <div class="v-diseases-subtitle">
                     <h2>В нашей ветеринарной клинике «ЛИС» Ваш питомец сможет получить помощь при воспалении уха (отит). Мы лечим аллергический отит у собак и кошек, отодектоз (ушной клещ), а также оказываем хирургическую помощь при заболевании ушей (удаление  новообразований уха, удаление слухового прохода при хроническом отите, хирургическое лечение гематомы ушной раковины у собак и кошек). В ветклинике можно провести купирование ушей собаке ( стаффордширский терьер, доберман, дог, миттельшнауцер, цвергшнауцер, ризеншнауцер, пинчер, кане – корсо)</h2>
                     <h2>Отодектоз</h2> 
-                    <img src="../../../../assets/images/therapy/Sob_otodektoz.jpg" class="card-img-top" alt="sob">
+                    <img src="../../../../assets/images/therapy/Sob_otodektoz.jpg" class="card-img-top r-img" alt="sob">
                     <h2>Отит</h2> 
-                    <img src="../../../../assets/images/therapy/otogematoma-koshki.jpg" class="card-img-top" alt="kosh">
+                    <img src="../../../../assets/images/therapy/otogematoma-koshki.jpg" class="card-img-top r-img" alt="kosh">
                     <h2>Как опрделитьналичие болезни?</h2> 
                     <h2>В общем-то, сделать это может даже очень далекий от ветеринарии и медицины человек, так как признаки характерны:</h2>
                     <ul>
@@ -91,8 +91,10 @@ export default {
             max-width: 45px;
             margin-left: 5px;
         }
-}
-
+    }
+    .r-img{
+        border-radius: 20px;
+    }
     .v-diseases-title{
         text-align: left;
         margin-top: 40px;

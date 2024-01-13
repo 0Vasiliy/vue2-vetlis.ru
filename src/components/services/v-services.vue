@@ -24,11 +24,7 @@
                         </a>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <!-- <a class="v-services_block">
-                            <span>Лаборатория</span>
-                            <img src="@/assets/icons/services/lab.svg">                             
-                        </a> -->
-                        <router-link tag="a" to="/vLab" class="v-services_block"><span>Лабораторная диагностика</span><img src="@/assets/icons/services/lab.svg"></router-link>
+                        <router-link tag="a" to="/vLab" class="v-services_block"><span>Лабораторная<br>диагностика</span><img src="@/assets/icons/services/lab.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
