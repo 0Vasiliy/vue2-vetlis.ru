@@ -22,6 +22,8 @@ import vDerma from '@/components/services/derma/v-derma.vue'
 import vSterilization from '@/components/services/sterilization/v-sterilization.vue'
 import vEye from '@/components/services/eye/v-eye.vue'
 import vUrolithiasis from '@/components/services/therapy/urolithiasis/v-urolithiasis.vue'
+import vParanal from '@/components/services/therapy/paranal/v-paranal.vue'
+import vOthers from '@/components/services/therapy/others/v-others.vue'
 
     export default new VueRouter({  
     mode: 'history',
@@ -121,6 +123,14 @@ import vUrolithiasis from '@/components/services/therapy/urolithiasis/v-urolithi
         {
             path: '/vUrolithiasis',
             component: vUrolithiasis      
+        },
+        {
+            path: '/vParanal',
+            component: vParanal     
+        },
+        {
+            path: '/vOthers  ',
+            component: vOthers    
         },
     ],
     scrollBehavior() {
