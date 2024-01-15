@@ -9,10 +9,10 @@
                 </div>                                        
                 <div class="row">
                     <router-link  tag="a" to="/vOthers" class="v-modul_block v-modul_item col-3 col"><span>Основные терапевтические услуги</span></router-link>                        
-                    <router-link  tag="a" to="/vRespiratorySystem" class="v-modul_block v-modul_item col-3 col"><span>Дыхательная система</span></router-link>
                     <router-link  tag="a" to="/vDiseases" class="v-modul_block v-modul_item col-3 col"><span>Болезни ушей</span></router-link>
                     <router-link  tag="a" to="/vStomach" class="v-modul_block v-modul_item col-3 col"><span>Болезни желудка и кишечника</span></router-link>
                     <router-link  tag="a" to="/vUrinary" class="v-modul_block v-modul_item col-3 col"><span>Болезни почек и мочевого пузыря</span></router-link>
+                    <router-link  tag="a" to="/vRespiratorySystem" class="v-modul_block v-modul_item col-3 col"><span>Дыхательная система</span></router-link>
                     <router-link  tag="a" to="/vPancreas" class="v-modul_block v-modul_item col-3 col"><span>Болезни печени и поджелудочной железы</span></router-link>
                     <router-link  tag="a" to="/vInfection" class="v-modul_block v-modul_item col-3 col"><span>Инфекционные заболевания</span></router-link> 
                     <router-link  tag="a" to="/vUrolithiasis" class="v-modul_block v-modul_item col-3 col"><span>Мочекаменная болезнь</span></router-link>

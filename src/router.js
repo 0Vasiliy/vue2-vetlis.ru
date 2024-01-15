@@ -129,7 +129,7 @@ import vOthers from '@/components/services/therapy/others/v-others.vue'
             component: vParanal     
         },
         {
-            path: '/vOthers  ',
+            path: '/vOthers',
             component: vOthers    
         },
     ],
