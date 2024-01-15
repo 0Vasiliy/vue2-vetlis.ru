@@ -21,6 +21,7 @@ import vVaccinationChip from '@/components/services/vaccination-chip/v-vaccinati
 import vDerma from '@/components/services/derma/v-derma.vue'
 import vSterilization from '@/components/services/sterilization/v-sterilization.vue'
 import vEye from '@/components/services/eye/v-eye.vue'
+import vUrolithiasis from '@/components/services/therapy/urolithiasis/v-urolithiasis.vue'
 
     export default new VueRouter({  
     mode: 'history',
@@ -116,6 +117,10 @@ import vEye from '@/components/services/eye/v-eye.vue'
         {
             path: '/vEye',
             component: vEye      
+        },
+        {
+            path: '/vUrolithiasis',
+            component: vUrolithiasis      
         },
     ],
     scrollBehavior() {
