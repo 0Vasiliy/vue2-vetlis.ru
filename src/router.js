@@ -20,6 +20,7 @@ import vChip from '@/components/services/vaccination-chip/chip/v-chip.vue'
 import vVaccinationChip from '@/components/services/vaccination-chip/v-vaccination-chip.vue'
 import vDerma from '@/components/services/derma/v-derma.vue'
 import vSterilization from '@/components/services/sterilization/v-sterilization.vue'
+import vEye from '@/components/services/eye/v-eye.vue'
 
     export default new VueRouter({  
     mode: 'history',
@@ -111,6 +112,10 @@ import vSterilization from '@/components/services/sterilization/v-sterilization.
         {
             path: '/vSterilization',
             component: vSterilization      
+        },
+        {
+            path: '/vEye',
+            component: vEye      
         },
     ],
     scrollBehavior() {

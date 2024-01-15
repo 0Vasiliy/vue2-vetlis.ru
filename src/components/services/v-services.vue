@@ -65,10 +65,11 @@
                         <router-link  tag="a" to="/vKardio" class="v-services_block"><span>Кардиология</span><img src="@/assets/icons/services/kardio.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <a class="v-services_block">
+                        <!-- <a class="v-services_block">
                             <span>Офтальмология</span>
                             <img src="@/assets/icons/services/oftalmogia.svg">                             
-                        </a>
+                        </a> -->
+                        <router-link  tag="a" to="/vEye" class="v-services_block"><span>Офтальмология</span><img src="@/assets/icons/services/oftalmogia.svg"></router-link>
                     </div>
             </div>           
         </div>
