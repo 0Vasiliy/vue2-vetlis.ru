@@ -1,10 +1,10 @@
 <template>
     <div class="v-uzi">
         <div class="container">
-           <div class="v-uzi-block">
-               <div class="v-uzi-block-left">
-                <h1 class="v-uzi_title">УЗИ-диагностика</h1> 
-                <div class="v-uzi-subtitle"> Ультразвуковое исследование - один из самых распространенных и безболезненных методов визуализации внутренних органов в современной ветеринарии.
+           <div class="v-modul-block">
+               <div class="v-modul-block-left">
+                <h1 class="v-modul_title">УЗИ-диагностика</h1> 
+                <div class="v-modul-subtitle"> Ультразвуковое исследование - один из самых распространенных и безболезненных методов визуализации внутренних органов в современной ветеринарии.
                     <h2>Ультразвуковое исследование для животных – это современный, эффективный и информативный вид диагностики различных органов. Данные ультразвукового исследования позволяют более точно поставить диагноз. При этом УЗИ не представляет опасности для здоровья питомца.</h2>
                     <h2>С помощью УЗИ можно исследовать различные органы грудной и брюшной полости. Оценить их состояние и структуру, что не обходимо для дальнейшей тактики лечения. А так же можно определить наличие новообразования или инородного тела.</h2>
                     <img src="../../../assets/images/uzi/uzi1.jpg" class="card-img-top r-img" alt="uzi1">
@@ -50,127 +50,6 @@ export default {
     },
 }
 </script>
-
 <style scoped lang="scss">
-    .v-uzi-block-left{
-        margin-right: 20px;
-        margin-left: 0;
-        flex: 0 0 70%;
-        max-width: 70%;
-        border: 1px solid gray;
-        border-radius: 20px;
-        padding: 30px;
-    }
-    .v-uzi-block{
-        display: flex;
-    }
-    .r-img{
-        border-radius: 20px;
-    }
-
-    .v-uzi_item{   
-        box-sizing: content-box; 
-        display: flex;
-        margin-top: 50px;  
-        max-width: 20%;
-        padding: 10px 30px;
-        height: 100px;
-        border-radius: 20px;  
-        border: 1px solid #723030;
-        cursor: pointer;
-        align-items: center;       
-    }
-    .v-uzi_title{
-        font-size: 36px;
-        font-weight: 300;
-        text-align: center;
-        line-height: 21px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 700;
-        color: #757575;
-    }
-    .v-uzi_block{
-        text-decoration: none;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        span{
-            font-size: 20px;
-            font-weight: 300;
-            text-align: center;
-            line-height: 20px;
-            font-family: 'Museo Sans Cyrl';
-            font-weight: 300;
-            color: #757575;
-        }
-        img{
-            max-width: 45px;
-            margin-left: 5px;
-        }
-}
-
-    .v-uzi-title{
-        text-align: left;
-        margin-top: 40px;
-        font-size: 42px;
-        line-height: 36px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 700;
-        color: #757575;
-    }
-    .v-uzi-subtitle{
-        margin-top: 30px;
-        text-align: left;
-        font-size: 24px;
-        line-height: 24px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 300;
-        color: #757575;
-        ul{
-            margin-top: 20px;
-        }
-        li{
-            margin-top: 10px;
-        }
-        br{
-            margin-top: 10px;
-        }
-        h2{
-            margin-top: 15px;
-            text-align: left;
-            font-size: 24px;
-            line-height: 24px;
-            font-family: 'Museo Sans Cyrl';
-            font-weight: 300;
-            color: #757575;
-        }   
-    }
-    .v-uzi-subtitle li::marker {
-    color: teal;
-    font-size: 24px;
-    }
-@media (min-width: 1600px){
-    .container {
-        max-width: 1434px;
-    }
-}
-@media (min-width: 768px) and (max-width: 1100px){
-    .col-3{
-        flex: 0 0 35%;
-        max-width: 35%;
-    }
-}
-@media (max-width: 860px){
-    .col-3{
-        flex: 0 0 45%;
-        max-width: 45%;
-    }
-}
-@media (max-width: 767px){
-    .col-3 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
+    @import '@/assets/css/modul.scss';
 </style>

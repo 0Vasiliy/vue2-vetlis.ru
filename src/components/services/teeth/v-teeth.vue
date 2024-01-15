@@ -1,10 +1,10 @@
 <template>
     <div class="v-teeth">
         <div class="container">
-           <div class="v-teeth-block">
-               <div class="v-teeth-block-left">
-                <h1 class="v-teeth_title">Ультразвуковая чистка зубов</h1> 
-                <div class="v-teeth-subtitle"> Ультразвуковая чистка зубов у животных — это процесс очищения зубов от твердого налета при помощи ультразвукового скалера. Зубной камень образуется практически у всех животных старше 3 лет, чаще у собак.
+           <div class="v-modul-block">
+               <div class="v-modul-block-left">
+                <h1 class="v-modul_title">Ультразвуковая чистка зубов</h1> 
+                <div class="v-modul-subtitle"> Ультразвуковая чистка зубов у животных — это процесс очищения зубов от твердого налета при помощи ультразвукового скалера. Зубной камень образуется практически у всех животных старше 3 лет, чаще у собак.
                     <h1>Зубной камень у собак и кошек</h1>
                     <h2>Зубной камень представляет собой твердые отложения желтого, коричневатого и даже черного цвета. В составе такого налета присутствуют соли кальция и железа, белки, частицы эпителия, бактерии, мельчайшие кусочки пищи. Он образуется в результате скопления остатков пищи и слюны животного, которые спустя некоторое время твердеют. Отложения на зубах являются прекрасной средой для размножения различных бактерий, и как следствие, в ротовой полости питомца возникают воспаления.</h2>
                     <img src="../../../assets/images/teeth/stom1.jpg" class="card-img-top r-img" alt="stom2">
@@ -60,128 +60,5 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-    .v-teeth-block-left{
-        margin-right: 20px;
-        margin-left: 0;
-        flex: 0 0 70%;
-        max-width: 70%;
-        border: 1px solid gray;
-        border-radius: 20px;
-        padding: 30px;
-    }
-    .v-teeth-block{
-        display: flex;
-    }
-
-    .v-teeth_item{   
-        box-sizing: content-box; 
-        display: flex;
-        margin-top: 50px;  
-        max-width: 20%;
-        padding: 10px 30px;
-        height: 100px;
-        border-radius: 20px;  
-        border: 1px solid #723030;
-        cursor: pointer;
-        align-items: center;       
-    }
-    .v-teeth_title{
-        font-size: 36px;
-        font-weight: 300;
-        text-align: center;
-        line-height: 21px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 700;
-        color: #757575;
-    }
-    .v-teeth_block{
-        text-decoration: none;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        span{
-            font-size: 20px;
-            font-weight: 300;
-            text-align: center;
-            line-height: 20px;
-            font-family: 'Museo Sans Cyrl';
-            font-weight: 300;
-            color: #757575;
-        }
-        img{
-            max-width: 45px;
-            margin-left: 5px;
-        }
-    }
-    .r-img{
-        border-radius: 20px;
-    }
-    .v-teeth-title{
-        text-align: left;
-        margin-top: 40px;
-        font-size: 42px;
-        line-height: 36px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 700;
-        color: #757575;
-    }
-    .v-teeth-subtitle{
-        margin-top: 30px;
-        text-align: left;
-        font-size: 24px;
-        line-height: 24px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 300;
-        color: #757575;
-        ul{
-            margin-top: 20px;
-        }
-        li{
-            margin-top: 10px;
-        }
-        br{
-            margin-top: 10px;
-        }
-        h2{
-            margin-top: 15px;
-            text-align: left;
-            font-size: 24px;
-            line-height: 24px;
-            font-family: 'Museo Sans Cyrl';
-            font-weight: 300;
-            color: #757575;
-        }   
-    }
-    .v-teeth-subtitle li::marker {
-    color: teal;
-    font-size: 24px;
-    }
-@media (min-width: 1600px){
-    .container {
-        max-width: 1434px;
-    }
-}
-@media (min-width: 768px) and (max-width: 1100px){
-    .col-3{
-        flex: 0 0 35%;
-        max-width: 35%;
-    }
-}
-@media (max-width: 860px){
-    .col-3{
-        flex: 0 0 45%;
-        max-width: 45%;
-    }
-    .v-services{
-        margin-right: 10%;
-        margin-left: 12%;
-    }
-}
-@media (max-width: 767px){
-    .col-3 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
+    @import '@/assets/css/modul.scss';
 </style>

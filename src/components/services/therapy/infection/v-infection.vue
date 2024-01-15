@@ -1,10 +1,10 @@
 <template>
     <div class="v-infection">
         <div class="container">
-           <div class="v-infection-block">
-               <div class="v-infection-block-left">
-                <h1 class="v-infection_title">Инфекционные заболевания</h1> 
-                <div class="v-infection-subtitle">
+           <div class="v-modul-block">
+               <div class="v-modul-block-left">
+                <h1 class="v-modul_title">Инфекционные заболевания</h1> 
+                <div class="v-modul-subtitle">
                     <h2>Появление вирусных заболеваний у наших любимых четвероногих друзей, собак и кошек, это закономерный результат попадания внутрь патогенной флоры, которая тут же начинает размножаться и постепенно рассеиваться по их организму.</h2>
                     <h2>Вирусы могут передаваться от одной особи ко многим другим, причём часто случается, что кот или собака не болеют, а лишь являются скрытыми передатчиками инфекции и многократно заражают ею других.</h2>
                     <img src="../../../../assets/images/therapy/infection.jpg" class="card-img-top r-img" alt="infection">
@@ -109,129 +109,5 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-    .v-infection-block-left{
-        margin-right: 20px;
-        margin-left: 0;
-        flex: 0 0 70%;
-        max-width: 70%;
-        border: 1px solid gray;
-        border-radius: 20px;
-        padding: 30px;
-    }
-    .v-infection-block{
-        display: flex;
-    }
-
-    .v-infection_item{   
-        box-sizing: content-box; 
-        display: flex;
-        margin-top: 50px;  
-        max-width: 20%;
-        padding: 10px 30px;
-        height: 100px;
-        border-radius: 20px;  
-        border: 1px solid #723030;
-        cursor: pointer;
-        align-items: center;       
-    }
-    .v-infection_title{
-        font-size: 36px;
-        font-weight: 300;
-        text-align: center;
-        line-height: 21px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 700;
-        color: #757575;
-    }
-    .v-infection_block{
-        text-decoration: none;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        span{
-            font-size: 20px;
-            font-weight: 300;
-            text-align: center;
-            line-height: 20px;
-            font-family: 'Museo Sans Cyrl';
-            font-weight: 300;
-            color: #757575;
-        }
-        img{
-            max-width: 45px;
-            margin-left: 5px;
-        }
-    }
-
-    .v-infection-title{
-        text-align: left;
-        margin-top: 40px;
-        font-size: 42px;
-        line-height: 36px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 700;
-        color: #757575;
-    }
-    .v-infection-subtitle{
-        margin-top: 30px;
-        text-align: left;
-        font-size: 24px;
-        line-height: 24px;
-        font-family: 'Museo Sans Cyrl';
-        font-weight: 300;
-        color: #757575;
-        ul{
-            margin-top: 20px;
-        }
-        li{
-            margin-top: 10px;
-        }
-        br{
-            margin-top: 10px;
-        }
-        h2{
-            margin-top: 15px;
-            text-align: left;
-            font-size: 24px;
-            line-height: 24px;
-            font-family: 'Museo Sans Cyrl';
-            font-weight: 300;
-            color: #757575;
-        }   
-    }
-    .r-img{
-        border-radius: 20px;
-    }
-    .v-infection-subtitle li::marker {
-    color: teal;
-    font-size: 24px;
-    }
-@media (min-width: 1600px){
-    .container {
-        max-width: 1434px;
-    }
-}
-@media (min-width: 768px) and (max-width: 1100px){
-    .col-3{
-        flex: 0 0 35%;
-        max-width: 35%;
-    }
-}
-@media (max-width: 860px){
-    .col-3{
-        flex: 0 0 45%;
-        max-width: 45%;
-    }
-    .v-services{
-        margin-right: 10%;
-        margin-left: 12%;
-    }
-}
-@media (max-width: 767px){
-    .col-3 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
+    @import '@/assets/css/modul.scss';
 </style>

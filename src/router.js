@@ -14,6 +14,12 @@ import vTeeth from '@/components/services/teeth/v-teeth.vue'
 import vUzi from '@/components/services/uzi/v-uzi.vue'
 import vLab from '@/components/services/lab/v-lab.vue'
 import vStom from '@/components/services/stom/v-stom.vue'
+import vKardio from '@/components/services/kardio/v-kardio.vue'
+import vVaccination from '@/components/services/vaccination-chip/vaccination/v-vaccination.vue'
+import vChip from '@/components/services/vaccination-chip/chip/v-chip.vue'
+import vVaccinationChip from '@/components/services/vaccination-chip/v-vaccination-chip.vue'
+import vDerma from '@/components/services/derma/v-derma.vue'
+import vSterilization from '@/components/services/sterilization/v-sterilization.vue'
 
     export default new VueRouter({  
     mode: 'history',
@@ -82,6 +88,33 @@ import vStom from '@/components/services/stom/v-stom.vue'
             path: '/vStom',
             component: vStom         
         },
+        {
+            path: '/vKardio',
+            component: vKardio         
+        },
+        {
+            path: '/vVaccination',
+            component: vVaccination         
+        },
+        {
+            path: '/vChip',
+            component: vChip        
+        },
+        {
+            path: '/vVaccinationChip',
+            component: vVaccinationChip        
+        },
+        {
+            path: '/vDerma',
+            component: vDerma        
+        },
+        {
+            path: '/vSterilization',
+            component: vSterilization      
+        },
     ],
+    scrollBehavior() {
+        return { x: 0, y: 0 }
+      }
 })
 

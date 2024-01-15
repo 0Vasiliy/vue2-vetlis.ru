@@ -18,19 +18,21 @@
                         <router-link tag="a" to="/vUzi" class="v-services_block"><span>Узи диагностика</span><img src="@/assets/icons/services/visual.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <a class="v-services_block">
+                        <!-- <a class="v-services_block">
                             <span>Стерилизация <br>и кастрация</span>
                             <img src="@/assets/icons/services/sterilizacziya.svg">                             
-                        </a>
+                        </a> -->
+                        <router-link tag="a" to="/vSterilization" class="v-services_block"><span>Стерилизация <br>и кастрация</span><img src="@/assets/icons/services/sterilizacziya.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <router-link tag="a" to="/vLab" class="v-services_block"><span>Лабораторная<br>диагностика</span><img src="@/assets/icons/services/lab.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <a class="v-services_block">
+                        <!-- <a class="v-services_block">
                             <span>Дерматология</span>
                             <img src="@/assets/icons/services/derm.svg">                             
-                        </a>
+                        </a> -->
+                        <router-link tag="a" to="/vDerma" class="v-services_block"><span>Дерматология</span><img src="@/assets/icons/services/derm.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
@@ -39,10 +41,11 @@
                         </a>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <a class="v-services_block">
+                        <!-- <a class="v-services_block">
                             <span>Вакцинация</span>
                             <img src="@/assets/icons/services/vakcinacia.svg">                             
-                        </a>
+                        </a> -->
+                        <router-link tag="a" to="/vVaccinationChip" class="v-services_block"><span>Вакцинация и <br>чипирование</span><img src="@/assets/icons/services/vakcinacia.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <!-- <a class="v-services_block">
@@ -55,14 +58,15 @@
                         <router-link  tag="a" to="/vTeeth" class="v-services_block"><span>Ультразвуковая чистка зубов</span><img src="@/assets/icons/services/canin.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <a class="v-services_block">
+                        <!-- <a class="v-services_block">
                             <span>Кардиология</span>
                             <img src="@/assets/icons/services/kardio.svg">                             
-                        </a>
+                        </a> -->
+                        <router-link  tag="a" to="/vKardio" class="v-services_block"><span>Кардиология</span><img src="@/assets/icons/services/kardio.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <a class="v-services_block">
-                            <span>Офтальмогия</span>
+                            <span>Офтальмология</span>
                             <img src="@/assets/icons/services/oftalmogia.svg">                             
                         </a>
                     </div>
