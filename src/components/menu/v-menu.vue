@@ -4,11 +4,11 @@
             <div class="row">
                 <div class="col  menu_block">                   
                     <ul class="col  menu_block_list">
-                        <li class="menu_block_item"><a href="#" class="menu_block_link ">О нас</a></li>
-                        <li class="menu_block_item"><a href="#servis" class="menu_block_link ">Услуги</a></li>
+                        <li class="menu_block_item"><a href="#carusel" class="menu_block_link ">О нас</a></li>
                         <li class="menu_block_item"><a href="#news_action" class="menu_block_link ">Новости</a></li>
-                        <li class="menu_block_item"><a href="#" class="menu_block_link ">Консультация ветеринара</a></li>
-                        <li class="menu_block_item"><a href="#" class="menu_block_link ">Полезные статьи</a></li>
+                        <li class="menu_block_item"><a href="#servis" class="menu_block_link ">Услуги</a></li>
+                        <li class="menu_block_item"><a href="#vetart" class="menu_block_link ">Полезные статьи</a></li>
+                        <li class="menu_block_item"><a href="#" class="menu_block_link ">Рекомедации ветрача</a></li>
                         <li class="menu_block_item"><a href="#" class="menu_block_link ">Контакты</a></li>
                     </ul>                  
                     <vHamburger/>

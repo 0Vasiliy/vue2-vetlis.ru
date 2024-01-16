@@ -1,5 +1,5 @@
 <template>
-    <section class="v-carousel-main  col-xl-9 col-md-9 col-10">      
+    <section class="v-carousel-main  col-xl-9 col-md-9 col-10" id="carusel">      
       <div class="container">
         <v-carousel
                 :carousel_data="sliderItems"

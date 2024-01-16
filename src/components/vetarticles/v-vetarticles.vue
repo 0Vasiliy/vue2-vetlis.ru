@@ -1,5 +1,5 @@
 <template>
-    <div class="v-vetarticles">
+    <div class="v-vetarticles" id="vetart">
        <div class="container">
         <h1 class="v-vetaricles-title">Полезные статьи</h1>
            <div class="v-vetarticles-card-block">

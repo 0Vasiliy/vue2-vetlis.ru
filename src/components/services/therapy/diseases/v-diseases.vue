@@ -10,7 +10,7 @@
                     <img src="../../../../assets/images/therapy/Sob_otodektoz.jpg" class="card-img-top r-img" alt="sob">
                     <h2>Отит</h2> 
                     <img src="../../../../assets/images/therapy/otogematoma-koshki.jpg" class="card-img-top r-img" alt="kosh">
-                    <h2>Как опрделитьналичие болезни?</h2> 
+                    <h2>Как определить наличие болезни?</h2> 
                     <h2>В общем-то, сделать это может даже очень далекий от ветеринарии и медицины человек, так как признаки характерны:</h2>
                     <ul>
                         <li>крайне неприятный запах от ушей.</li>
