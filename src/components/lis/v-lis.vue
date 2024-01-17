@@ -37,19 +37,17 @@ export default {
 <style>
 .v-lis{
     margin-top: 50px;
-   
 }
 .v-lis-block{
     margin: auto;
     font-family: sans-serif;
-    overflow: auto;
-   
+    overflow: auto;  
     background: #bdc3c7;
     background: -webkit-linear-gradient(to right, #abbaab, #bdc3c7);  
     background: linear-gradient(to right, #abbaab, #bdc3c7); 
     background-size: 400% 400%;
     background-attachment: fixed;
-    padding: 100px;
+    padding:75px 0 75px 0;
     border-radius: 20px;
 }
 
@@ -113,7 +111,7 @@ export default {
   z-index: 100;
 }
 .text-container-lis{
-  margin-left: 500px;
+  margin-left: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,7 +121,7 @@ export default {
 .text-container-lis h1{
   font-size: 75px;
   color: rgba(225,225,225, .01);
-  background-image: url("../../assets/images/lis_fon2.jpg");
+  background-image: url("../../assets/images/lis_fon3.jpg");
   background-repeat: repeat;
   -webkit-background-clip:text;
   animation: animate 15s ease-in-out infinite;
@@ -136,7 +134,7 @@ export default {
   margin-left: 50px;
   font-size: 50px;
   color: rgba(225,225,225, .01);
-  background-image: url("../../assets/images/lis_fon2.jpg");
+  background-image: url("../../assets/images/lis_fon6.jpg");
   background-repeat: repeat;
   -webkit-background-clip:text;
   animation: animate 15s ease-in-out infinite;
