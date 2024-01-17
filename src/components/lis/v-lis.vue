@@ -4,7 +4,7 @@
             <div class="v-lis-block">
                 <div class="wave-lis"> 
                     <div class="text-container-lis">
-                        <h1>Ветеринарная клиника ЛИС</h1>
+                        <h1>Ветеринарная клиника <br>ЛИС</h1>
                     </div>
                 </div>
                 <div class="wave">
@@ -121,9 +121,9 @@ export default {
   margin-bottom: 70px;  
 }
 .text-container-lis h1{
-  font-size: 35px;
+  font-size: 75px;
   color: rgba(225,225,225, .01);
-  background-image: url("../../assets/images/lis_fon.jpg");
+  background-image: url("../../assets/images/lis_fon2.jpg");
   background-repeat: repeat;
   -webkit-background-clip:text;
   animation: animate 15s ease-in-out infinite;
@@ -134,9 +134,9 @@ export default {
 
 .text-container h1 { 
   margin-left: 50px;
-  font-size: 75px;
+  font-size: 50px;
   color: rgba(225,225,225, .01);
-  background-image: url("../../assets/images/lis_fon.jpg");
+  background-image: url("../../assets/images/lis_fon2.jpg");
   background-repeat: repeat;
   -webkit-background-clip:text;
   animation: animate 15s ease-in-out infinite;
