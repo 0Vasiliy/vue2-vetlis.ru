@@ -7,6 +7,7 @@
       <v-news/>
       <v-services/>
       <v-vetarticles/>
+      <v-lis/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import vCarouselMain from './slider/v-Carousel-main.vue'
 import vServices from './services/v-services.vue'
 import vMenu from './menu/v-menu.vue'
 import vVetarticles from './vetarticles/v-vetarticles.vue'
+import vLis from './lis/v-lis.vue'
 
 export default {
   name: 'v-mainapp',
@@ -29,6 +31,7 @@ export default {
     vServices,
     vMenu,
     vVetarticles,
+    vLis
   },
   props: {
    
