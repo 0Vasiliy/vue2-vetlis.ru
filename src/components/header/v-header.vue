@@ -50,9 +50,7 @@ export default {
 
 <style scoped lang="scss">
     .v-header{
-    max-width: 1920px;
-    margin-left: 150px;
-    margin-right: 200px;  
+        max-width: 1540px; 
     &_block{   
         display: flex;
         margin-top: 40px;
@@ -80,6 +78,11 @@ export default {
     margin-right: 0px;
   
 }
+// @media (min-width: 1600px){
+//     .container {
+//     max-width: 1434px
+// }
+// }
 
 @media (max-width: 1630px){
 

@@ -40,5 +40,8 @@ export default {
 </script>
 
 <style>
+.v-mainapp{
+  min-width: 320px;
+}
  @import '@/assets/css/animate.css';
 </style>

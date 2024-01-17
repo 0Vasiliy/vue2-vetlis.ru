@@ -38,12 +38,10 @@ export default {
 </script>
 <style scoped lang="scss">
     .v-menu{ 
-    // max-width:1620px;
-    margin-left: 13%;
-    margin-right: 13%;
+    max-width:1400px;
     margin-top: 50px; 
     padding-left: 0px;
-    height: 75px;
+    // height: 75px;
     border: 1px solid #723030;
     border-left: none;
     border-right: none;
@@ -101,16 +99,16 @@ export default {
     }
 }
 
-.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 1620px;
-    }
-.container{
-    margin-left: 0px;
-    margin-right: 0px;
-}
-@media (max-width: 991px){
-    .menu_block_list{
-        display: none;
-}
-}
+// .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+//         max-width: 1620px;
+//     }
+// .container{
+//     margin-left: 0px;
+//     margin-right: 0px;
+// }
+// @media (max-width: 991px){
+//     .menu_block_list{
+//         display: none;
+// }
+// }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <section class="v-services" id="servis">
+    <section class="v-services col-xl-9 col-md-9 col-10" id="servis">
         <div class="container">
             <div class="row">
                 <h1 class="v-services_title">Наши услуги</h1>
@@ -87,9 +87,9 @@ export default {
     display: flex;
     flex-direction: row;
     margin-top: 100px; 
-    margin-right: 11%;
-    margin-left: 11.5%;
-    max-width: 1550px;
+    // margin-right: 11%;
+    // margin-left: 11.5%;
+    // max-width: 1550px;
     }
 
     .v-services_item{   

@@ -33,13 +33,14 @@ export default {
 </script>
 <style scoped lang="scss">
     .v-news_block{
-    background: url(../../assets/images/news/fon_vet2.jpg) center (center/cover) no-repeat;
+    background: url(../../assets/images/news/fon_vet22.jpg) center (center/cover) no-repeat;
+    background-size: contain;
     margin-top: 30px;
     overflow: hidden;
     object-fit: cover;       
     border-radius: 20px; 
     max-width: 100%;
-    min-height: 500px;     
+    min-height: 550px;     
 }
 .v-news_title{
     margin-top: 5%;
@@ -60,4 +61,9 @@ export default {
     margin-left: auto;
     margin-right: auto;
 }
+// @media (min-width: 1600px){
+//     .container {
+//     max-width: 1434px
+// }
+// }
 </style>

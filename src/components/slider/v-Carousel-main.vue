@@ -40,7 +40,7 @@ export default {
 <style scoped lang="scss">
 
   .v-carousel-main{
-    max-width: 1920px;
+    max-width: 1400px;
     display: flex;
     align-items: center;
     background: hsla(186, 33%, 94%, 1);
