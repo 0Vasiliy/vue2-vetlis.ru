@@ -1,5 +1,6 @@
 <template>
     <div class="v-rodents">
+       <div class="container">
         <div class="v-modul-block">
                <div class="v-modul-block-left">
                 <h1 class="v-modul_title">Лечение грызунов и зайцеобразных</h1> 
@@ -30,7 +31,8 @@
                 </div>                                       
                 </div>               
                 <v-side/>
-            </div> 
+        </div> 
+       </div>
     </div>
 </template>
 

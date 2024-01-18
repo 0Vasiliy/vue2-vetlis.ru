@@ -27,4 +27,5 @@ export default {
         max-width: 200px;
         max-height: 80px;
 }
+
 </style>

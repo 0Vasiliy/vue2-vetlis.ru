@@ -92,6 +92,7 @@
                 </div>                                       
                 </div>               
                 <v-side/>
+                <!-- <v-pageup/> -->
             </div>             
         </div>
     </div>
@@ -99,10 +100,12 @@
 
 <script>
 import vSide from '@/components/side/v-side.vue'
+// import vPageup from '@/components/pageup/v-pageup.vue'
 export default {
     name: 'vLab',
     components: {
         vSide,
+        // vPageup
     },
 }
 </script>

@@ -79,16 +79,15 @@
 </template>
 
 <script>
-// import vPageup from '@/pageup/v-pageup.vue'
-import VPageup from '../pageup/v-pageup.vue'
+import vPageup from '../pageup/v-pageup.vue'
+
 export default {
     name: 'v-services',
     components:{
         vPageup 
     }
 }
-
-        VPageup</script>
+</script>
 
 <style scoped lang="scss">
     .v-services{

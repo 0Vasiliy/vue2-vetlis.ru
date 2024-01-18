@@ -68,7 +68,7 @@ export default {
     margin-left: 0px;
     max-width: 800px;
     height: 80px;
-    color: #757575;;
+    color: #757575;
     
 }
 .v-header_block_phone{
@@ -98,6 +98,15 @@ export default {
    align-items: center;
    height: auto;
 }
+.v-header_block_logo{
+    display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;  
+   align-content: center;
+   align-items: center;
+   height: auto; 
+}
+
 .v-header_block_phone{
     margin-top: 40px;
 }
