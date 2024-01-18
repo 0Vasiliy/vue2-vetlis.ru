@@ -72,16 +72,23 @@
                         </a> -->
                         <router-link  tag="a" to="/vEye" class="v-services_block"><span>Офтальмология</span><img src="@/assets/icons/services/oftalmogia.svg"></router-link>
                     </div>
-            </div>           
+            </div>
+            <v-pageup/>
         </div>
     </section>
 </template>
 
 <script>
+// import vPageup from '@/pageup/v-pageup.vue'
+import VPageup from '../pageup/v-pageup.vue'
 export default {
     name: 'v-services',
+    components:{
+        vPageup 
+    }
 }
-</script>
+
+        VPageup</script>
 
 <style scoped lang="scss">
     .v-services{
