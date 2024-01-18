@@ -51,6 +51,7 @@ export default {
 <style scoped lang="scss">
     .v-header{
         max-width: 1540px; 
+        width: 80%;
     &_block{   
         display: flex;
         margin-top: 40px;

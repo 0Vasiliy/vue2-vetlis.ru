@@ -1,5 +1,5 @@
 <template>
-    <section class="v-lis">
+    <section class="v-lis col-xl-9 col-md-9 col-10">
        <div class="container">
             <div class="v-lis-block">
                 <div class="wave-lis"> 
@@ -111,7 +111,7 @@ export default {
   z-index: 100;
 }
 .text-container-lis{
-  margin-left: 450px;
+  margin-left: 500px;
   display: flex;
   justify-content: center;
   align-items: center;

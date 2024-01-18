@@ -39,6 +39,7 @@ export default {
 <style scoped lang="scss">
     .v-menu{ 
     max-width:1400px;
+    width: 75%;
     margin-top: 50px; 
     padding-left: 0px;
     // height: 75px;
@@ -47,7 +48,7 @@ export default {
     border-right: none;
 }
 
-.menu_block{
+.menu_block{  
     display: flex;
     margin-top: 23px;
     justify-content: space-between;
@@ -106,9 +107,10 @@ export default {
 //     margin-left: 0px;
 //     margin-right: 0px;
 // }
-// @media (max-width: 991px){
-//     .menu_block_list{
-//         display: none;
-// }
-// }
+
+@media (max-width: 991px){
+    .menu_block_list{
+        display: none;
+}
+}
 </style>
