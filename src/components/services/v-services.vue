@@ -35,10 +35,11 @@
                         <router-link tag="a" to="/vDerma" class="v-services_block"><span>Дерматология</span><img src="@/assets/icons/services/derm.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <a class="v-services_block">
+                        <!-- <a class="v-services_block">
                             <span>Лечение грызунов</span>
                             <img src="@/assets/icons/services/lechenie-gryzunov.svg">                             
-                        </a>
+                        </a> -->
+                        <router-link tag="a" to="/vRodents" class="v-services_block"><span>Лечение грызунов<br>и зайцеобразных</span><img src="@/assets/icons/services/lechenie-gryzunov.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <!-- <a class="v-services_block">
