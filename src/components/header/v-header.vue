@@ -4,9 +4,9 @@
         <div class="container">
             <div class="col-md-11 col-sm-12 v-header_block">
                 <div class="col v-header_block_logo">
-                    <v-header-logo/>
-                    <v-header-lis/>
-                    <v-header-vet/>
+                    <v-header-logo class="h-logo"/>
+                    <v-header-lis class="h-lis"/>
+                    <v-header-vet class="h-vet"/>
                 </div>
                 <div class="col v-header_adress">
                     <v-header-adress class="h-adress"/>
@@ -68,8 +68,7 @@ export default {
     margin-left: 0px;
     max-width: 800px;
     height: 80px;
-    color: #757575;
-    
+    color: #757575;   
 }
 .v-header_block_phone{
     display: flex;
@@ -86,7 +85,6 @@ export default {
 // }
 
 @media (max-width: 1630px){
-
 .v-header{
     height: auto;
 }
@@ -104,11 +102,20 @@ export default {
    flex-wrap: wrap;  
    align-content: center;
    align-items: center;
+   margin-left: auto;
    height: auto; 
 }
-
 .v-header_block_phone{
-    margin-top: 40px;
+    margin-top: 20px;
+}
+.v-header_adress{
+    margin-top: 20px;
+}
+.h-lis{
+    margin-top: 20px;
+}
+.h-vet{
+    margin-top: 20px;
 }
 }
 </style>

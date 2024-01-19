@@ -25,6 +25,7 @@ import vUrolithiasis from '@/components/services/therapy/urolithiasis/v-urolithi
 import vParanal from '@/components/services/therapy/paranal/v-paranal.vue'
 import vOthers from '@/components/services/therapy/others/v-others.vue'
 import vRodents  from '@/components/services/rodents/v-rodents.vue'
+import vSurgery  from '@/components/services/surgery/v-surgery.vue'
 
     export default new VueRouter({  
     mode: 'history',
@@ -136,6 +137,10 @@ import vRodents  from '@/components/services/rodents/v-rodents.vue'
         {
             path: '/vRodents',
             component: vRodents    
+        },
+        {
+            path: '/vSurgery',
+            component: vSurgery    
         },
     ],
     scrollBehavior() {

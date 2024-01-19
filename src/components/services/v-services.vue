@@ -9,19 +9,12 @@
                         <router-link tag="a" to="/vTherapy" class="v-services_block"><span>Терапия</span><img src="@/assets/icons/services/therapy.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <a class="v-services_block">
-                            <span>Хирургия</span>
-                            <img src="@/assets/icons/services/surgery.svg">
-                        </a>
+                        <router-link tag="a" to="/vSurgery" class="v-services_block"><span>Хирургия</span><img src="@/assets/icons/services/surgery.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <router-link tag="a" to="/vUzi" class="v-services_block"><span>Узи диагностика</span><img src="@/assets/icons/services/visual.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <!-- <a class="v-services_block">
-                            <span>Стерилизация <br>и кастрация</span>
-                            <img src="@/assets/icons/services/sterilizacziya.svg">                             
-                        </a> -->
                         <router-link tag="a" to="/vSterilization" class="v-services_block"><span>Стерилизация <br>и кастрация</span><img src="@/assets/icons/services/sterilizacziya.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
@@ -35,41 +28,21 @@
                         <router-link tag="a" to="/vDerma" class="v-services_block"><span>Дерматология</span><img src="@/assets/icons/services/derm.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <!-- <a class="v-services_block">
-                            <span>Лечение грызунов</span>
-                            <img src="@/assets/icons/services/lechenie-gryzunov.svg">                             
-                        </a> -->
                         <router-link tag="a" to="/vRodents" class="v-services_block"><span>Лечение грызунов<br>и зайцеобразных</span><img src="@/assets/icons/services/lechenie-gryzunov.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <!-- <a class="v-services_block">
-                            <span>Вакцинация</span>
-                            <img src="@/assets/icons/services/vakcinacia.svg">                             
-                        </a> -->
                         <router-link tag="a" to="/vVaccinationChip" class="v-services_block"><span>Вакцинация и <br>чипирование</span><img src="@/assets/icons/services/vakcinacia.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <!-- <a class="v-services_block">
-                            <span>Стоматология</span>
-                            <img src="@/assets/icons/services/stomatologiya.svg">                             
-                        </a> -->
                         <router-link tag="a" to="/vStom" class="v-services_block"><span>Стоматология</span><img src="@/assets/icons/services/stomatologiya.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
                         <router-link  tag="a" to="/vTeeth" class="v-services_block"><span>Ультразвуковая чистка зубов</span><img src="@/assets/icons/services/canin.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <!-- <a class="v-services_block">
-                            <span>Кардиология</span>
-                            <img src="@/assets/icons/services/kardio.svg">                             
-                        </a> -->
                         <router-link  tag="a" to="/vKardio" class="v-services_block"><span>Кардиология</span><img src="@/assets/icons/services/kardio.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <!-- <a class="v-services_block">
-                            <span>Офтальмология</span>
-                            <img src="@/assets/icons/services/oftalmogia.svg">                             
-                        </a> -->
                         <router-link  tag="a" to="/vEye" class="v-services_block"><span>Офтальмология</span><img src="@/assets/icons/services/oftalmogia.svg"></router-link>
                     </div>
             </div>
