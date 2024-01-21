@@ -66,10 +66,7 @@ export default {
     .v-services{
     display: flex;
     flex-direction: row;
-    margin-top: 100px; 
-    // margin-right: 11%;
-    // margin-left: 11.5%;
-    // max-width: 1550px;
+    margin-top: 50px; 
     }
 
     .v-services_item{   

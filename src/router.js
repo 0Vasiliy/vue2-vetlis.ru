@@ -26,6 +26,9 @@ import vParanal from '@/components/services/therapy/paranal/v-paranal.vue'
 import vOthers from '@/components/services/therapy/others/v-others.vue'
 import vRodents  from '@/components/services/rodents/v-rodents.vue'
 import vSurgery  from '@/components/services/surgery/v-surgery.vue'
+import vUrine  from '@/components/recommendations/urine/v-urine.vue'
+import vRehabilitation  from '@/components/recommendations/rehabilitation/v-rehabilitation.vue'
+import vDrip  from '@/components/recommendations/drip/v-drip.vue'
 
     export default new VueRouter({  
     mode: 'history',
@@ -141,6 +144,18 @@ import vSurgery  from '@/components/services/surgery/v-surgery.vue'
         {
             path: '/vSurgery',
             component: vSurgery    
+        },
+        {
+            path: '/vUrine',
+            component: vUrine    
+        },
+        {
+            path: '/vRehabilitation',
+            component: vRehabilitation   
+        },
+        {
+            path: '/vDrip',
+            component: vDrip   
         },
     ],
     scrollBehavior() {

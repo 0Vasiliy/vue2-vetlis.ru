@@ -35,9 +35,7 @@ export default {
 </script>
 
 <style>
-.v-lis{
-    margin-top: 50px;
-}
+
 .v-lis-block{
     margin: auto;
     font-family: sans-serif;

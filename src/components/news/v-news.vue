@@ -35,7 +35,7 @@ export default {
     .v-news_block{
     background: url(../../assets/images/news/fon_vet22.jpg) center (center/cover) no-repeat;
     background-size: contain;
-    margin-top: 30px;
+    // margin-top: 30px;
     overflow: hidden;
     object-fit: cover;       
     border-radius: 20px; 

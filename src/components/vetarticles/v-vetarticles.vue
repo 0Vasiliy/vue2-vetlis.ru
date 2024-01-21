@@ -68,7 +68,7 @@ export default {
     .v-vetarticles{
         margin-left: 11%;
         margin-right: 11%;
-        margin-top: 100px;
+        margin-top: 30px;
     }
     .v-vetarticles-card-block{
         margin-top: 50px;
