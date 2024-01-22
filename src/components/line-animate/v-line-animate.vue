@@ -16,7 +16,23 @@
             <g class="wave-parallax3"><use xlink:href="#gentle-wave" x="50" y="9" fill="#73bbf5"/></g>
             <g class="wave-parallax4"><use xlink:href="#gentle-wave" x="50" y="6" fill="#337AB7"/></g>
         </svg>
-        <div class="dark-block">Ветеринарная клиника ЛИС</div>
+        <div class="dark-block">
+            <div class="text-container">
+                <h1>Ветеринарная клиника ЛИС</h1>
+            </div>
+            <div class="text-container">
+                <h1>+7 (911) 259 83 84</h1>
+            </div>
+            <div class="text-container">
+                <h1>+7 (931) 373 29 42</h1>
+            </div>
+            <div class="text-container-text">
+                <h1>ул. Русановская 19.к.4</h1>
+            </div>
+            <div class="text-container">
+                <button>Запись на приём</button>
+            </div>
+        </div>
         <svg class="wave-divider dark-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
             <g class="wave-parallax1"><use xlink:href="#gentle-wave" x="50" y="3" fill="#5e9cd1"/></g>
             <g class="wave-parallax2"><use xlink:href="#gentle-wave" x="50" y="0" fill="#73bbf5"/></g>
@@ -31,7 +47,7 @@ export default {
     name: 'vLineAnimate'
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
    wave-divider {
     width: 100%;
     height: 60px;
@@ -100,4 +116,67 @@ export default {
     text-align: center;
     color: #337AB7;
 } 
+.text-container {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.text-container h1 { 
+  margin-left: 50px;
+  font-size: 50px;
+  color:#D3D3D3;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.text-container-text {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.text-container-text h1 { 
+  margin-left: 50px;
+  font-size: 30px;
+  color:#D3D3D3;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+ button { 
+  margin-top: 50px;
+  max-width: 350px;
+  padding: 0 15px 0 15px;
+  height: 70px; 
+  margin-left: 50px;
+  font-size: 28px;
+  color: rgba(225,225,225, .01);
+  background-image: url("../../assets/images/lis_fon6.jpg");
+  background-repeat: repeat;
+  -webkit-background-clip:text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+button{
+    border-radius: 10px;
+}
+  @keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
+}
 </style>
