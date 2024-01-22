@@ -7,7 +7,9 @@
                         <h1>Ветеринарная клиника <br>ЛИС</h1>
                     </div>
                 </div>
-                <div class="wave">
+                <div class="wave-blok">
+                  <div class="wave-block-lis">
+                    <div class="wave">
                     <div class="text-container">
                         <h1>Лечение</h1>
                     </div>
@@ -21,6 +23,13 @@
                     <div class="text-container">
                         <h1>Стремление</h1>
                     </div>
+                </div>
+                  </div>
+                  <div class="wave">
+                    <div class="text-container">
+                        <button>Запись на приём</button>
+                    </div>
+                  </div>
                 </div>
             </div>
        </div>
@@ -49,7 +58,10 @@ export default {
     border-radius: 20px;
 }
 
-
+.wave-blok{
+    display: flex;
+    align-items: center;
+}
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
@@ -100,6 +112,22 @@ export default {
         transform: translateX(1);
     }
 }  
+.text-container button{
+  max-width: 350px;
+  padding: 0 15px 0 15px;
+  height: 70px; 
+  margin-left: 50px;
+  font-size: 28px;
+  color: rgba(225,225,225, .01);
+  background-image: url("../../assets/images/lis_fon6.jpg");
+  background-repeat: repeat;
+  -webkit-background-clip:text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 10px;
+}
 
 .text-container {
   margin-left: 100px;
