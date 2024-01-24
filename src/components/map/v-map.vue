@@ -11,5 +11,12 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-    
+        @media (min-width: 1400px)
+{
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container
+     {
+    max-width: 1400px;
+    width:72%
+    }
+}
 </style>

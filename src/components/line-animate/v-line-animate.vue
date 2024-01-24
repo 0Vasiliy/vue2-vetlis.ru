@@ -28,7 +28,7 @@
                 <h1>+7 (931) 373 29 42</h1>
             </div>
             <div class="text-container-text">
-                <h1>ул. Русановская 19.к.4</h1>
+                <h1>ул. Русановская д.19 к.4</h1>
             </div>
             <div class="text-container">
                 <button>Запись на приём</button>
@@ -190,7 +190,7 @@ button{
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container
      {
     max-width: 1400px;
-    width:75%
+    width:72%
     }
 }
 </style>

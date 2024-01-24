@@ -19,6 +19,7 @@
       <v-line/>
       <v-map/>
       <v-line/>
+      <v-footer/>
   </div>
 </template>
 
@@ -35,6 +36,7 @@ import vRecommendations from './recommendations/v-recommendations.vue'
 import vLineAnimate from './line-animate/v-line-animate.vue'
 import vLine from './line/v-line.vue'
 import vMap from './map/v-map.vue'
+import vFooter from './footer/v-footer.vue'
 
 export default {
   name: 'v-mainapp',
@@ -50,7 +52,8 @@ export default {
     vRecommendations,
     vLineAnimate,
     vLine,
-    vMap
+    vMap,
+    vFooter
   },
   props: {
    

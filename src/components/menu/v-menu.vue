@@ -8,8 +8,8 @@
                         <li class="menu_block_item"><a href="#news_action" class="menu_block_link ">Новости</a></li>
                         <li class="menu_block_item"><a href="#servis" class="menu_block_link ">Услуги</a></li>
                         <li class="menu_block_item"><a href="#vetart" class="menu_block_link ">Полезные статьи</a></li>
-                        <li class="menu_block_item"><a href="#" class="menu_block_link ">Рекомедации ветрача</a></li>
-                        <li class="menu_block_item"><a href="#" class="menu_block_link ">Контакты</a></li>
+                        <li class="menu_block_item"><a href="#recomendation" class="menu_block_link ">Рекомедации ветрача</a></li>
+                        <li class="menu_block_item"><a href="#footer" class="menu_block_link ">Контакты</a></li>
                     </ul>                  
                     <vHamburger/>
                     <vHamburgerMenu/>
