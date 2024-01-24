@@ -109,10 +109,15 @@ export default {
             margin-left: 5px;
         }
     }
-    @media (min-width: 1600px){
-        .container {
-            max-width: 1434px;
-        }
+    // @media (min-width: 1600px){
+    //     .container {
+    //         max-width: 1434px;
+    //     }
+    // }
+    @media (min-width: 1400px){
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+         max-width: 1400px;
+    }
     }
     @media (min-width: 768px) and (max-width: 1100px){
         .col-3{

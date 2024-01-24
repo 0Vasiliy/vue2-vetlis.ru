@@ -1,7 +1,8 @@
 <template>
-    <div lass="v-line-animate">
+    <div lass="v-line-animate col-xl-9 col-md-9 col-10">
       <div class="container">
-        <svg class="wave-divider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <div class="v-line-animate-block">
+            <svg class="wave-divider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
             <defs>
                 <path id="gentle-wave"
                 d="M-160 44c30 0 
@@ -39,6 +40,7 @@
             <g class="wave-parallax3"><use xlink:href="#gentle-wave" x="50" y="9" fill="#BFE2FF"/></g>
             <g class="wave-parallax4"><use xlink:href="#gentle-wave" x="50" y="6" fill="#FFFFFF"/></g>
         </svg>
+        </div>
       </div>
     </div>
 </template>
@@ -48,6 +50,10 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+    .v-line-animate{
+        max-width: 1400px;
+        width: 100%;
+    }
    wave-divider {
     width: 100%;
     height: 60px;
@@ -178,5 +184,13 @@ button{
     75% {
       background-position: right top;
     }   
+}
+@media (min-width: 1400px)
+{
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container
+     {
+    max-width: 1400px;
+    width:75%
+    }
 }
 </style>

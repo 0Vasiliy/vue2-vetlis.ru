@@ -1,5 +1,5 @@
 <template>
-    <div class="v-recommendations">
+    <div class="v-recommendations col-xl-9 col-md-9 col-10">
        <div class="container">
         <h1 class="v-recommendations-title">Рекомендации ветеринара</h1>
         <div class="v-recommendations-block card">       
@@ -90,5 +90,9 @@ export default {
             border-radius: 20px 20px 0 0 ;
         }
     }
-    
+    @media (min-width: 1400px){
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+         max-width: 1400px;
+    }
+    }
 </style>

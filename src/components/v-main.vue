@@ -17,6 +17,8 @@
       <v-line/>
       <v-line-animate/>
       <v-line/>
+      <v-map/>
+      <v-line/>
   </div>
 </template>
 
@@ -32,6 +34,7 @@ import vLis from './lis/v-lis.vue'
 import vRecommendations from './recommendations/v-recommendations.vue'
 import vLineAnimate from './line-animate/v-line-animate.vue'
 import vLine from './line/v-line.vue'
+import vMap from './map/v-map.vue'
 
 export default {
   name: 'v-mainapp',
@@ -46,7 +49,8 @@ export default {
     vLis,
     vRecommendations,
     vLineAnimate,
-    vLine
+    vLine,
+    vMap
   },
   props: {
    

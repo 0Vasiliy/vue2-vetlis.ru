@@ -1,5 +1,5 @@
 <template>
-    <div class="v-vetarticles" id="vetart">
+    <div class="v-vetarticles col-xl-9 col-md-9 col-10" id="vetart">
        <div class="container">
         <h1 class="v-vetaricles-title">Полезные статьи</h1>
            <div class="v-vetarticles-card-block">
@@ -66,8 +66,6 @@ export default {
         
     }
     .v-vetarticles{
-        margin-left: 11%;
-        margin-right: 11%;
         margin-top: 30px;
     }
     .v-vetarticles-card-block{
@@ -97,7 +95,7 @@ export default {
     }
     @media (min-width: 1400px){
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-         max-width: 1420px;
+         max-width: 1400px;
     }
     }
 </style>
