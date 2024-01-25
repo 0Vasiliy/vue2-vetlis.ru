@@ -60,41 +60,26 @@ export default {
     name: 'vDrip',
     components: {
         vSide,
-        vContacts 
+        vContacts,
     }, 
     data: () => ({
     small: false
-  }),
-  created() {
-    window.addEventListener('resize', this.onResize);
-    this.onResize();
-  },
-  destroyed() {
-    window.removeEventListener('resize', this.onResize)
-  },
-  methods: {
-    onResize() {
-        this.small = window.innerWidth <= 991;
+    }),
+    created() {
+      window.addEventListener('resize', this.onResize);
+      this.onResize();
+    },
+    destroyed() {
+      window.removeEventListener('resize', this.onResize)
+    },
+    methods: {
+      onResize() {
+          this.small = window.innerWidth <= 991;
+      }
     }
-  }
 }
 </script>
 
 <style scoped lang="scss">
  @import '@/assets/css/modul.scss';
-
- @media (max-width: 991px){
-    .v-modul-block{
-    display: flex;
-    flex-direction: column;
-    }
-    .v-modul-block-left{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-// .v-drip{
-//     display: flex;
-// }
-}
-
 </style>

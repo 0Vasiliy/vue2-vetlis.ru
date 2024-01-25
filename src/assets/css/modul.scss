@@ -108,6 +108,18 @@
     max-width: 35%;
 }
 }
+@media (max-width: 991px){
+    .v-modul-block{
+        display: flex;
+        flex-direction: column;
+        }
+    .v-modul-block-left{
+        margin-right: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 860px){
 .col-3{
     flex: 0 0 45%;
@@ -119,5 +131,19 @@
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+}
+@media (max-width: 600px){
+    .v-modul_title{
+        font-size: 24px;
+    }
+    .v-modul-subtitle{
+        font-size: 18px;
+        h2{
+            font-size: 18px;
+        }
+        h5{
+            font-size: 12px;
+        }
+    }
 }
 }
