@@ -42,9 +42,10 @@
                    </ul>
                    <h2>Внимание!</h2>
                    <h2>При появлении отека лапы, покраснения, местного повышения температуры, непроходимости катетера, подтекании, а также при болезненных ощущениях животного необходимо срочно обратиться в клинику.</h2>
-                </div>                                                       
-                </div>               
-                <v-side/>
+                </div>                                                      
+                </div>   
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
             </div>
              
         </div> 
@@ -54,16 +55,46 @@
 <script>
 
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vDrip',
     components: {
         vSide,
+        vContacts 
     }, 
+    data: () => ({
+    small: false
+  }),
+  created() {
+    window.addEventListener('resize', this.onResize);
+    this.onResize();
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.onResize)
+  },
+  methods: {
+    onResize() {
+        this.small = window.innerWidth <= 991;
+    }
+  }
 }
 </script>
 
 <style scoped lang="scss">
-
  @import '@/assets/css/modul.scss';
+
+ @media (max-width: 991px){
+    .v-modul-block{
+    display: flex;
+    flex-direction: column;
+    }
+    .v-modul-block-left{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+// .v-drip{
+//     display: flex;
+// }
+}
 
 </style>

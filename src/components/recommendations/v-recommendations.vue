@@ -15,7 +15,7 @@
                 <img src="../../assets/images/recommendations/pos3.jpg" class="card-img-top" alt="kot-23">
                 <div class="card-body">
                     <h5 class="card-title">Период реабилитации</h5>
-                    <p class="card-text">В восстановительный период соблюдение особого режима для животного может иметь определенное лечебное значение. Лечащий врач дает рекомендации, как вести себя в послеоперационный период...</p>
+                    <p class="card-text">В восстановительный период соблюдение особого режима для животного имеет большое значение. Лечащий врач дает рекомендации, как вести себя в послеоперационный период...</p>
                     <router-link  tag="a" to="/vRehabilitation"  class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
                 </div>   
             </div>    
