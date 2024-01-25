@@ -22,8 +22,9 @@
                             Попону не следует снимать в течение 10-12 дней: 8-10 дней до снятия швов и еще 2 дня после снятия швов.</h2>
                         <h2>Обязательно посещайте врача в назначенный день для коррекции лечения!</h2>    
                 </div>                                                       
-                </div>               
-                <v-side/>
+                </div> 
+                <v-contacts v-if="small"/>               
+                <v-side v-else/>
             </div>
              
         </div>
@@ -31,12 +32,16 @@
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vRehabilitation',
     components: {
         vSide,
+        vContacts
     }, 
+    mixins: [resize]
 }
 
 </script>

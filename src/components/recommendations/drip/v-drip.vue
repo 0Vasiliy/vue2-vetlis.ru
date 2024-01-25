@@ -53,7 +53,7 @@
 </template>
 
 <script>
-
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
 import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
@@ -62,21 +62,7 @@ export default {
         vSide,
         vContacts,
     }, 
-    data: () => ({
-    small: false
-    }),
-    created() {
-      window.addEventListener('resize', this.onResize);
-      this.onResize();
-    },
-    destroyed() {
-      window.removeEventListener('resize', this.onResize)
-    },
-    methods: {
-      onResize() {
-          this.small = window.innerWidth <= 991;
-      }
-    }
+    mixins: [resize]
 }
 </script>
 

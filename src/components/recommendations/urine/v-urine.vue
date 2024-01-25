@@ -20,20 +20,24 @@
                     <h2>Надеемся, что эти рекомендации помогут вам позаботиться о здоровье вашей кошки.
                         Ведь профилактика – это лучший способ сохранить здоровье, а иногда и жизнь вашему питомцу.</h2>
                 </div>                                                       
-                </div>               
-                <v-side/>
-            </div>
-             
+                </div>
+                <v-contacts v-if="small"/>                  
+                <v-side v-else/>
+            </div>             
         </div> 
     </div>
 </template>
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vUrine',
     components: {
         vSide,
+        vContacts,
     }, 
+    mixins: [resize]
 }
 </script>
 <style scoped lang="scss">
