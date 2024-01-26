@@ -59,20 +59,24 @@
                     <h2>В любом случае, точный диагноз можно определить только при осмотре ротовой полости, различных цитологических и гистологических исследованиях.</h2>
                 </div>                                                       
                 </div>               
-                <v-side/>
-            </div>
-             
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
+            </div>             
         </div> 
     </div>
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
   name: 'vStom',
   components: {
         vSide,
+        vContacts,
     },
+    mixins: [resize]
 }
 </script>
 <style scoped lang="scss">

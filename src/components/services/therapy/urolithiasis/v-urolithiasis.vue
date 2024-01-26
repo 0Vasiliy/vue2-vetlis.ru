@@ -45,20 +45,24 @@
                     <h2>При отсутствии своевременной помощи животное погибает.Интоксикация наступает уже спустя сутки после того, как прекращается мочевыделение!</h2>
                 </div>                                        
                 </div>               
-                <v-side/>
-            </div>
-             
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
+            </div>             
         </div>
     </div>
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vUrolithiasis',
     components: {
         vSide,
+        vContacts,
     },
+    mixins: [resize]
 }
 </script>
 <style scoped lang="scss">

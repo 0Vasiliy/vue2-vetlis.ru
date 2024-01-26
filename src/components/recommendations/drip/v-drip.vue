@@ -46,8 +46,7 @@
                 </div>   
                 <v-contacts v-if="small"/>             
                 <v-side v-else/>
-            </div>
-             
+            </div>            
         </div> 
     </div>
 </template>

@@ -77,7 +77,7 @@ export default {
     }
    
     .v-carousel-slide{
-        margin-bottom: 100px; 
+        margin-bottom: 100px;
         img{         
             width: 800px;
             height: 400px;
@@ -108,5 +108,15 @@ export default {
         max-width: 600px;
     }
 
+}
+@media (max-width: 830px){
+    .v-carousel{
+        max-width: 300px;
+    }
+}
+@media (max-width: 400px){
+    .v-carousel{
+        max-width: 200px;
+    }
 }
 </style>

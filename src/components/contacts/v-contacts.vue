@@ -19,7 +19,7 @@
                 <a href="#" class="v-sidepanel_link"> <img src="@/assets/icons/social/telegram.svg" alt="telegram"></a>
                 </div>
                 <div class="text-container">
-                <button>Запись на приём</button>
+                    <button class="v-footer-btn">Запись на приём</button>
                 </div>
         </div>       
     </div>
@@ -31,13 +31,13 @@ export default {
 </script>
 <style scoped lang="scss">
     .v-contacts{
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-top: 50px;     
-        border-radius: 20px;
-        background: #485563;
-        background: -webkit-linear-gradient(to right, #29323c, #485563);  
-        background: linear-gradient(to right, #29323c, #485563); 
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 50px;     
+    border-radius: 20px;
+    background: #485563;
+    background: -webkit-linear-gradient(to right, #29323c, #485563);  
+    background: linear-gradient(to right, #29323c, #485563); 
     }
     .v-footer-contacts{
     max-width: 100%;
@@ -132,7 +132,7 @@ export default {
       background-position: right top;
     }   
 }
-button { 
+.v-footer-btn { 
   margin-top: 15px;
   max-width: 300px;
   padding: 0 15px 0 15px;
@@ -148,7 +148,7 @@ button {
   text-transform: uppercase;
   font-weight: 400;
 }
-button{
+.v-footer-btn{
     border-radius: 10px;
 }
 @media(max-width: 450px){
@@ -168,7 +168,7 @@ button{
             font-size: 18px;
         }
     }
-    button{
+   .v-footer-btn{
         font-size: 14px;
     }
 }
@@ -189,7 +189,7 @@ button{
             font-size: 16px;
         }
     }
-    button{
+   .v-footer-btn{
         font-size: 12px;
     }
 }

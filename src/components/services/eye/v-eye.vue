@@ -58,18 +58,23 @@
                     <h2>Для некоторых представителей перечисленных пород собак и кошек и многих других, также весьма характерны такие явления как пролапс железы третьего века (выпадение слезной железы), дистихиаз, эктопия ресниц, конъюнктивальный или корнеальный дермоид, корнеальный секвестр у кошек, аномалии развития носослезной системы. Все эти состояния требуют оперативного лечения, и чем более своевременно оно начато, тем благоприятней прогноз исхода болезни.</h2>
                 </div>                                       
                 </div>               
-                <v-side/>
+            <v-contacts v-if="small"/>             
+            <v-side v-else/>
          </div>   
         </div>
     </div>
 </template>
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vEye',
     components: {
         vSide,
+        vContacts,
     },
+    mixins: [resize]
 }
 </script>
 

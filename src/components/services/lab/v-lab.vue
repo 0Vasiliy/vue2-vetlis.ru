@@ -91,22 +91,24 @@
                     <h2>Электролиты отвечают за мембранные электрические свойства. Благодаря электрической разнице потенциалов клетки улавливают и исполняют команды мозга. При патологиях клетки в буквальном смысле «выбрасываются» из системы проводимости нервных импульсов.</h2>
                 </div>                                       
                 </div>               
-                <v-side/>
-                <!-- <v-pageup/> -->
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
             </div>             
         </div>
     </div>
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
-// import vPageup from '@/components/pageup/v-pageup.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vLab',
     components: {
         vSide,
-        // vPageup
+        vContacts,
     },
+    mixins: [resize]
 }
 </script>
 

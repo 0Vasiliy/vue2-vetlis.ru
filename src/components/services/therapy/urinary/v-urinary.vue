@@ -11,19 +11,24 @@
                     <h2>В нашей ветеринарной клинике лечат эндометрит, венерическую саркому, аденому простаты, опухоли матки, опухоли семенников и другие заболевания половой сферы. У нас можно сделать УЗИ матки и яичников собакам и кошкам. Возможно удаление пиометры у кошек, пиометры у собак.Наши врачи осуществляют родовспоможение собакам и кошкам, в том числе мы занимаемся наблюдением и помощью при патологических родах. В нашей ветеринарной клинике проводится кесарево сечение собак и кошек.</h2>
                 </div>                                        
                 </div>               
-                <v-side/>
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
             </div>            
         </div> 
     </div>
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vUrinary',
     components: {
         vSide,
+        vContacts,
     },
+    mixins: [resize]
 }
 </script>
 <style scoped lang="scss">

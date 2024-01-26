@@ -122,16 +122,17 @@
 
 @media (max-width: 860px){
 .col-3{
-    flex: 0 0 45%;
-    max-width: 45%;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 }
-@media (max-width: 767px){
-.col-3 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
+// @media (max-width: 767px){
+// .col-3 {
+//     -ms-flex: 0 0 100%;
+//     flex: 0 0 100%;
+//     max-width: 100%;
+// }
+// }
 @media (max-width: 600px){
     .v-modul_title{
         font-size: 24px;
@@ -146,4 +147,13 @@
         }
     }
 }
+@media (max-width:360px){
+    .v-modul_item{
+        padding: 7px 25px;
+    }
+    .v-modul-block{
+        span{
+            font-size: 14px;
+        }
+    }
 }

@@ -22,20 +22,24 @@
                     <h2> Пес ходит с наклоненной головой, стараясь постоянно держать ее в одном положении. Если хозяин задевает уши своего питомца, тут же возникает выраженная болевая реакция. Изменения в поведении, такие как депрессия или раздражительность.</h2>                 
                 </div>                                        
                 </div>               
-                <v-side/>
-            </div>
-             
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
+            </div>            
         </div>       
     </div>
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vDiseases',
     components: {
         vSide,
+        vContacts,
     },
+    mixins: [resize]
 }
 </script>
 <style scoped lang="scss">

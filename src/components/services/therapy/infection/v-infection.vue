@@ -93,19 +93,24 @@
                     <h2>Диагностика инфекционных заболеваний зависит от клинических признаков. Иногда ветеринарному врачу достаточно осмотра для того, чтобы заподозрить ту или иную болезнь. Однако в ряде случаев требуются результаты исследований – анализов мочи, крови, кала, УЗИ, и т.д.</h2>
                 </div>                                        
                 </div>               
-                <v-side/>
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
             </div>            
         </div> 
     </div>
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vInfection',
     components: {
         vSide,
+        vContacts,
     },
+    mixins: [resize]
 }
 </script>
 <style scoped lang="scss">

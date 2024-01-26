@@ -34,7 +34,8 @@
                     </ul>
                 </div>                                        
                 </div>               
-                <v-side/>
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
             </div>
              
         </div>
@@ -42,12 +43,16 @@
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vOthers',
     components: {
         vSide,
+        vContacts,
     },
+    mixins: [resize]
 }
 </script>
 

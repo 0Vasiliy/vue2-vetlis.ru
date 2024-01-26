@@ -49,19 +49,24 @@
                     <h2>Если вы заметили несколько признаков сахарного диабета у своего питомца, то не откладывайте визит к ветеринару – сразу запишитесь на прием!</h2>
                 </div>                                        
                 </div>               
-                <v-side/>
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
             </div>            
         </div> 
     </div>
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vPancreas',
     components: {
         vSide,
+        vContacts,
     },
+    mixins: [resize]
 }
 
 </script>

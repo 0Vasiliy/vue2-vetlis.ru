@@ -34,19 +34,23 @@
                     <h2>Внимательные владельцы должны тут же везти питомца в ветеринарную клинику, если заметили, что он стал намного быстрее уставать во время выгула, и даже самое незначительное препятствие вызывает у собаки сильную одышку и кашель. </h2>
                 </div>                                                       
                 </div>               
-                <v-side/>
-            </div>
-             
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
+            </div>             
         </div>
     </div>
 </template>
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
   name: 'vKardio',
   components: {
         vSide,
-    },   
+        vContacts,
+    },
+    mixins: [resize]   
 }
 </script>
 

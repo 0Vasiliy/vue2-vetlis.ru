@@ -26,19 +26,24 @@
                     <img src="../../../../assets/images/therapy/stomach.jpg" class="card-img-top r-img" alt="stomach">
                 </div>                                        
                 </div>               
-                <v-side/>
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
             </div>            
         </div> 
     </div>
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vStomach',
     components: {
         vSide,
+        vContacts,
     },
+    mixins: [resize]
 }
 </script>
 

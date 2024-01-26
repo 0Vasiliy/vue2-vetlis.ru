@@ -27,20 +27,24 @@
                     </ul>
                 </div>                                        
                 </div>               
-                <v-side/>
-            </div>
-             
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
+            </div>             
         </div> 
     </div>
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vParanal',
     components: {
         vSide,
+        vContacts,
     },
+    mixins: [resize]
 }
 </script>
 <style scoped lang="scss">

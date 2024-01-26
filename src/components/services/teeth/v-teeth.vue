@@ -43,20 +43,24 @@
                     <h2>Важно следить за состоянием полости рта домашнего питомца и периодически осматривать его зубы на предмет наличия налёта или зубного камня и своевременно обращаться в ветеринарную клинику, где будет проведена чистка зубов ультразвуком, для того чтобы избежать их потери, сильных воспалительных процессов в ротовой полости домашнего питомца, нарушений работы желудочно- кишечного тракта.</h2>
                 </div>                                                       
                 </div>               
-                <v-side/>
-            </div>
-             
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
+            </div>             
         </div>       
     </div>
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
   name: 'vTeeth',
   components: {
         vSide,
-    },  
+        vContacts,
+    }, 
+    mixins: [resize] 
 }
 </script>
 <style scoped lang="scss">

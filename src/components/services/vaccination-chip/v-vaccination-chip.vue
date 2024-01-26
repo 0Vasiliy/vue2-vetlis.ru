@@ -14,19 +14,24 @@
                     <router-link  tag="a" to="/vChip" class="v-modul_block v-modul_item col-3 col"><span>Чипирование</span></router-link>
                 </div>
                 </div>               
-                <v-side/>
+                <v-contacts v-if="small"/>             
+                <v-side v-else/>
             </div>            
         </div> 
     </div>
 </template>
 
 <script>
+import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
+import vContacts from '@/components/contacts/v-contacts.vue'
 export default {
     name: 'vVaccinationChip',
     components: {
         vSide,
+        vContacts,
     },
+    mixins: [resize]
 }
 </script>
 

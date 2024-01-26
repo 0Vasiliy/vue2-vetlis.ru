@@ -25,13 +25,11 @@ export default {
     border-radius: 20px;
     background-size: cover auto 100%;
     background-repeat: no-repeat center;
-   
 }
 img{
   width: 800px;
   height: 400px;  
   border-radius: 20px;
-  overflow: hidden;
 }
 @media (max-width: 1100px){
     .v-carousel-item img{
