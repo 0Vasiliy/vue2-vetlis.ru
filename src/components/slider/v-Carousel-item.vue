@@ -35,5 +35,30 @@ img{
     .v-carousel-item img{
         width: 600px;
     }
+
+}
+@media (max-width: 840px){
+    .v-carousel-item img{
+        width: 500px;
+    }
+    .v-carousel-item{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 620px){
+    .v-carousel-item img{
+        width: 400px;
+    }
+}
+@media (max-width: 520px){
+    .v-carousel-item img{
+        width: 300px;
+    }
+}
+@media (max-width: 420px){
+    .v-carousel-item img{
+        width: 250px;
+    }
 }
 </style>

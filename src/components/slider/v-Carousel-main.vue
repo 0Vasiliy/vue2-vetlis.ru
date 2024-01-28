@@ -72,14 +72,36 @@ export default {
         max-width: 600px;
     }
 }
-@media (max-width: 830px){
-    .v-carousel-title{      
-        max-width: 300px;
+
+    @media (max-width: 840px){
+     .v-carousel-title{
+        max-width: 500px;
+        h1{
+          font-size: 18px;
+        }
     }
-}
-@media (max-width: 830px){
-    .v-carousel-title{      
-        max-width: 200px;
     }
-}
+    
+    @media (max-width: 620px){
+      .v-carousel-title{
+            max-width: 400px;
+            h1{
+          margin-top: 30px;
+          margin-bottom: 30px;
+          font-size: 16px;
+        }
+        }
+    }
+    @media (max-width: 520px){
+      .v-carousel-title{
+            max-width: 300px;
+        }
+  
+    }
+    @media (max-width: 420px){
+      .v-carousel-title{
+            max-width: 250px;
+        }
+    }
+
 </style>
