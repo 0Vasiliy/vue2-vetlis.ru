@@ -16,7 +16,7 @@
                     <div class="v-header_block_phone_link">
                         <v-header-phone/>
                     </div>
-                   <vButton/>
+                   <vButton class="header-btn"/>
                 </div>
            </div>
         </div>
@@ -78,11 +78,6 @@ export default {
     margin-right: 0px;
   
 }
-// @media (min-width: 1600px){
-//     .container {
-//     max-width: 1434px
-// }
-// }
 
 @media (max-width: 1630px){
 .v-header{
@@ -115,6 +110,16 @@ export default {
     margin-top: 20px;
 }
 .h-vet{
+    margin-top: 20px;
+}
+}
+@media(max-width:500px){
+.v-header_block_phone{
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+}
+.header-btn{
     margin-top: 20px;
 }
 }

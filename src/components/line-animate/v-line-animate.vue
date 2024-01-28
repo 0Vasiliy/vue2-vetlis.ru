@@ -1,5 +1,5 @@
 <template>
-    <div lass="v-line-animate col-xl-9 col-md-9 col-10">
+    <section lass="v-line-animate col-xl-9 col-md-9 col-10">
       <div class="container">
         <div class="v-line-animate-block">
             <svg class="wave-divider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
@@ -42,7 +42,7 @@
         </svg>
         </div>
       </div>
-    </div>
+    </section>
 </template>
 <script>
 export default {

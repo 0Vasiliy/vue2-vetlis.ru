@@ -1,5 +1,5 @@
 <template>
-    <div class="v-recommendations col-xl-9 col-md-9 col-10" id="recomendation">
+    <section class="v-recommendations col-xl-9 col-md-9 col-10" id="recomendation">
        <div class="container">
         <h1 class="v-recommendations-title">Рекомендации ветеринара</h1>
         <div class="v-recommendations-block card">       
@@ -29,7 +29,7 @@
             </div> 
         </div>
        </div>
-    </div>
+    </section>
 </template>
 <script>
 export default {

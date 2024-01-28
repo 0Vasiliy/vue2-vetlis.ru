@@ -1,5 +1,5 @@
 <template>
-    <div class="v-footer" id="footer">
+    <section class="v-footer" id="footer">
         <div class="container">
             <div class="v-footer-block">
                 <div class="v-footer-services">
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 <script>
 

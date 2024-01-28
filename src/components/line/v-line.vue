@@ -1,9 +1,9 @@
 <template>
-    <div class="v-line">
+    <section class="v-line">
        <div class="container">
             <hr>
        </div>
-    </div>
+    </section>
 </template>
 <script>
 export default {

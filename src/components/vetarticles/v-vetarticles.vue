@@ -1,5 +1,5 @@
 <template>
-    <div class="v-vetarticles col-xl-9 col-md-9 col-10" id="vetart">
+    <section class="v-vetarticles col-xl-9 col-md-9 col-10" id="vetart">
        <div class="container">
         <h1 class="v-vetaricles-title">Полезные статьи</h1>
            <div class="v-vetarticles-card-block">
@@ -30,7 +30,7 @@
            </div>
         <!-- <a href="#" class="buttons-cards btn btn-primary">Больше интересных статей</a>   -->
        </div>
-    </div>
+    </section>
 
 </template>
 <script>

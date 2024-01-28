@@ -1,8 +1,7 @@
 <template>
-    <section class="v-news col-xl-9 col-md-9 col-10" id="news_action">
-            <div class="v-news_block">
+    <section class="v-news col-xl-9 col-md-9 col-10" id="news_action">          
                <div class="container">
-                <div class="row"> 
+                <div class="v-news_block">
                     <div class="v-news_title">
                         <h1>ВНИМАНИЕ!
                             Уважаемые посетители!
@@ -14,10 +13,9 @@
                             -просьба находиться в зале на расстоянии, соблюдать физическую дистанцию с другими посетителями.
                             -в клинике с одним животным должен находится один посетитель.
                         </h1>
-                        <vButton class="button-news"/>
+                        <vButton class="button-news"/>                 
                     </div>
-                  
-                </div>
+                    <img src="../../assets/images/news/fon_vet_old.jpg">               
                </div>
             </div>
     </section>   
@@ -33,15 +31,22 @@ export default {
 </script>
 <style scoped lang="scss">
     .v-news_block{
-    background: url(../../assets/images/news/fon_vet22.jpg) center (center/cover) no-repeat;
-    background-size: contain;
-    // margin-top: 30px;
-    overflow: hidden;
-    object-fit: cover;       
+    display: flex;
+    background: #B2FEFA;
+    background: -webkit-linear-gradient(to right,#B2FEFA, #0ED2F7,);
+    background: linear-gradient(to right, #B2FEFA, #0ED2F7,);
+    max-width: 100%;   
     border-radius: 20px; 
-    max-width: 100%;
-    min-height: 550px;     
 }
+
+    img{
+       max-width: 800px; 
+       border-radius: 20px;
+       width: 100%;
+       overflow: hidden;
+       object-fit: cover; 
+    }
+
 .v-news_title{
     margin-top: 5%;
     margin-left: 10%;   
@@ -61,9 +66,22 @@ export default {
     margin-left: auto;
     margin-right: auto;
 }
-// @media (min-width: 1600px){
-//     .container {
-//     max-width: 1434px
-// }
-// }
+@media (min-width: 1600px){
+    .container {
+    max-width: 1400px
+}
+}
+@media (max-width: 1250px){
+   .v-news_block{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+   } 
+   .v-news_title{
+    margin-left: auto;
+    max-width: 80%;
+   }
+}
 </style>
