@@ -11,7 +11,7 @@
                     <router-link  tag="a" to="/vUrine"  class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
                 </div>   
             </div>    
-            <div class="card v-recommendations-link col">           
+            <div class="card v-recommendations-link vet-cards col">           
                 <img src="../../assets/images/recommendations/pos3.jpg" class="card-img-top" alt="kot-23">
                 <div class="card-body">
                     <h5 class="card-title">Период реабилитации</h5>
@@ -19,7 +19,7 @@
                     <router-link  tag="a" to="/vRehabilitation"  class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
                 </div>   
             </div>    
-            <div class="card v-recommendations-link col">           
+            <div class="card v-recommendations-link vet-cards col">           
                 <img src="../../assets/images/recommendations/drip.jpg" class="card-img-top" alt="kot-23">
                 <div class="card-body">
                     <h5 class="card-title">Как поставить капельницу</h5>
@@ -94,5 +94,43 @@ export default {
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
          max-width: 1400px;
     }
+    }
+    @media (max-width: 1100px){
+        .card-text{
+            font-size: 12px;
+        }
+        .card-title{
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 1000px){
+        .v-recommendations-link{
+        flex: 0 0 100%;
+        max-width: 100%;
+        }
+        .v-button-card{
+            margin-top: 0;
+        }
+        .vet-cards{
+            margin-top: 50px;
+        }
+        .v-recommendations-block{
+            flex-direction: column;
+        }
+        .card-text{
+            font-size: 10px;
+        }
+        .card-title{
+            font-size: 12px;
+        }
+        .v-button-card{
+            max-width: 100px;
+            max-height: 30px;
+            p{
+                padding: 10px 0 0 0;
+                font-size: 10px;   
+            }
+            
+        }
     }
 </style>

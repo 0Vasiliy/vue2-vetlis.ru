@@ -206,4 +206,32 @@ export default {
     width: 72%;
     }
 }
+@media (max-width: 991px){
+    .v-footer-block{
+        flex-direction: column;
+    }
+    .v-footer-services{
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 90%;
+    }
+    .v-footer-vet{
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 90%;
+    }
+    .v-footer-contacts{
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 90%;
+    }
+    @media(max-width: 380px){
+        .v-footer-services-mini{
+            font-size: 12px;
+        }
+        .v-footer-vet-mini{
+            font-size: 12px;
+        }
+    }
+}
 </style>

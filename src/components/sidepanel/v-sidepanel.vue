@@ -30,7 +30,7 @@ export default {
     &_text {
         color: #757575;
         height: 150px;
-        width: 25px;  
+        width: 10px;  
         font-family: 'Museo Sans Cyrl';
         font-weight: 500;
         span {
@@ -43,6 +43,11 @@ export default {
 @media (min-width: 1920px){
     .sidepanel{
         right: 75%;
+    }
+}
+@media (max-width: 1075px){
+    .v-sidepanel{
+        left: 0;
     }
 }
 @media (max-width: 991px){

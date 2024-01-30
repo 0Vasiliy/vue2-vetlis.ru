@@ -193,4 +193,79 @@ button{
     width:72%
     }
 }
+@media (max-width:1550px){
+    .text-container{
+        margin-left: 30px;
+    }
+    .text-container-text{
+        margin-left: 30px;
+    }
+}
+@media (max-width:1300px){
+    .text-container h1{
+        font-size: 40px;
+    }
+    .text-container-text h1{
+        font-size: 25px;
+    }
+    button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width:991px){
+    .text-container h1{
+        font-size: 30px;
+    }
+    .text-container-text h1{
+        font-size: 20px;
+    }
+}
+@media (max-width:768px){
+    .text-container h1{
+        font-size: 20px;
+    }
+    .text-container-text h1{
+        font-size: 15px;
+    }
+    button {
+        max-width: 250px;
+        font-size: 20px;
+    }
+}
+@media (max-width:500px){
+    .text-container h1{
+        font-size: 15px;
+    }
+    .text-container-text h1{
+        font-size: 12px;
+    }
+    button {
+        padding: 0 9px 0 9px;
+        height: 50px; 
+        max-width: 200px;
+        font-size: 16px;
+    }
+}
+@media (max-width:400px){
+    .text-container{
+        margin-left: 0;
+    }
+    .text-container-text{
+        margin-left: 0;
+    }
+    .text-container h1{
+        font-size: 12px;
+    }
+    .text-container-text h1{
+        font-size: 9px;
+    }
+    button {
+        padding: 0 8px 0 8px;
+        height: 40px; 
+        max-width: 150px;
+        font-size: 12px;
+    }
+}
+
 </style>

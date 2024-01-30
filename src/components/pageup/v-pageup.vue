@@ -45,4 +45,10 @@ export default {
         width: 100%;
     }
 }
+@media(max-width: 1100px){
+    .pageup{
+        right: 0;
+    }
+}
+
 </style>

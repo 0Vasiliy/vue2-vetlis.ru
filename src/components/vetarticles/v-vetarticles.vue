@@ -8,10 +8,10 @@
                 <div class="card-body">
                     <h5 class="card-title">Рвота у кошек</h5>
                     <p class="card-text">Рвота у кошек — достаточно распространенное явление, вызываемое различными факторами. Рефлекторное извержение содержимого желудка через рот — не болезнь, а симптом, указывающий на нарушение...</p>
-                    <router-link  tag="a" to="/vVomitingCats"  class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
+                    <router-link  tag="a" to="/vVomitingCats"  class="btn btn-primary v-button-card"><p>Подробнее</p></router-link>
                 </div>   
             </div>
-            <div class="card v-vetarticles-card col">           
+            <div class="card v-vetarticles-card vet-cards col">           
                 <img src="../../assets/images/vetarticles/dog-22.png" class="card-img-top" alt="dog-22">
                 <div class="card-body">
                     <h5 class="card-title">Рвота у собак</h5>
@@ -19,7 +19,7 @@
                     <router-link  tag="a" to="/vVomitingDogs"  class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
                 </div>   
             </div>
-            <div class="card v-vetarticles-card col">           
+            <div class="card v-vetarticles-card vet-cards col">           
                 <img src="../../assets/images/vetarticles/pets.png" class="card-img-top" alt="pets">
                 <div class="card-body">
                     <h5 class="card-title">Готовимся к появлению домашнего питомца</h5>
@@ -41,6 +41,7 @@ export default {
 </script>
 <style scoped lang="scss">
     .v-button-card{
+        margin-top: 50px;
         display: flex;
         align-items: center;
         max-width: 150px;
@@ -81,9 +82,6 @@ export default {
             border-radius: 20px 20px 0 0; 
         }
     }
-    .buttons-cards{
-        margin-top: 50px;
-    }
     .v-vetaricles-title{
         font-size: 36px;
         font-weight: 300;
@@ -98,4 +96,43 @@ export default {
          max-width: 1400px;
     }
     }
+    @media (max-width: 1100px){
+        .card-text{
+            font-size: 12px;
+        }
+        .card-title{
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 1000px){
+        .v-vetarticles-card{
+        flex: 0 0 100%;
+        max-width: 100%;
+        }
+        .v-button-card{
+            margin-top: 0;
+        }
+        .vet-cards{
+            margin-top: 50px;
+        }
+        .v-vetarticles-card-block{
+            flex-direction: column;
+        }
+        .card-text{
+            font-size: 10px;
+        }
+        .card-title{
+            font-size: 12px;
+        }
+        .v-button-card{
+            max-width: 100px;
+            max-height: 30px;
+            p{
+                padding: 10px 0 0 0;
+                font-size: 10px;   
+            }
+            
+        }
+    }
+ 
 </style>
