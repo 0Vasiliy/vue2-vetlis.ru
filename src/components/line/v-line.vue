@@ -43,4 +43,28 @@ hr:after {
         height: 0;
     }
 }
+@media(max-width: 300px){
+    hr:before,
+    hr:after { 
+    left: 60%;  
+}
+}
+@media(max-width: 260px){
+    hr:before,
+    hr:after { 
+    left: 65%;  
+}
+}
+@media(max-width: 230px){
+    hr:before,
+    hr:after { 
+    left: 75%;  
+}
+}
+@media(max-width: 200px){
+    hr:before,
+    hr:after { 
+    left: 80%;  
+}
+}
 </style>
