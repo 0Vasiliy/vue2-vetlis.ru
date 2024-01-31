@@ -84,4 +84,18 @@ export default {
     max-width: 80%;
    }
 }
+@media (max-width: 850px){
+    .v-news_title{
+        h1{
+            line-height: 25px;
+        }
+    }
+   }
+   @media (max-width: 500px){
+    .v-news_title{
+        h1{
+            line-height: 22px;
+        }
+    }
+   }
 </style>

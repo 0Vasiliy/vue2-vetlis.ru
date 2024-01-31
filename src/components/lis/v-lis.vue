@@ -75,6 +75,7 @@ export default {
 }
 
 .wave-lis {
+    max-width: 1000px;
     animation: wave-lis 10s -3s linear infinite;
     transform: translate3d(0, 0, 0);    
 }
@@ -189,6 +190,113 @@ export default {
     max-width: 1350px;
     }
 }
+@media(max-width: 1600px){
+    .wave-lis{
+        max-width: 100%;
+    }
+    .text-container-lis{
+        margin-left: 50%;
+    }
+    .text-container-lis h1{
+        font-size: 60px;
+    }
+    .text-container h1{
+        margin-left: 0;
+        font-size: 40px;
+    }
+    .text-container button{
+        max-width: 250px; 
+        font-size: 22px;
+        margin-left: 0;
+    }
+}
+@media(max-width: 1450px){
+    .text-container-lis h1{
+        font-size: 50px;
+    }
+}
+@media(max-width: 1200px){
+    .text-container-lis h1{
+        font-size: 40px;
+    }
+    .text-container h1{
+        font-size: 30px;
+    }
+    .wave-blok{
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start
+    }
+    .text-container button{
+        margin-top: 30px;       
+    }
+   
+}
+@media(max-width: 980px){
+    .text-container-lis{
+        margin-bottom: 30px;
+    }
+    .text-container-lis h1{
+        font-size: 30px;
+    }
+    .text-container h1{
+        font-size: 22px;
+    } 
+    .text-container button{
+        max-width: 200px; 
+        font-size: 16px;
+        height: 50px;
+    }
+}
 
-
+@media(max-width: 670px){
+    .text-container-lis h1{
+        font-size: 25px;
+    }
+    .text-container{
+        margin-left: 70px;
+    }
+}
+@media(max-width: 490px){
+    .text-container-lis h1{
+        font-size: 20px;
+    }
+    .text-container h1{
+        font-size: 18px;
+    } 
+    .text-container button{
+        max-width: 150px; 
+        font-size: 12px;
+        height: 40px;
+    }
+   }
+   @media(max-width: 450px){
+    .text-container-lis h1{
+        font-size: 16px;
+    }
+    .text-container h1{
+        font-size: 14px;
+    } 
+    .text-container button{
+        max-width: 130px; 
+        font-size: 9px;
+        height: 40px;
+    }
+    .v-lis-block{
+        padding:35px 0 35px 0;
+    }
+   }
+   @media(max-width: 370px){
+    .text-container-lis h1{
+        font-size: 14px;
+    }
+    .text-container h1{
+        font-size: 13px;
+    } 
+    .text-container button{
+        max-width: 120px; 
+        font-size: 8px;
+    } 
+   }
 </style>
