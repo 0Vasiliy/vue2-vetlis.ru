@@ -1,7 +1,7 @@
 <template>
-      <div class="v-hamburger-menu" id="menu_id" v-if="hamburgerOpen" @close="hamburgerOpen = false" @click.self="close">
+      <div class="v-hamburger-menu" id="menu_id" >
                         <div class="v-hamburger_menu_block">
-                            <vHamburgerClose @click="close"/>
+                            <vHamburgerClose/>
                             <nav>
                                 <ul class="v-hamburger_menu_list" id="menu_list_id">
                                     <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link">О нас</a></li>
@@ -27,16 +27,7 @@ export default {
     components:{
         vHamburgerClose,
     },
-    data(){
-        return{
-            hamburgerOpen: true
-        }
-    },
-    methods: {
-        close(){
-            this.$emit('close')
-        }
-    }
+   
 }
 </script>
 <style scoped lang="scss">

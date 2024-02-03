@@ -29,11 +29,6 @@ export default {
         vHamburger,
         vHamburgerMenu
     },
-    data(){
-        return{
-            hamburgerOpen: true
-        }
-    }
 }
 </script>
 <style scoped lang="scss">

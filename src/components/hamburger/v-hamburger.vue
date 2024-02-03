@@ -1,8 +1,8 @@
 <template>
-     <div class="menu_text">
+     <div class="v-hamburger">
             <h5>Меню</h5>
             <img src="../../assets/images/arrows/right-arrows.png">
-        <div class="v-hamburger">
+        <div class="v-hamburger-btn">
             <span></span>
             <span class="long"></span>
             <span></span>
@@ -17,7 +17,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-    .v-hamburger {
+    .v-hamburger-btn {
     margin-right: 0px;
     height: 21px;
     display: flex;
@@ -35,7 +35,7 @@ export default {
         width: 36px;
     }
     }
-    .menu_text{
+    .v-hamburger{
         margin-left: auto;
         margin-right: auto;
         border: 1px solid #723030;
@@ -43,6 +43,7 @@ export default {
         border-radius: 10px;
         display: flex;
         align-items: center;
+        cursor:pointer;
         h5{
             margin-right: 20px;
             color: teal;
@@ -55,10 +56,10 @@ export default {
         }
     }
     @media (min-width: 992px){
-        .v-hamburger{
+        .v-hamburger-btn{
             display: none;
         }
-        .menu_text{
+        .v-hamburger{
         display: none;    
     }
     }
