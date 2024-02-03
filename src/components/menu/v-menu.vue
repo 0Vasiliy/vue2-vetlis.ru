@@ -10,7 +10,7 @@
                         <li class="menu_block_item"><a href="#vetart" class="menu_block_link ">Полезные статьи</a></li>
                         <li class="menu_block_item"><a href="#recomendation" class="menu_block_link ">Рекомедации ветрача</a></li>
                         <li class="menu_block_item"><a href="#footer" class="menu_block_link ">Контакты</a></li>
-                    </ul>                  
+                    </ul>                                  
                     <vHamburger/>
                     <vHamburgerMenu/>
                 </div>                           
@@ -99,7 +99,9 @@ export default {
         border-radius: 50%;             
     }
 }
-
+.menu_text{
+    margin-right: 0;
+}
 // .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
 //         max-width: 1620px;
 //     }
@@ -111,6 +113,27 @@ export default {
 @media (max-width: 991px){
     .menu_block_list{
         display: none;
+    }
+    .v-menu{
+        border: none;
+        width: 77%;
+    }
 }
+@media (max-width: 767px){
+    .v-menu{
+        width: 87%;
+    }
 }
+@media (max-width: 500px){
+    .menu_text{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .v-menu{
+        margin-top: 15px;
+        padding-left: 30px;
+    }
+}
+
 </style>
