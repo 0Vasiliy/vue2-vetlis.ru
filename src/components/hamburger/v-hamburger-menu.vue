@@ -1,24 +1,24 @@
 <template>
-      <div class="v-hamburger-menu" id="menu_id" >
-                        <div class="v-hamburger_menu_block">
-                            <vHamburgerClose/>
-                            <nav>
-                                <ul class="v-hamburger_menu_list" id="menu_list_id">
-                                    <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link">О нас</a></li>
-                                    <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link ">Услуги</a></li>
-                                    <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link">Новости</a></li>
-                                    <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link">Консультация ветеринара</a></li>
-                                    <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link">Полезные статьи</a></li>
-                                    <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link">Контакты</a></li>
-                                </ul>
-                            </nav>                
-                            <div class="v-hamburger_menu_social">   
-                                <a href="https://vk.com/id1980195" class="sidepanel_link"> <img src="../../assets/icons/social/vkontakte.svg" alt="vkontakte"></a>
-                                <a href="https://t.me/vasiliy_k_p" class="sidepanel_link"> <img src="../../assets/icons/social/telegram.svg" alt="telegram"></a>
-                            </div>
-                        </div>
-                        <div class="menu_overlay"></div>
-                    </div>   
+      <div class="v-hamburger-menu" id="show" v-if="show" @close="show = false">
+            <slot class="v-hamburger_menu_block">
+                    <vHamburgerClose/>
+                    <nav>
+                        <ul class="v-hamburger_menu_list" id="menu_list_id">
+                            <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link">О нас</a></li>
+                            <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link ">Услуги</a></li>
+                            <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link">Новости</a></li>
+                            <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link">Консультация ветеринара</a></li>
+                            <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link">Полезные статьи</a></li>
+                            <li class="v-hamburger_menu_item"><a href="#" class="v-hamburger_menu_link">Контакты</a></li>
+                        </ul>
+                    </nav>                
+                    <div class="v-hamburger_menu_social">   
+                        <a href="https://vk.com/id1980195" class="sidepanel_link"> <img src="../../assets/icons/social/vkontakte.svg" alt="vkontakte"></a>
+                        <a href="https://t.me/vasiliy_k_p" class="sidepanel_link"> <img src="../../assets/icons/social/telegram.svg" alt="telegram"></a>
+                    </div>
+                </slot>
+            <!-- <div class="menu_overlay"></div> -->
+        </div>   
 </template>
 <script>
 import vHamburgerClose from '@/components/hamburger/v-hamburger-close.vue'
@@ -27,26 +27,30 @@ export default {
     components:{
         vHamburgerClose,
     },
-   
+    data(){
+    return{
+        show: false
+        }  
+    }
 }
 </script>
 <style scoped lang="scss">
     .v-hamburger-menu {
         position: fixed;
         top: 0;
-        left: -100%;
-        height: 100vh;
-        z-index: 10;
-        // visibility: hidden;
-        opacity: 0;
+        left: 0;
+        // left: -100%;
+        // height: 100vh;
+        width: 100px;
+        height: 100px;
+        z-index: 9998;
+        // display: block;
+        color: #103783;
+        background: #757575;
+        visibility: visible;
+        // opacity: 0;
         transition: all .6s;
-        // &.active {
-        //     left: 0;
-        //     visibility: visible;
-        //     opacity: 1;   
-        // }
-}
-
+    }
     .v-hamburger_menu_block{
         position: relative;
         width: 345px;
@@ -60,10 +64,8 @@ export default {
     }
     .v-hamburger_menu_list{
         list-style-type: none;
-        //  padding-left: 35px;
-         
+        //  padding-left: 35px;        
         ul{
-
             display: flex;
             flex-direction: column;
         }
@@ -112,7 +114,6 @@ export default {
         justify-content: space-between;
         align-items: center;
     }
-
     // .menu_overlay{
     //     position: fixed;
     //     top: 0;
@@ -122,7 +123,6 @@ export default {
     //     background-color: #723030;
     //     opacity: .75;
     // }
-
 
     @media (max-width: 991px){
         .menu_block_list{

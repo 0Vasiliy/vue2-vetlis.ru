@@ -11,7 +11,7 @@
                         <li class="menu_block_item"><a href="#recomendation" class="menu_block_link ">Рекомедации ветрача</a></li>
                         <li class="menu_block_item"><a href="#footer" class="menu_block_link ">Контакты</a></li>
                     </ul>                                  
-                    <vHamburger/>
+                    <vHamburger @click="show = true"/>
                     <vHamburgerMenu/>
                 </div>                           
             </div>
