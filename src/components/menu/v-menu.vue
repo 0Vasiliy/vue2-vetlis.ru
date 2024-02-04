@@ -32,12 +32,17 @@
                             </div>
                             <nav>
                                 <ul class="v-hamburger_menu_list" id="menu_list_id">
-                                    <li class="v-hamburger_menu_item"><a href="#carusel" class="v-hamburger_menu_link">О нас</a></li>
-                                    <li class="v-hamburger_menu_item"><a href="#news_action" class="v-hamburger_menu_link">Новости</a></li>
-                                    <li class="v-hamburger_menu_item"><a href="#servis" class="v-hamburger_menu_link ">Услуги</a></li>
-                                    <li class="v-hamburger_menu_item"><a href="#vetart" class="v-hamburger_menu_link">Полезные статьи</a></li>
-                                    <li class="v-hamburger_menu_item"><a href="#recomendation" class="v-hamburger_menu_link">Рекомндации ветеринара</a></li>
-                                    <li class="v-hamburger_menu_item"><a href="#footer" class="v-hamburger_menu_link">Контакты</a></li>
+                                    <li class="v-hamburger_menu_item" @click="close"><a href="#carusel"
+                                     class="v-hamburger_menu_link"
+                                     @mouseover="hover = true"
+                                     @mouseleave="hover = false"
+                                     :class="{ link : hover }"
+                                     >О нас</a></li>
+                                    <li class="v-hamburger_menu_item" @click="close"><a href="#news_action" class="v-hamburger_menu_link">Новости</a></li>
+                                    <li class="v-hamburger_menu_item" @click="close"><a href="#servis" class="v-hamburger_menu_link ">Услуги</a></li>
+                                    <li class="v-hamburger_menu_item" @click="close"><a href="#vetart" class="v-hamburger_menu_link">Полезные статьи</a></li>
+                                    <li class="v-hamburger_menu_item" @click="close"><a href="#recomendation" class="v-hamburger_menu_link link_vet">Рекомендации<br>ветеринара</a></li>
+                                    <li class="v-hamburger_menu_item" @click="close"><a href="#footer" class="v-hamburger_menu_link">Контакты</a></li>
                                 </ul>
                             </nav>                
                             <div class="v-hamburger_menu_social">   
@@ -45,8 +50,8 @@
                                 <a href="https://t.me/vasiliy_k_p" class="sidepanel_link"> <img src="../../assets/icons/social/telegram.svg" alt="telegram"></a>
                             </div>
                         </div>
-            <div class="menu_overlay"></div>
-        </div>  
+                        <div class="menu_overlay"></div>
+                    </div>  
                 </div>                           
             </div>
         </div>
@@ -54,11 +59,13 @@
 </template>
 
 <script>
+
 export default {
     name: 'v-menu',
     data(){
     return{
-        show: false
+        show: false,
+        hover: false,
         }  
     },
     methods: {
@@ -158,7 +165,7 @@ export default {
     .v-hamburger{
         margin-left: auto;
         margin-right: auto;
-        border: 1px solid #723030;
+        border: 2px solid #723030;
         padding: 10px;
         border-radius: 10px;
         display: flex;
@@ -182,8 +189,7 @@ export default {
         top: 100px;
         left: 0;
         height: 100vh;   
-        z-index: 9998;
-        background: #757575;
+        z-index: 999;
         visibility: visible;
         transition: all .6s;
     }
@@ -200,11 +206,20 @@ export default {
     }
     .v-hamburger_menu_list{
         list-style-type: none;
-        //  padding-left: 35px;        
+         padding-left: 35px;        
         ul{
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-start;
         }
+    }
+    .v-hamburger_menu_item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: flex-start;
     }
     .v-hamburger_menu_link{
         position: relative;
@@ -221,7 +236,6 @@ export default {
         color:#103783;
         }
 
-
     .v-hamburger_menu_link::before {
         content: '';
         position: absolute;
@@ -233,17 +247,19 @@ export default {
         border: 1px solid #000000;
         transition: all 0.6s;
         }
-    .v-hamburger_menu_link:hover::before{
-        background-color: #6d3b3b;
-            
+    // .v-hamburger_menu_link:hover::before{
+    //     background-color: #6d3b3b;       
+    // }
+    .link{
+        color: #6d3b3b; 
     }
-    .v-hamburger_menu_link a{
-        background-color: #723030;
-    }
+    // .v-hamburger_menu_link a{
+    //     background-color: #723030;
+    // }
     .v-hamburger_menu_social{
         position: absolute;
-        bottom: 50px;
-        left: 40%;
+        bottom: 130px;
+        left: 50%;
         transform: translateX(-50%);
         width: 90px;
         display: flex;
@@ -256,7 +272,7 @@ export default {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #0f2027;
+        background-color:  #757575;;
         opacity: .75;
     }
 
@@ -301,6 +317,18 @@ export default {
     .v-menu{
         margin-top: 15px;
         padding-left: 30px;
+    }
+}
+@media(max-width: 400px){
+    .v-hamburger_menu_block{
+        width: 280px;
+    }
+    .v-hamburger_menu_link{
+        font-size: 18px;
+        line-height: 30px;  
+    }
+    .v-hamburger_menu_link::before{
+        top: 8px;
     }
 }
 </style>
