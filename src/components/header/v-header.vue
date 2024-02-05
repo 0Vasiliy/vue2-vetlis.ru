@@ -16,9 +16,10 @@
                     <div class="v-header_block_phone_link">
                         <v-header-phone/>
                     </div>
-                   <vButton class="header-btn"/>
+                   <vButton class="header-btn" @click.prevent="show = true"/>
                 </div>
            </div>
+           <v-modal v-if="show" @click.self="close"/>
         </div>
        </div>
     </section>
@@ -32,7 +33,7 @@ import vHeaderVet from '@/components/header/header-vet/v-header-vet.vue'
 import vHeaderAdress from '@/components/header/header-adress/v-header-adress.vue'
 import vHeaderAdressNum from '@/components/header/header-adress-num/v-header-adress-num.vue'
 import vHeaderPhone from '@/components/header/header-phone/v-header-phone.vue'
-
+import vModal from '@/components/modal/v-modal.vue'
 
 export default {
     name: 'v-header',
@@ -43,7 +44,13 @@ export default {
         vHeaderVet,
         vHeaderAdress,
         vHeaderAdressNum,
-        vHeaderPhone
+        vHeaderPhone,
+        vModal
+    },
+    data(){
+        return{
+            show: false,  
+        }
     }
 }
 </script>

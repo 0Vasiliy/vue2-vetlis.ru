@@ -72,7 +72,7 @@ export default {
             close: function () {
                 this.show = false
             }
-        }
+        },
 }
 
 </script>
@@ -192,6 +192,7 @@ export default {
         z-index: 999;
         visibility: visible;
         transition: all .6s;
+        border: 5px solid #723030;
     }
     .v-hamburger_menu_block{
         position: relative;
@@ -247,15 +248,15 @@ export default {
         border: 1px solid #000000;
         transition: all 0.6s;
         }
-    // .v-hamburger_menu_link:hover::before{
-    //     background-color: #6d3b3b;       
-    // }
+    .v-hamburger_menu_link:hover::before{
+        background-color: #6d3b3b;       
+    }
     .link{
         color: #6d3b3b; 
     }
-    // .v-hamburger_menu_link a{
-    //     background-color: #723030;
-    // }
+    .v-hamburger_menu_link a{
+        background-color: #723030;
+    }
     .v-hamburger_menu_social{
         position: absolute;
         bottom: 130px;
