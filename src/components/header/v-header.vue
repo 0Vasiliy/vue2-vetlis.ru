@@ -16,17 +16,18 @@
                     <div class="v-header_block_phone_link">
                         <v-header-phone/>
                     </div>
-                   <vButton class="header-btn" @click.prevent="show = true"/>
-                </div>
+                   <button type="button" class="v-button" id="phone_btn" @click="openModal">
+                        <h1 class="v-button-title">Запись на приём</h1>
+                    </button>
+                </div> 
            </div>
-           <v-modal v-if="show" @click.self="close"/>
+           <v-modal v-if="isModalOpen" @close="isModalOpen = false"/>
         </div>
-       </div>
+       </div>  
     </section>
 </template>
 
 <script>
-import vButton from '@/components/buttons/v-button.vue'
 import vHeaderLogo from '@/components/header/header-logo/v-header-logo.vue'
 import vHeaderLis from '@/components/header/header-lis/v-header-lis.vue'
 import vHeaderVet from '@/components/header/header-vet/v-header-vet.vue'
@@ -38,24 +39,30 @@ import vModal from '@/components/modal/v-modal.vue'
 export default {
     name: 'v-header',
     components:{
-        vButton,
         vHeaderLogo,
         vHeaderLis,
         vHeaderVet,
         vHeaderAdress,
         vHeaderAdressNum,
         vHeaderPhone,
-        vModal
+        vModal,
     },
+  
     data(){
-        return{
-            show: false,  
+        return {
+           isModalOpen:false
         }
+    },
+    methods:{
+       openModal(){
+           this.isModalOpen = true;
+       }
     }
 }
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/css/modul_btn.scss';
     .v-header{
         max-width: 1540px; 
         width: 80%;
@@ -75,15 +82,17 @@ export default {
     margin-left: 0px;
     max-width: 800px;
     height: 80px;
-    color: #757575;   
+    color: #757575; 
 }
 .v-header_block_phone{
     display: flex;
     align-items: center;
     max-width: 600px;
     max-height: 80px;
-    margin-right: 0px;
-  
+    margin-right: 0px; 
+}
+.h-logo{
+    margin-bottom: 20px;
 }
 
 @media (max-width: 1630px){

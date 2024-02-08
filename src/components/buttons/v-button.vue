@@ -1,11 +1,11 @@
 <template>
-    <button type="button" class="v-button" id="phone_btn">
+    <button type="button" class="v-button" id="phone_btn" @click="openModal">
         <h1 class="v-button-title">Запись на приём</h1>
     </button>
 </template>
 <script>
 export default {
-    name: 'vButton'
+    name: 'vButton',
 }
 </script>
 <style scoped lang="scss">

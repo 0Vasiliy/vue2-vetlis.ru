@@ -1,6 +1,11 @@
 <template>
     <form class="v-modal v-form-validate row g-3" @submit.prevent="handlerSubmit">
-        <div class="container">
+        <div class="v-form-block">
+            <div class="v-modal-close" @click="closeModal" aria-label="close">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
+                </svg>
+            </div>
             <div class="v-form-group">
             <!-- Фамилия -->
             <div class="v-form-input  col-md-8">
@@ -92,25 +97,24 @@
                 <button type="submit"  
                 class="v-form-btn btn btn-primary"
                 >Записасться на приём</button>
-            </div>
-            <div class="v-modal-close" @click="close">
-                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
-                </svg>
-            </div>
-        </div>
-        </div>       
+            </div>       
+            </div>  
+        </div> 
+        <v-overlay/>   
     </form>   
 </template>
 
 <script>
 import { validationMixin } from 'vuelidate'
 import { required, minLength, email, numeric} from 'vuelidate/lib/validators'
+import vOverlay from '../overlay/v-overlay.vue'
 
 export default {
     name: 'vModal',
-    mixins: [validationMixin], 
-     
+    components:{
+        vOverlay
+    },
+    mixins: [validationMixin],      
     data(){
         return{
             form:{
@@ -138,19 +142,28 @@ export default {
           console.log('Валидация прошла успешно')
         }
     },
-    close: function () {
-                this.show = false
-            }
-   
+    closeModal(){
+        this.$emit('close')
+    }
     }
 }
 </script>
 
 <style scoped>
+  
     .v-form-validate{
-        max-width: 400px;
-        margin: 0 auto;
-        
+        position: fixed;
+        top:100px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        max-width: 600px;
+        margin: 0 auto;  
+        z-index: 998;
+        /* visibility: visible; */
+    }
+    .v-form-block{
+        z-index: 10;
     }
     .v-form-group{
         margin-left: 50px;
@@ -161,6 +174,8 @@ export default {
         justify-content: center;
         align-items: center;
         border: 4px solid #2f4f4f;
+        background-color: white;
+     
     }
     .v-form-input{
         margin-top: 15px;
@@ -204,8 +219,8 @@ export default {
     }
     .v-modal-close{
         position: absolute;
-        top: 25px;
-        right: 25px;
+        top: -20px;
+        left: 550px;
         cursor: pointer;
   } 
     @media(max-width: 1200px){

@@ -11,8 +11,8 @@ export default {
 <style scoped lang="scss">
   .v-header-logo{
     img{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
   }  
 .v-header_block_logo_img{
