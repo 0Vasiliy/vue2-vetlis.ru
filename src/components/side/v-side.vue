@@ -7,34 +7,49 @@
             <v-header-adress class="side-comp"/>
             <v-header-adress-num class="side-comp"/>
             <v-header-phone class="side-comp"/>
-            <v-button class="side-comp"/>
-        </div>       
+            <button type="button" class="v-button side-comp" id="phone_btn" @click="openModal">
+                <h1 class="v-button-title">Запись на приём</h1>
+            </button>
+        </div>  
+        <v-modal v-if="isModalOpen" @close="isModalOpen = false"/>       
     </div>
 </template>
 <script>
-import vButton from '@/components/buttons/v-button.vue'
 import vHeaderLogo from '@/components/header/header-logo/v-header-logo.vue'
 import vHeaderLis from '@/components/header/header-lis/v-header-lis.vue'
 import vHeaderVet from '@/components/header/header-vet/v-header-vet.vue'
 import vHeaderAdress from '@/components/header/header-adress/v-header-adress.vue'
 import vHeaderAdressNum from '@/components/header/header-adress-num/v-header-adress-num.vue'
 import vHeaderPhone from '@/components/header/header-phone/v-header-phone.vue'
+import vModal from '@/components/modal/v-modal.vue'
 
 export default {
     name: 'v-side',
     components:{
-        vButton,
         vHeaderLogo,
         vHeaderLis,
         vHeaderVet,
         vHeaderAdress,
         vHeaderAdressNum,
-        vHeaderPhone
-    }
+        vHeaderPhone,
+        vModal,
+    },
+    data(){
+        return {
+           isModalOpen:false
+        }
+    },
+    methods:{
+       openModal(){
+           this.isModalOpen = true;
+       }
+    }  
 }
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/css/modul_btn.scss';
+
     .v-side{
         margin-right: 0;
         flex: 0 0 30%;
@@ -56,7 +71,7 @@ export default {
     margin-left: 50px;
    }
    .side-comp{
-    margin-top: 10px;
+    margin-top: 20px;
    }
    @media (max-width: 1200px){
     .v-side-right{
