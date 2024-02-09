@@ -135,7 +135,7 @@ export default {
     flex-direction: column;
     max-height: none;
 }
-.header-btn{
+.v-button{
     margin-top: 20px;
 }
 }

@@ -9,10 +9,10 @@ export default {
 <style scoped lang="scss">
         .v-overlay{
         position: fixed;
-        top: 0;
+        top: -20px;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color:  #757575;;
         opacity: .75;
     }

@@ -94,9 +94,7 @@
             </div>             
                 <!-- button -->
             <div class="v-form-input col-md-8">
-                <button type="submit"  
-                class="v-form-btn btn btn-primary"
-                >Записасться на приём</button>
+                <button type="submit" class="v-form-btn btn btn-primary">Записасться на приём</button>
             </div>       
             </div>  
         </div> 
@@ -153,14 +151,13 @@ export default {
   
     .v-form-validate{
         position: fixed;
-        top:100px;
+        top:50px;
         right: 0;
         left: 0;
         bottom: 0;
         max-width: 600px;
         margin: 0 auto;  
         z-index: 998;
-        /* visibility: visible; */
     }
     .v-form-block{
         z-index: 10;
@@ -168,7 +165,7 @@ export default {
     .v-form-group{
         margin-left: 50px;
         margin-right: 50px;
-        padding: 50px;
+        padding: 70px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -180,12 +177,14 @@ export default {
     .v-form-input{
         margin-top: 15px;
     }
+
     .v-form-btn{
-        margin-left: 0;
-    }
-    .v-form-btn{
+        max-width: 250px;
+        margin-top: 20px;
+        height: 45px;
         background-color: #778899;
         color: white;
+        font-size: 18px;
         border: none;
     }
     .v-form-btn:hover{
@@ -230,6 +229,9 @@ export default {
         .v-form-group{
             padding: 10px;
         }
+        .v-form-btn{
+            margin-bottom: 50px;
+        }
     }
     @media(max-width: 767px){
         .form-selected {
@@ -237,10 +239,19 @@ export default {
         width: 50%;
         }
     }
+    @media(max-width: 600px){
+        .v-modal-close{
+        top: -15px;
+    }
+    }
     @media(max-width: 585px){
         .form-selected {
         flex: 0 0 55%;
         width: 55%;
+        }
+        .v-modal-close{
+        top: -13px;
+        left: 520px;
         }
     }
     @media(max-width: 555px){
@@ -248,11 +259,17 @@ export default {
         flex: 0 0 57%;
         width: 57%;
         }
+        .v-modal-close{
+        left: 500px;
+        }
     }
     @media(max-width: 540px){
         .form-selected {
         flex: 0 0 60%;
         width: 60%;
+        }
+        .v-modal-close{
+        left: 480px;
         }
     }
     @media(max-width: 510px){
@@ -260,11 +277,17 @@ export default {
         flex: 0 0 62%;
         width: 62%;
         }
+        .v-modal-close{
+        left: 455px;
+        }
     }
     @media(max-width: 500px){
         .form-selected {
         flex: 0 0 65%;
         width: 65%;
+        }
+        .v-modal-close{
+        left: 435px;
         }
     }
     @media(max-width: 490px){
@@ -272,11 +295,17 @@ export default {
         flex: 0 0 67%;
         width: 67%;
         }
+        .v-modal-close{
+        left: 430px;
+        }
     }
     @media(max-width: 470px){
         .form-selected {
         flex: 0 0 71%;
         width: 71%;
+        }
+        .v-modal-close{
+        left: 410px;
         }
     }
     @media(max-width: 460px){
@@ -284,11 +313,17 @@ export default {
         flex: 0 0 73%;
         width: 73%;
         }
+        .v-modal-close{
+        left: 405px;
+        }
     }
     @media(max-width: 450px){
         .form-selected {
         flex: 0 0 80%;
         width: 80%;
+        }
+        .v-modal-close{
+        left: 390px;
         }
     }
     @media(max-width: 430px){
@@ -296,17 +331,31 @@ export default {
         flex: 0 0 82%;
         width: 82%;
         }
+        .v-modal-close{
+        left: 370px;
+        }
     }
     @media(max-width: 411px){
         .form-selected {
         flex: 0 0 85%;
         width: 85%;
         }
+        .v-modal-close{
+        left: 350px;
+        }
     }
     @media(max-width: 400px){
         .form-selected {
         flex: 0 0 75%;
         width: 75%;
+        }
+        .v-modal-close{
+        left: 345px;
+        }
+        .v-form-btn{
+            max-width: 200px;
+            font-size: 13px;
+            height: 35px;
         }
         label,input,select,option{
             font-size: 12px;
@@ -317,17 +366,26 @@ export default {
         flex: 0 0 78%;
         width: 78%;
         }
+        .v-modal-close{
+        left: 325px;
+        }
     }
     @media(max-width: 370px){
         .form-selected {
         flex: 0 0 84%;
         width: 84%;
         }
+        .v-modal-close{
+        left: 320px;
+        }
     }
     @media(max-width: 350px){
         .form-selected {
         flex: 0 0 90%;
         width: 90%;
+        }
+        .v-modal-close{
+        left: 300px;
         }
         .v-form-radio{
         display: flex;
@@ -345,6 +403,9 @@ export default {
         flex: 0 0 100%;
         width: 100%;
         }
+        .v-modal-close{
+        left: 290px;
+        }
     }
     @media(max-width: 300px){  
         label,input,select,option{
@@ -353,6 +414,9 @@ export default {
         .v-form-btn{
             max-width: 120px;
             font-size: 10px;
+        }
+        .v-modal-close{
+        left: 280px;
         }
     }
     @media(max-width: 260px){

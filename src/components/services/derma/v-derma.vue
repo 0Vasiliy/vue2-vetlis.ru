@@ -67,7 +67,8 @@
                 </div>               
                 <v-contacts v-if="small"/>             
                 <v-side v-else/>
-            </div>             
+            </div>  
+            <v-modal v-if="isModalOpen" @close="isModalOpen = false"/>           
         </div> 
     </div>
 </template>
@@ -76,13 +77,26 @@
 import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
 import vContacts from '@/components/contacts/v-contacts.vue'
+import vModal from '@/components/modal/v-modal.vue'
+
 export default {
     name: 'vDerma',
     components: {
         vSide,
         vContacts,
+        vModal,
     },
-    mixins: [resize]  
+    mixins: [resize],
+    data(){
+        return {
+           isModalOpen:false
+        }
+    },
+    methods:{
+       openModal(){
+           this.isModalOpen = true;
+       }
+    }  
 }
 </script>
 

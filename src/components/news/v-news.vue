@@ -13,23 +13,41 @@
                             -просьба находиться в зале на расстоянии, соблюдать физическую дистанцию с другими посетителями.
                             -в клинике с одним животным должен находится один посетитель.
                         </h1>
-                        <vButton class="button-news"/>                 
+                        <!-- <vButton class="button-news"/>   -->
+                    <button type="button" class="v-button button-news" id="phone_btn" @click="openModal">
+                        <h1 class="v-button-title">Запись на приём</h1>
+                    </button>               
                     </div>
                     <img src="../../assets/images/news/fon_vet_old.jpg">               
                </div>
+               <v-modal v-if="isModalOpen" @close="isModalOpen = false"/>
             </div>
     </section>   
 </template>
+
 <script>
-import vButton from '@/components/buttons/v-button.vue'
+// import vButton from '@/components/buttons/v-button.vue'
+import vModal from '@/components/modal/v-modal.vue'
+
 export default {
     name: 'v-news',
     components:{
-        vButton
+        vModal,
+    },
+    data(){
+        return {
+           isModalOpen:false
+        }
+    },
+    methods:{
+       openModal(){
+           this.isModalOpen = true;
+       }
     }
 }
 </script>
 <style scoped lang="scss">
+@import '@/assets/css/modul_btn.scss';
     .v-news_block{
     display: flex;
     background: #B2FEFA;
@@ -38,7 +56,6 @@ export default {
     max-width: 100%;   
     border-radius: 20px; 
 }
-
     img{
        max-width: 800px; 
        border-radius: 20px;
@@ -65,6 +82,16 @@ export default {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+    h1{
+        margin-top: 3%;
+        font-size: 18px;
+        align-items: center;
+        text-align: center;
+        line-height: 21px;
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 300;
+        color: white;
+    }
 }
 @media (min-width: 1600px){
     .container {
