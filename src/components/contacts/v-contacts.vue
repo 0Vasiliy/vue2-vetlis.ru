@@ -19,14 +19,29 @@
                 <a href="#" class="v-sidepanel_link"> <img src="@/assets/icons/social/telegram.svg" alt="telegram"></a>
                 </div>
                 <div class="text-container">
-                    <button class="v-footer-btn">Запись на приём</button>
+                    <button class="v-footer-btn" @click="openModal">Запись на приём</button>
                 </div>
-        </div>       
+        </div>
+        <v-modal v-if="isModalOpen" @close="isModalOpen = false"/>       
     </div>
 </template>
 <script>
+import vModal from '@/components/modal/v-modal.vue'
 export default {
-    name: 'vContacts'
+    name: 'vContacts',
+    components:{
+        vModal
+    },
+    data(){
+        return {
+           isModalOpen:false
+        }
+    },
+    methods:{
+       openModal(){
+           this.isModalOpen = true;
+       }
+    } 
 }
 </script>
 <style scoped lang="scss">
