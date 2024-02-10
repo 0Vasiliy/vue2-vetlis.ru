@@ -1,0 +1,16 @@
+.button_gradient { 
+    max-width: 350px;
+    padding: 0 15px 0 15px;
+    height: 70px; 
+    margin-left: 50px;
+    font-size: 28px;
+    color: rgba(225,225,225, .01);
+    background-image: url("@/assets/images/lis_fon6.jpg");
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 10px;
+  }

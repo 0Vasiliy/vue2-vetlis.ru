@@ -379,6 +379,11 @@ export default {
         left: 320px;
         }
     }
+    @media(max-width: 355px){
+        .v-modal-close{
+        left: 310px;
+        }
+    }
     @media(max-width: 350px){
         .form-selected {
         flex: 0 0 90%;
@@ -405,6 +410,11 @@ export default {
         }
         .v-modal-close{
         left: 290px;
+        }
+    }
+    @media(max-width: 325px){
+        .v-modal-close{
+        left: 285px;
         }
     }
     @media(max-width: 300px){  

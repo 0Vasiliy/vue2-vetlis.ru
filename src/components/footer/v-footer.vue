@@ -36,18 +36,19 @@
                    <div class="v-footer-contacts-adress">
                         <h5>ул.Русановская д.19 к.4</h5>
                    </div>
-                  <div class="v-footer-contacts-social">
-                    <a href="https://vk.com/vetlis" class="v-sidepanel_link"> <img src="@/assets/icons/social/vkontakte.svg" alt="vkontakte"></a>
-                    <a href="#" class="v-sidepanel_link"> <img src="@/assets/icons/social/telegram.svg" alt="telegram"></a>
-                  </div>
+                  <v-social class="v-footer-contacts-social"/>
                 </div>
             </div>
         </div>
     </section>
 </template>
 <script>
+import vSocial from '../social/v-social.vue'
 
 export default {
+  components: { 
+    vSocial 
+    },
     name: 'vFooter',
 }
 </script>

@@ -47,7 +47,7 @@
                             </nav>                
                             <div class="v-hamburger_menu_social">   
                                 <a href="https://vk.com/id1980195" class="sidepanel_link"> <img src="../../assets/icons/social/vkontakte.svg" alt="vkontakte"></a>
-                                <a href="https://t.me/vasiliy_k_p" class="sidepanel_link"> <img src="../../assets/icons/social/telegram.svg" alt="telegram"></a>
+                                <a href="https://t.me/vetlissp" class="sidepanel_link"> <img src="../../assets/icons/social/telegram.svg" alt="telegram"></a>
                             </div>
                         </div>
                         <v-overlay/>

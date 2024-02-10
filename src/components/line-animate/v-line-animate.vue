@@ -31,7 +31,7 @@
                 <h1>ул. Русановская д.19 к.4</h1>
             </div>
             <div class="text-container">
-                <button>Запись на приём</button>
+                <button class="button_gradient btn_anime" @click="openModal">Запись на приём</button>
             </div>
         </div>
         <svg class="wave-divider dark-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
@@ -41,15 +41,35 @@
             <g class="wave-parallax4"><use xlink:href="#gentle-wave" x="50" y="6" fill="#FFFFFF"/></g>
         </svg>
         </div>
+        <v-modal v-if="isModalOpen" @close="isModalOpen = false"/>
       </div>
     </section>
 </template>
+
 <script>
+import vModal from '@/components/modal/v-modal.vue'
 export default {
-    name: 'vLineAnimate'
+    name: 'vLineAnimate',
+    components:{
+        vModal,
+    },
+    data(){
+        return {
+           isModalOpen:false
+        }
+    },
+    methods:{
+       openModal(){
+           this.isModalOpen = true;
+       }
+    } 
 }
+
 </script>
+
 <style scoped lang="scss">
+@import '@/assets/css/modul_btn_gradient.scss';
+
     .v-line-animate{
         max-width: 1400px;
         width: 100%;
@@ -152,24 +172,9 @@ export default {
   text-transform: uppercase;
   font-weight: 900;
 }
- button { 
-  margin-top: 50px;
-  max-width: 350px;
-  padding: 0 15px 0 15px;
-  height: 70px; 
-  margin-left: 50px;
-  font-size: 28px;
-  color: rgba(225,225,225, .01);
-  background-image: url("../../assets/images/lis_fon6.jpg");
-  background-repeat: repeat;
-  -webkit-background-clip:text;
-  animation: animate 15s ease-in-out infinite;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-button{
-    border-radius: 10px;
+
+.btn_anime{
+    margin-top: 50px;
 }
   @keyframes animate {
     0%, 100% {
@@ -208,7 +213,7 @@ button{
     .text-container-text h1{
         font-size: 25px;
     }
-    button{
+    .btn_anime{
         margin-left: auto;
         margin-right: auto;
     }
@@ -228,7 +233,7 @@ button{
     .text-container-text h1{
         font-size: 15px;
     }
-    button {
+    .btn_anime {
         max-width: 250px;
         font-size: 20px;
     }
@@ -240,7 +245,7 @@ button{
     .text-container-text h1{
         font-size: 12px;
     }
-    button {
+    .btn_anime {
         padding: 0 9px 0 9px;
         height: 50px; 
         max-width: 200px;
@@ -260,7 +265,7 @@ button{
     .text-container-text h1{
         font-size: 9px;
     }
-    button {
+    .btn_anime {
         padding: 0 8px 0 8px;
         height: 40px; 
         max-width: 150px;

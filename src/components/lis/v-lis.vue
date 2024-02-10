@@ -27,24 +27,39 @@
                   </div>
                   <div class="wave">
                     <div class="text-container">
-                        <button>Запись на приём</button>
+                        <button class="button_gradient btn_lis" @click="openModal">Запись на приём</button>
                     </div>
                   </div>
                 </div>
             </div>
+            <v-modal v-if="isModalOpen" @close="isModalOpen = false"/>
        </div>
     </section>
 </template>
 
 <script>
+import vModal from '@/components/modal/v-modal.vue'
 
 export default {
-   name: 'vLis' 
+   name: 'vLis',
+    components:{
+        vModal,
+    },
+    data(){
+        return {
+           isModalOpen:false
+        }
+    },
+    methods:{
+       openModal(){
+           this.isModalOpen = true;
+       }
+    } 
 }
 </script>
 
 <style>
-
+@import '@/assets/css/modul_btn_gradient.scss';
 .v-lis-block{
     margin: auto;
     font-family: sans-serif;
@@ -113,22 +128,6 @@ export default {
         transform: translateX(1);
     }
 }  
-.text-container button{
-  max-width: 350px;
-  padding: 0 15px 0 15px;
-  height: 70px; 
-  margin-left: 50px;
-  font-size: 28px;
-  color: rgba(225,225,225, .01);
-  background-image: url("../../assets/images/lis_fon6.jpg");
-  background-repeat: repeat;
-  -webkit-background-clip:text;
-  animation: animate 15s ease-in-out infinite;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  border-radius: 10px;
-}
 
 .text-container {
   margin-left: 100px;
@@ -204,7 +203,7 @@ export default {
         margin-left: 0;
         font-size: 40px;
     }
-    .text-container button{
+    .btn_lis{
         max-width: 250px; 
         font-size: 22px;
         margin-left: 0;
@@ -228,7 +227,7 @@ export default {
         flex-wrap: wrap;
         align-content: flex-start
     }
-    .text-container button{
+    .btn_lis{
         margin-top: 30px;       
     }
    
@@ -243,7 +242,7 @@ export default {
     .text-container h1{
         font-size: 22px;
     } 
-    .text-container button{
+    .btn_lis{
         max-width: 200px; 
         font-size: 16px;
         height: 50px;
@@ -265,7 +264,7 @@ export default {
     .text-container h1{
         font-size: 18px;
     } 
-    .text-container button{
+    .btn_lis{
         max-width: 150px; 
         font-size: 12px;
         height: 40px;
@@ -278,7 +277,7 @@ export default {
     .text-container h1{
         font-size: 14px;
     } 
-    .text-container button{
+    .btn_lis{
         max-width: 130px; 
         font-size: 9px;
         height: 40px;
@@ -294,7 +293,7 @@ export default {
     .text-container h1{
         font-size: 13px;
     } 
-    .text-container button{
+    .btn_lis{
         max-width: 120px; 
         font-size: 8px;
     } 

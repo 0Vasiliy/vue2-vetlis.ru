@@ -14,10 +14,7 @@
                 <div class="v-footer-contacts-adress">
                     <h5>ул.Русановская д.19 к.4</h5>
                 </div>
-                <div class="v-footer-contacts-social">
-                <a href="https://vk.com/vetlis" class="v-sidepanel_link"> <img src="@/assets/icons/social/vkontakte.svg" alt="vkontakte"></a>
-                <a href="#" class="v-sidepanel_link"> <img src="@/assets/icons/social/telegram.svg" alt="telegram"></a>
-                </div>
+                <v-social class="v-footer-contacts-social"/>
                 <div class="text-container">
                     <button class="v-footer-btn" @click="openModal">Запись на приём</button>
                 </div>
@@ -27,10 +24,12 @@
 </template>
 <script>
 import vModal from '@/components/modal/v-modal.vue'
+import vSocial from '@/components/social/v-social.vue'
 export default {
     name: 'vContacts',
     components:{
-        vModal
+        vModal,
+        vSocial
     },
     data(){
         return {
