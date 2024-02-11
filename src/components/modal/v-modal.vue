@@ -9,12 +9,12 @@
             <div class="v-form-group">
             <!-- Фамилия -->
             <div class="v-form-input  col-md-8">
-                <label for="surname" class="form-label">Фамилия</label>
+                <label for="surname" class="form-label">Фамилия:</label>
                 <input 
                 type="input" 
                 class="form-control" 
                 id="surname" 
-                placeholder="Фамилия"
+                placeholder="Фамилия:"
                 v-model.trim="form.surname"
                 :class="$v.form.surname.$error ? 'is-invalid' : ''"
                 >
@@ -27,12 +27,12 @@
             </div>
                  <!-- Имя -->
             <div class="v-form-input col-md-8">
-                <label for="inputAddress2" class="form-label">Имя</label>
+                <label for="inputAddress2" class="form-label">Имя:</label>
                 <input 
                 type="text"
                 class="form-control"
                 id="inputAddress2"
-                placeholder="Имя"
+                placeholder="Имя:"
                 v-model.trim="form.name"
                 :class="$v.form.name.$error ? 'is-invalid' : ''"
                 >
@@ -40,24 +40,9 @@
                 Введите Имя
                 </p>
             </div> 
-                    <!-- Отчество -->
-            <div class="v-form-input col-md-8">
-                <label for="inputAddress2" class="form-label">Отчество</label>
-                <input 
-                type="text"
-                class="form-control"
-                id="inputAddress2"
-                placeholder="Отчество"
-                v-model.trim="form.patronymic"
-                :class="$v.form.patronymic.$error ? 'is-invalid' : ''"
-                >
-                <p v-if="$v.form.patronymic.$dirty && !$v.form.patronymic.required" class="invalid-feedback">
-                Введите Отчество
-                </p>
-            </div> 
             <!-- email -->
             <div class="v-form-input  col-md-8">
-                <label for="inputEmail4" class="form-label">Имя</label>
+                <label for="inputEmail4" class="form-label">Имя:</label>
                 <input 
                 type="email" 
                 class="form-control" 
@@ -67,7 +52,7 @@
                 :class="$v.form.email.$error ? 'is-invalid' : ''"
                 >
                 <p v-if="$v.form.email.$dirty && !$v.form.email.required" class="invalid-feedback">
-                Обязательное поле
+                Введите email
                 </p>
                 <p v-if="$v.form.email.$dirty && !$v.form.email.email" class="invalid-feedback">
                 Email неккоректный
@@ -75,7 +60,7 @@
             </div>          
             <!-- phone -->
             <div class="v-form-input col-md-8">
-                <label for="inputAddress3" class="form-label">Телефон</label>
+                <label for="inputAddress3" class="form-label">Телефон:</label>
                 <input
                 type="tel"
                 class="form-control" 
@@ -91,7 +76,22 @@
                 <p v-if="$v.form.phone.$dirty && !$v.form.phone.required" class="invalid-feedback">
                 Введите номер телефона
                 </p>
-            </div>             
+            </div> 
+            <!-- text             -->
+            <div class="v-form-input col-md-8">
+                <label for="inputAddress3" class="form-label">Опишите вашу проблему:</label>
+                <textarea
+                type="tel"
+                class="form-control" 
+                id="inputAddress3" 
+                placeholder="Введите техт:"
+                v-model.trim="form.text"           
+                :class="$v.form.text.$error ? 'is-invalid' : ''"                                      
+                />
+                <p v-if="$v.form.text.$dirty && !$v.form.text.required" class="invalid-feedback">
+                Поле не должно быть пустым
+                </p>
+            </div>
                 <!-- button -->
             <div class="v-form-input col-md-8">
                 <button type="submit" class="v-form-btn btn btn-primary">Записасться на приём</button>
@@ -118,8 +118,8 @@ export default {
             form:{
                 surname: '',
                 name: '',
-                patronymic: '',
                 phone: '',
+                text: '',
                 email: '',
             },           
         }
@@ -128,9 +128,9 @@ export default {
       form: {
         surname: { required, minLength: minLength(5)},
         name: {required},
-        patronymic: {required},
         email: { required, email },
         phone: {required, numeric},
+        text: {required, numeric},
       }
     },
     methods:{
@@ -151,7 +151,7 @@ export default {
   
     .v-form-validate{
         position: fixed;
-        top:50px;
+        top:30px;
         right: 0;
         left: 0;
         bottom: 0;
@@ -175,7 +175,7 @@ export default {
      
     }
     .v-form-input{
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .v-form-btn{
@@ -215,6 +215,12 @@ export default {
         color: #2f4f4f;
         max-width: 200px;
         font-size: 14px;
+    }
+    textarea{
+        border: 3px solid teal;;
+    }
+    p{
+        height: 5px;
     }
     .v-modal-close{
         position: absolute;
@@ -338,17 +344,16 @@ export default {
     @media(max-width: 411px){
         .form-selected {
         flex: 0 0 85%;
-        width: 85%;
-        }
-        .v-modal-close{
-        left: 350px;
-        }
     }
+    .v-modal-close{
+        left: 355px;
+        }
     @media(max-width: 400px){
         .form-selected {
         flex: 0 0 75%;
         width: 75%;
         }
+    }
         .v-modal-close{
         left: 345px;
         }
@@ -357,7 +362,7 @@ export default {
             font-size: 13px;
             height: 35px;
         }
-        label,input,select,option{
+        label,input,select,option,textarea{
             font-size: 12px;
         }
     }
@@ -418,11 +423,11 @@ export default {
         }
     }
     @media(max-width: 300px){  
-        label,input,select,option{
-            font-size: 10px;
+        label,input,select,option,textarea{
+            font-size: 9px;
         }
         .v-form-btn{
-            max-width: 120px;
+            max-width: 130px;
             font-size: 10px;
         }
         .v-modal-close{
@@ -431,7 +436,7 @@ export default {
     }
     @media(max-width: 260px){
         
-        label,input,select,option{
+        label,input,select,option,textarea{
             font-size: 8px;
         }
         .v-form-btn{
