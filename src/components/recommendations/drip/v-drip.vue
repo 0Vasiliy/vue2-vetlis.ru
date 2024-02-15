@@ -5,8 +5,12 @@
                <div class="v-modul-block-left">
                 <h1 class="v-modul_title">Как поставить капельницу</h1> 
                 <div class="v-modul-subtitle">Внутривенная инфузия - это введение в организм растворов.Применяется для животных в тяжёлом состоянии, при быстром и резком обезвоживании, остром течении заболеваний и в других случаях.
-                    <img src="../../../assets/images/recommendations/drip2.jpg" class="card-img-top r-img" alt="drip2">
-                   <h2>Подготовка к постановке:</h2>
+                    <picture>
+                        <source srcset="../../../assets/images/recommendations/drip2.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/recommendations/drip2.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/recommendations/drip2.jpg" class="card-img-top r-img" alt="drip2">
+                    </picture>
+                    <h2>Подготовка к постановке:</h2>
                    <ul>
                         <li>подготовьте к квартире удобное место для постановки капельницы</li>
                         <li>животное удобнее капать на столе, на стол можно положить одеяло, одноразовую пеленку.</li>
@@ -25,7 +29,11 @@
                         <li>убедитесь, что в системе нет воздуха (воздушных пузырьков). Если они есть, то снова откройте зажим и дождитесь пока воздушный пузырек выйдет из системы.</li>
                    </ul>
                    <h5>Постановка капельницы</h5>
-                   <img src="../../../assets/images/recommendations/drip3.jpg" class="card-img-top r-img" alt="drip2">
+                   <picture>
+                        <source srcset="../../../assets/images/recommendations/drip3.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/recommendations/drip3.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/recommendations/drip3.jpg" class="card-img-top r-img" alt="drip2">
+                    </picture>
                    <h2>Постановка капельницы:</h2>
                    <ul>
                         <li>положите животное на подготовленный стол набок</li>

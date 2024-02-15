@@ -7,7 +7,11 @@
                 <div class="v-modul-subtitle">Предлагаемые рекомендации являются общими, т.е. разработаны для большинства пациентов.
                     В случаях индивидуального течения восстановительного периода, врач может предложить индивидуальную схему лечения и график осмотров пациента. 
                     Уточняйте, пожалуйста, рекомендации при каждом посещении врача.
-                    <img src="../../../assets/images/recommendations/pos3.jpg" class="card-img-top r-img" alt="rec">
+                    <picture>
+                        <source srcset="../../../assets/images/recommendations/pos3.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/recommendations/pos3.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/recommendations/pos3.jpg" class="card-img-top r-img" alt="rec">
+                    </picture>
                     <h1>Режим</h1>
                     <h2>В восстановительный период соблюдение режима может иметь определенное лечебное значение.
                         Лечащий врач дает рекомендации, как вести себя в послеоперационный период.
