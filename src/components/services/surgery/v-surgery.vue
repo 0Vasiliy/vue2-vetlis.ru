@@ -5,7 +5,11 @@
                <div class="v-modul-block-left">
                 <h1 class="v-modul_title">Хирургия</h1> 
                 <div class="v-modul-subtitle">Иногда случается так, что Вашему питомцу требуется хирургическое вмешательство для лечения острого или хронического заболевания. Наши специалисты проводят как самые простые и распространенные операции, так и самые сложные.
-                    <img src="../../../assets/images/surgery/surgery.jpg" class="card-img-top r-img" alt="surgery">
+                    <picture>
+                        <source srcset="../../../assets/images/surgery/surgery.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/surgery/surgery.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/surgery/surgery.jpg" class="card-img-top r-img" alt="surgery">
+                    </picture>
                     <h2>В наше ветеринарной клиники мы проводим различные хирургические манипуляции и операции:</h2>
                     <ul>
                         <li>всрытие абцесса и гематомы;</li>
@@ -27,7 +31,11 @@
                         <li>различные стерилицации и кастрации в т.ч крипторхов;</li>
                         <li>и многое другое;</li>
                     </ul>
-                    <img src="../../../assets/images/surgery/surgery2.jpg" class="card-img-top r-img" alt="surgery2">          
+                    <picture>
+                        <source srcset="../../../assets/images/surgery/surgery2.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/surgery/surgery2.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/surgery/surgery2.jpg" class="card-img-top r-img" alt="surgery">
+                    </picture>         
                 </div>                                                       
                 </div>               
                 <v-contacts v-if="small"/>             

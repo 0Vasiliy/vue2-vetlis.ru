@@ -17,7 +17,11 @@
                     <li>образования на или под кожей</li>
                     <li>травмы различной природы</li>
                 </ul>
-                <img src="../../../assets/images/therapy/rodents.jpg" class="card-img-top r-img" alt="rodents">
+                <picture>
+                    <source srcset="../../../assets/images/therapy/rodents.webp" class="card-img-top r-img" type="image/webp">
+                    <source srcset="../../../assets/images/therapy/rodents.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                    <img src="../../../assets/images/therapy/rodents.jpg" class="card-img-top r-img" alt="rodents">
+                </picture>
                 <h1>Виды заболеваний у грызунов и их лечение</h1>
                 <h2>Грызуны подвержены травмам, стрессам, а также следующим видам заболеваний и проблем:</h2>
                 <ul>
@@ -27,7 +31,11 @@
                     <li>инфекционные болезни.</li>
                     <li>паразитарные болезни</li>
                 </ul>
-                <img src="../../../assets/images/therapy/rodents2.jpg" class="card-img-top r-img" alt="rodents2">
+                <picture>
+                    <source srcset="../../../assets/images/therapy/rodents2.webp" class="card-img-top r-img" type="image/webp">
+                    <source srcset="../../../assets/images/therapy/rodents2.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                    <img src="../../../assets/images/therapy/rodents2.jpg" class="card-img-top r-img" alt="rodents2">
+                </picture>
             </div>                                       
             </div>               
             <v-contacts v-if="small"/>             

@@ -36,26 +36,54 @@
                    <h2>К заболеваниям пародонта относят гингивит, пародонтит, пародонтоз, опухолевые и опухолеподобные поражения пародонта.</h2>
                    <h1>Гингивит</h1>
                    <h2>Гингивит - это воспаление десен без нарушения целостности зубодесневого соединения. Если заболевание не лечить, оно может перейти в пародонтит и гингивостоматит. </h2>
-                    <img src="../../../assets/images/teeth/stom4.jpg" class="card-img-top r-img" alt="stom2">
+                    <picture>
+                        <source srcset="../../../assets/images/teeth/stom4.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/teeth/stom4.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/teeth/stom4.jpg" class="card-img-top r-img" alt="stom2">
+                    </picture>
                     <h2>Гингивит, как правило, возникает из-за скопления микробного налёта на зубах, в результате несоблюдения гигиены ротовой полости. У кошек часто бывает «аллергия» на зубной налет, вследствие чего  появляется хронический гингивостоматит.</h2>
-                    <img src="../../../assets/images/teeth/stom4_1.jpg" class="card-img-top r-img" alt="stom2">
+                    <picture>
+                        <source srcset="../../../assets/images/teeth/stom4_1.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/teeth/stom4_1.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/teeth/stom4_1.jpg" class="card-img-top r-img" alt="stom2">
+                    </picture>
                     <h1>Пародонтит</h1>
                     <h2> Пародонтит - это воспалительный процесс, в который вовлекаются все структуры пародонта. Он характеризуется разрушением зубодесневого соединения, а также прогрессирует деструкция («растворение, разрушение») альвеолярных отростков челюстных костей.</h2>
-                    <img src="../../../assets/images/teeth/stom5.jpg" class="card-img-top r-img" alt="stom2">
+                    <picture>
+                        <source srcset="../../../assets/images/teeth/stom5.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/teeth/stom5.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/teeth/stom5.jpg" class="card-img-top r-img" alt="stom2">
+                    </picture>
                     <h2>Фактически гингивит и пародонтит — это две взаимосвязанные формы заболевания, поскольку воспалительный процесс возникает сначала в тканях десны, и постепенно в него вовлекаются подлежащие структуры пародонта: связка зуба и альвеолярная кость.</h2>
                     <h2>Пародонтоз - это дистрофическое поражение пародонта. При данном заболевании зубы не шатаются, но есть значительная потеря десневой ткани.</h2>
                     <h1>Гингивостоматит</h1>
                     <h2>Гингивостоматит также может быть проявлением некоторых инфекционных заболеваний кошек, таких как панлейкопения, кошачий иммунодефицит, калицивирусная, коронавирусная, герпетическая и другие инфекции.</h2>
-                    <img src="../../../assets/images/teeth/stom6.jpg" class="card-img-top r-img" alt="stom2">
+                    <picture>
+                        <source srcset="../../../assets/images/teeth/stom6.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/teeth/stom6.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/teeth/stom6.jpg" class="card-img-top r-img" alt="stom2">
+                    </picture>
                     <h1>Одонтокластическая резорбция зубов</h1>
                     <h2>Одонтокластическая резорбция зубов - заболевание, при котором происходит разрушение зубов (корня и коронки – видимой белой части), которая приводит к полной потере пораженного зуба. Этиология данного заболевания неизвестна. Консервативного лечения не существует. Такие зубы подлежат экстракции (удалению).</h2>
-                    <img src="../../../assets/images/teeth/stom7.jpg" class="card-img-top r-img" alt="stom2">
+                    <picture>
+                        <source srcset="../../../assets/images/teeth/stom7.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/teeth/stom7.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/teeth/stom7.jpg" class="card-img-top r-img" alt="stom2">
+                    </picture>
                     <h1>Фрактура (перелом) зуба</h1>
                     <h2>Фрактура (перелом) зуба – это откол части или всей коронки зуба. Чаще всего причиной является травма. Такие зубы лечатся: проводится эндодонтическое лечение (пломбировка канала зуба) с последующим наложением пломбы, с/без укрепления металлической/металлокерамической коронкой.</h2>
-                    <img src="../../../assets/images/teeth/stom8.jpg" class="card-img-top r-img" alt="stom2">
+                    <picture>
+                        <source srcset="../../../assets/images/teeth/stom8.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/teeth/stom8.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/teeth/stom8.jpg" class="card-img-top r-img" alt="stom2">
+                    </picture>
                     <h1>Пародонтомы</h1>
                     <h2>Пародонтомы - опухолевые и опухолеподобные поражения пародонта относятся к числу заболеваний, которые трудно прогнозировать, так как они развиваются только у кошек, имеющих склонность к данному процессу, а именно индивидуальные особенности организма, в том числе и гормональные сдвиги. Породной предрасположенности к таким заболеваниям нет.</h2>
-                    <img src="../../../assets/images/teeth/stom9.jpg" class="card-img-top r-img" alt="stom2">
+                    <picture>
+                        <source srcset="../../../assets/images/teeth/stom9.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/teeth/stom9.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/teeth/stom9.jpg" class="card-img-top r-img" alt="stom2">
+                    </picture>
                     <h2>В любом случае, точный диагноз можно определить только при осмотре ротовой полости, различных цитологических и гистологических исследованиях.</h2>
                 </div>                                                       
                 </div>               
