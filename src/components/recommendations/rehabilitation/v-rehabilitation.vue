@@ -10,7 +10,7 @@
                     <picture>
                         <source srcset="../../../assets/images/recommendations/pos3.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/recommendations/pos3.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/recommendations/pos3.jpg" class="card-img-top r-img" alt="rec">
+                        <img src="../../../assets/images/recommendations/pos3.jpg" class="card-img-top r-img" alt="drip2">
                     </picture>
                     <h1>Режим</h1>
                     <h2>В восстановительный период соблюдение режима может иметь определенное лечебное значение.

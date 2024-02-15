@@ -84,7 +84,7 @@
                 type="tel"
                 class="form-control" 
                 id="inputAddress3" 
-                placeholder="Введите техт:"
+                placeholder="Введите текст:"
                 v-model.trim="form.text"           
                 :class="$v.form.text.$error ? 'is-invalid' : ''"                                      
                 />
@@ -130,7 +130,7 @@ export default {
         name: {required},
         email: { required, email },
         phone: {required, numeric},
-        text: {required, numeric},
+        text: {required,},
       }
     },
     methods:{

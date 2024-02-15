@@ -5,7 +5,11 @@
                <div class="v-modul-block-left">
                 <h1 class="v-modul_title">Дерматология</h1> 
                 <div class="v-modul-subtitle">Дерматология является одной из самых важных областей ветеринарии, так как большинство домашних животных подвержены целому спектру кожных заболеваний. Дерматология занимается вопросами здоровья кожи, когтей, шерсти, аллергических реакций, паразитарных поражений и т.п. Состояние кожи, шерсти и когтей является важным индикатором здоровья для животных, и потому пренебрегать визитами к дерматологу не стоит.
-                    <img src="../../../assets/images/derma/derma1.jpg" class="card-img-top r-img" alt="derma1">
+                    <picture>
+                        <source srcset="../../../assets/images/derma/derma1.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/derma/derma1.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/derma/derma1.jpg" class="card-img-top r-img" alt="derma1">
+                    </picture>
                     <h2>У нас вы можете получить помощь при аллергических заболеваниях кожи, а также связанных с нарушением обмена веществ, паразитарных заболеваниях кожи (демодекоз  у собак, саркоптоз, псороптоз, блошиная инвазия). Мы делаем микроскопию соскобов кожи, бакпосев с подтитровкой к антибиотикам, микологический посев.</h2>
                     <h1>Аллергия </h1>
                     <h2>Самыми типичными общими признаками аллергии являются:</h2>
@@ -35,7 +39,11 @@
                         <li>пищевая аллергия</li>
                         <li>атопический дерматит</li>
                     </ul>
-                    <img src="../../../assets/images/derma/derma2.jpg" class="card-img-top r-img" alt="stom2">
+                    <picture>
+                        <source srcset="../../../assets/images/derma/derma2.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/derma/derma2.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/derma/derma2.jpg" class="card-img-top r-img" alt="derma1">
+                    </picture>
                     <h6>Локализация симптомов при пищевой аллергии и атопическом дерматите</h6>
                     <h1>Аллергия на укусы блох</h1>
                     <h2>Симптомы</h2>
@@ -44,7 +52,11 @@
                         <li>Зуд спровоцирован гиперчувствительностью к слюне блох. При этом, вне зависимости от количества блох, зуд будет очень интенсивным. Блох на животном можно и не выявить, что заставит усомниться в точности диагноза. Однако при этом следует вспомнить, что взрослые блохи, которых можно обнаружить на животном, составляют лишь 5% популяции блох в квартире. Остальные 95 живут в коврах, мебели и других предметах обстановки.</li>
                     </ul>
                     <h2>Блошиная аллергия может проявляться не у всех животных в доме. В теплое время года встречается чаще, однако совершенно не исключена и зимой.</h2>
-                    <img src="../../../assets/images/derma/derma3.jpg" class="card-img-top r-img" alt="stom2">
+                    <picture>
+                        <source srcset="../../../assets/images/derma/derma3.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/derma/derma3.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/derma/derma3.jpg" class="card-img-top r-img" alt="derma1">
+                    </picture>
                     <h6>Блошиный дерматит</h6>
                     <h1>Пищевая аллергия </h1>
                     <h2>Симптомы:</h2>
