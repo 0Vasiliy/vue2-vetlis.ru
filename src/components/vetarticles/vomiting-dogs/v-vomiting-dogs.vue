@@ -6,7 +6,11 @@
                 <h1 class="v-modul_title">Рвота у собак</h1>
                 <div class="v-modul-subtitle">
                     Рвота у собак — достаточно распространенное явление, с которым сталкиваются многие владельцы. Она может быть вызвана различными причинами, от простого переедания до серьезных заболеваний. Если питомца часто рвет или рвота сопровождается другими симптомами, обязательно обратитесь к ветеринару для профессиональной консультации и лечения.
-                    <img src="@/assets/images/vetarticles/dog-22.png" class="card-img-top r-img" alt="kot-23">
+                <picture>
+                    <source srcset="@/assets/images/vetarticles/dog-22.webp" class="card-img-top r-img" type="image/webp">
+                    <source srcset="@/assets/images/vetarticles/dog-22.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                    <img src="@/assets/images/vetarticles/dog-22.jpg" class="card-img-top r-img" alt="kot-23"> 
+                </picture> 
                 <h1>Что такое тошнота и рвота</h1>
                 <h2>Тошнота и рвота у собак — процессы, связанные с избавлением организма от содержимого желудка через рот.</h2>
                 <h2>Тошнота — неприятное ощущение в животе, которое часто предшествует рвоте. Основные признаки: слюнотечение, частое глотание слюны, необычное поведение (беспокойство, нервозность).</h2>

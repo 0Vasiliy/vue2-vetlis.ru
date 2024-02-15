@@ -18,7 +18,11 @@
                         <li>УЗИ, иные диагностические процедуры,</li>
                         <li>вакцинация современными препаратами.</li>
                     </ul>
-                    <img src="../../../../assets/images/therapy/others.jpg" class="card-img-top r-img" alt="sob">
+                    <picture>
+                        <source srcset="../../../../assets/images/therapy/others.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../../assets/images/therapy/others.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../../assets/images/therapy/others.jpg" class="card-img-top r-img" alt="sob">
+                    </picture>
                     <h1>Основные болезни ветеринарной терапии</h1>
                     <h2>Чаще всего ветврачи сталкиваются со следующими заболеваниями:</h2>
                     <ul>

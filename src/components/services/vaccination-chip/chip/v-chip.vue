@@ -10,7 +10,11 @@
                         <li>о хозяине (имя, контактные данные);</li>
                         <li>о хозяине (имя, контактные данные);</li>
                     </ul>
-                    <img src="../../../../assets/images/chip/chip.jpg" class="card-img-top r-img" alt="vac">
+                    <picture>
+                        <source srcset="../../../../assets/images/chip/chip.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../../assets/images/chip/chip.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../../assets/images/chip/chip.jpg" class="card-img-top r-img" alt="vac">
+                    </picture>
                     <h1>Как выглядит микрочип</h1>
                     <h2>Размером он, как крохотное рисовое зернышко. Только оно сделано из биосовместимых материалов, чтобы не вступать в реакции с организмом животного, никак на него не влиять и даже не иметь такой возможности.</h2>
                     <h2>Внутри этой капсулы, конечно, находится устройство для передачи данных — интегральная микросхема.</h2>

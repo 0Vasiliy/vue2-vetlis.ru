@@ -5,7 +5,11 @@
                 <div class="v-modul-block-left">
                 <h1 class="v-modul_title">Готовимся к появлению домашнего питомца</h1>                
                 <div class="v-modul-subtitle">Маленькие четвероногие друзья — полноправные члены нашей семьи. Если семейный совет одобрил нового жителя, на примете есть хороший ветеринар, самое время заняться подготовкой дома к приходу котенка или щенка.                  
-                <img src="@/assets/images/vetarticles/pets.png" class="card-img-top r-img" alt="pets">
+                <picture>
+                    <source srcset="@/assets/images/vetarticles/pets.webp" class="card-img-top r-img" type="image/webp">
+                    <source srcset="@/assets/images/vetarticles/pets.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                    <img src="@/assets/images/vetarticles/pets.jpg" class="card-img-top r-img" alt="pets">
+                </picture>
                 <h1>Что понадобится</h1>
                 <h2>Животное должно прийти в дом, где уже все есть и подготовлено для его появления. Поэтому заранее приобретите все необходимые аксессуары. А именно:</h2>
                     <ul>
