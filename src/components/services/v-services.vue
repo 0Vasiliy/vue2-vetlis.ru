@@ -21,10 +21,6 @@
                         <router-link tag="a" to="/vLab" class="v-services_block"><span>Лабораторная<br>диагностика</span><img src="@/assets/icons/services/lab.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
-                        <!-- <a class="v-services_block">
-                            <span>Дерматология</span>
-                            <img src="@/assets/icons/services/derm.svg">                             
-                        </a> -->
                         <router-link tag="a" to="/vDerma" class="v-services_block"><span>Дерматология</span><img src="@/assets/icons/services/derm.svg"></router-link>
                     </div>
                     <div class="v-services_item col-3 col">
@@ -109,11 +105,6 @@ export default {
             margin-left: 5px;
         }
     }
-    // @media (min-width: 1600px){
-    //     .container {
-    //         max-width: 1434px;
-    //     }
-    // }
     @media (min-width: 1400px){
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
          max-width: 1400px;
@@ -130,17 +121,18 @@ export default {
             flex: 0 0 45%;
             max-width: 45%;
         }
-        .v-services{
-            margin-right: 10%;
-            margin-left: 12%;
-        }
+        // .v-services{
+        //     margin-right: 10%;
+        //     margin-left: 12%;
+        // }
     }
     @media (max-width: 767px){
         .col-3 {
             -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-            max-width: 100%;
+            flex: 0 0 80%;
+            max-width: 80%;
         }
+      
     }
 
 </style>
