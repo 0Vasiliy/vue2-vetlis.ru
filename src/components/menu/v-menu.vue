@@ -2,7 +2,7 @@
      <section class="v-menu">
         <div class="container">
             <div class="row">
-                <div class="col  menu_block">                   
+                <div class="col menu_block">                   
                     <ul class="col  menu_block_list">
                         <li class="menu_block_item"><a href="#carusel" class="menu_block_link ">О нас</a></li>
                         <li class="menu_block_item"><a href="#news_action" class="menu_block_link ">Новости</a></li>
@@ -84,7 +84,7 @@ export default {
     .v-menu{ 
     max-width:1400px;
     width: 75%;
-    margin-top: 50px; 
+    margin-top: 35px; 
     padding-left: 0px;
     border: 1px solid #723030;
     border-left: none;
@@ -282,6 +282,7 @@ export default {
     .v-hamburger-btn{
         display: none;
     }
+
     .v-hamburger{
     display: none;    
     }
@@ -294,6 +295,9 @@ export default {
     .v-menu{
         border: none;
         width: 77%;
+    }
+    .menu_block{
+        margin-top: 0;
     }
 }
 @media (max-width: 767px){
@@ -308,7 +312,6 @@ export default {
         margin-right: auto;
     }
     .v-menu{
-        margin-top: 15px;
         padding-left: 30px;
     }
 }

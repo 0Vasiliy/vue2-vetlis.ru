@@ -1,8 +1,8 @@
 <template>
-    <section class="v-header">
+    <section class="v-header col-xl-9 col-md-9 col-10">
        <div class="row">
         <div class="container">
-            <div class="col-md-11 col-sm-12 v-header_block">
+            <div class="v-header_block">
                 <div class="col v-header_block_logo">
                     <v-header-logo class="h-logo"/>
                     <v-header-lis class="h-lis"/>
@@ -10,7 +10,7 @@
                 </div>
                 <div class="col v-header_adress">
                     <v-header-adress class="h-adress"/>
-                    <v-header-adress-num class="h-adress"/>
+                    <v-header-adress-num class="h-adress h-adress2"/>
                 </div>
                 <div class="col v-header_block_phone">
                     <div class="v-header_block_phone_link">
@@ -68,12 +68,11 @@ export default {
         max-width: 1400px;
         min-height: 200px; 
         border-radius: 20px;
-        width: 80%;
     &_block{   
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin-top: 70px;
-        max-width: 1920px;
         &_title{
             margin-left: 50px;
         }
@@ -95,9 +94,11 @@ export default {
     max-height: 80px;
     margin-right: 0px; 
 }
-
 .h-logo{
     margin-bottom: 20px;
+}
+.h-adress2{
+    margin-top: 20px;
 }
 
 @media (max-width: 1630px){
@@ -109,6 +110,7 @@ export default {
    flex-direction: column;
    flex-wrap: wrap;
    align-content: center;
+   justify-content: space-between;
    align-items: center;
    height: auto;
    margin-bottom: 70px;

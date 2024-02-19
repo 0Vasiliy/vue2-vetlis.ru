@@ -55,6 +55,7 @@ export default {
         flex: 0 0 30%;
         max-width: 30%;
         border: 1px solid gray;
+        background: #ECE9E6;
         border-radius: 20px;
         padding: 30px;
         img{
@@ -68,14 +69,20 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 50px;
+    align-content: center;
+    margin-left: 3%;
    }
    .side-comp{
     margin-top: 20px;
    }
+   @media (max-width: 1400px){
+    .v-side-right{
+        margin-left: 1.5%;
+    }
+   }
    @media (max-width: 1200px){
     .v-side-right{
-        margin-left: auto;
+        margin-left: -0.8%;
     }
    }
 </style>
