@@ -29,6 +29,7 @@ import vSurgery  from '@/components/services/surgery/v-surgery.vue'
 import vUrine  from '@/components/recommendations/urine/v-urine.vue'
 import vRehabilitation  from '@/components/recommendations/rehabilitation/v-rehabilitation.vue'
 import vDrip  from '@/components/recommendations/drip/v-drip.vue'
+import vOrnitolog  from '@/components/services/ornitolog/v-ornitolog.vue'
 
     export default new VueRouter({  
     mode: 'history',
@@ -156,6 +157,10 @@ import vDrip  from '@/components/recommendations/drip/v-drip.vue'
         {
             path: '/vDrip',
             component: vDrip   
+        },
+        {
+            path: '/vOrnitolog',
+            component: vOrnitolog   
         },
     ],
     scrollBehavior() {

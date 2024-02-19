@@ -49,6 +49,7 @@ img{
 @media (max-width: 620px){
     .v-carousel-item img{
         width: 400px;
+        height: 100%;
     }
 }
 @media (max-width: 520px){
@@ -61,4 +62,9 @@ img{
         width: 250px;
     }
 }
+@media (max-width: 321px){
+        .v-carousel-item img{
+        width: 220px;
+    }
+    }
 </style>

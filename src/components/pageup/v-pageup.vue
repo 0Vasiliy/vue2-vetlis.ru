@@ -50,5 +50,10 @@ export default {
         right: 0;
     }
 }
+@media (max-width: 680px){
+    .pageup {
+        display: none !important;
+    }
+}
 
 </style>

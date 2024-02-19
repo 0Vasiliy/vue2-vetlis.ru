@@ -54,6 +54,7 @@ export default {
   }
   .v-carousel-title{
     max-width: 100%;
+    margin-top: -70px;
     h1{
         margin-top: 50px;
         margin-bottom: 50px;
@@ -67,8 +68,8 @@ export default {
   }
   @media (max-width: 1100px){
     .v-carousel-title{
-        align-items: center;
-        margin-top: 50px;
+        margin-top: -40px;
+        align-items: center;      
         max-width: 600px;
     }
 }
@@ -78,15 +79,16 @@ export default {
         max-width: 500px;
         h1{
           font-size: 18px;
+          line-height: 35px;
         }
     }
     }
     
     @media (max-width: 620px){
       .v-carousel-title{
-            max-width: 400px;
+        margin-top: -70px;
+          max-width: 400px;
             h1{
-          margin-top: 30px;
           margin-bottom: 30px;
           font-size: 16px;
         }
@@ -94,12 +96,16 @@ export default {
     }
     @media (max-width: 520px){
       .v-carousel-title{
-            max-width: 300px;
+          margin-top: -150px;
+          max-width: 300px;
+          h1{
+            line-height: 25px;
+          }
         }
-  
     }
     @media (max-width: 420px){
       .v-carousel-title{
+            margin-top: -170px;
             max-width: 250px;
         }
     }

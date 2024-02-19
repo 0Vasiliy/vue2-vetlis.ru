@@ -64,11 +64,15 @@ export default {
 <style scoped lang="scss">
 @import '@/assets/css/modul_btn.scss';
     .v-header{
-        max-width: 1540px; 
+        background: #ECE9E6;
+        max-width: 1400px;
+        min-height: 200px; 
+        border-radius: 20px;
         width: 80%;
     &_block{   
         display: flex;
-        margin-top: 40px;
+        align-items: center;
+        margin-top: 70px;
         max-width: 1920px;
         &_title{
             margin-left: 50px;
@@ -91,6 +95,7 @@ export default {
     max-height: 80px;
     margin-right: 0px; 
 }
+
 .h-logo{
     margin-bottom: 20px;
 }
@@ -106,6 +111,7 @@ export default {
    align-content: center;
    align-items: center;
    height: auto;
+   margin-bottom: 70px;
 }
 .v-header_block_logo{
     display: flex;
@@ -119,14 +125,14 @@ export default {
 .v-header_block_phone{
     margin-top: 20px;
 }
-.v-header_adress{
+.h-adress{
     margin-top: 20px;
 }
 .h-lis{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .h-vet{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 }
 @media(max-width:500px){
@@ -134,6 +140,8 @@ export default {
     display: flex;
     flex-direction: column;
     max-height: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 .v-button{
     margin-top: 20px;

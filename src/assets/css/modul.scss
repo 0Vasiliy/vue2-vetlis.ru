@@ -122,9 +122,15 @@
 
 @media (max-width: 860px){
 .col-3{
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 35%;
+    max-width: 35%;
 }
+}
+@media (max-width: 767px){
+    .col-3{
+        flex: 0 0 32%;
+        max-width: 32%;
+    }
 }
 @media (max-width: 600px){
     .v-modul_title{
@@ -141,13 +147,21 @@
         }
     }
 }
+@media (max-width: 550px){
+    .col-3{
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+    }
+ 
 @media (max-width:360px){
     .v-modul_item{
         padding: 7px 25px;
     }
-    .v-modul-block{
-        span{
-            font-size: 14px;
+    }
+@media (max-width: 310px){
+    .col-3{
+        flex: 0 0 70%;
+         max-width: 70%;
         }
     }
-}

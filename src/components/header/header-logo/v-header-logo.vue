@@ -13,6 +13,7 @@ export default {
     img{
         width: 100px;
         height: 100px;
+        border-radius: 50%;
     }
   }  
 .v-header_block_logo_img{

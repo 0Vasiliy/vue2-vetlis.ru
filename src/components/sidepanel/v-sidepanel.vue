@@ -45,28 +45,13 @@ export default {
         right: 75%;
     }
 }
-@media (max-width: 1075px){
-    .v-sidepanel{
-        left: 0;
-    }
-}
-@media (max-width: 991px){
 
-.v-sidepanel img{
-    width: 30px;
-    height: auto;
+@media (max-width: 680px){
+
+.v-sidepanel{
+   display: none;
 }
 }
-@media (max-width: 620px){
-    .v-sidepanel img{
-        width: 25px;
-    }
-}
-@media (max-width: 576px){
-    .v-sidepanel img{
-        width: 20px;
-    }
-    
- }
+
 
 </style>

@@ -41,6 +41,9 @@
                     <div class="v-services_item col-3 col">
                         <router-link  tag="a" to="/vEye" class="v-services_block"><span>Офтальмология</span><img src="@/assets/icons/services/oftalmogia.svg"></router-link>
                     </div>
+                    <div class="v-services_item col-3 col">
+                        <router-link  tag="a" to="/vOrnitolog" class="v-services_block"><span>Орнитолог</span><img src="@/assets/icons/services/ornitolog.svg"></router-link>
+                    </div>
             </div>
             <v-pageup/>
         </div>

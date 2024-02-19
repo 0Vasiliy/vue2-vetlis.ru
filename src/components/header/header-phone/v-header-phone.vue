@@ -29,6 +29,6 @@ export default {
     }
     }
     .v-header_block_phone_link_new{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 </style>

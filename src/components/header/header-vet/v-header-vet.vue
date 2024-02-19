@@ -9,9 +9,9 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-     h4{
+     .v-header_block_title{
         margin-left: 10px;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 300;
         text-align: center;
         line-height: 21px;

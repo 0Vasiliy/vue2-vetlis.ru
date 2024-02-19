@@ -151,7 +151,7 @@ export default {
   
     .v-form-validate{
         position: fixed;
-        top:30px;
+        top:70px;
         right: 0;
         left: 0;
         bottom: 0;
@@ -170,7 +170,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 4px solid #2f4f4f;
+        border: 10px solid #2f4f4f;
         background-color: white;
      
     }
