@@ -170,7 +170,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 10px solid #2f4f4f;
+        border: 4px solid #2f4f4f;
         background-color: white;
      
     }
