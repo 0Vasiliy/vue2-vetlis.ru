@@ -100,7 +100,12 @@ export default {
 .h-adress2{
     margin-top: 20px;
 }
-
+@media (min-width: 1630px){
+    .v-header_block{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
 @media (max-width: 1630px){
 .v-header{
     height: auto;
