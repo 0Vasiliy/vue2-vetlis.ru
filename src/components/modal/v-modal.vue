@@ -1,5 +1,24 @@
+
 <template>
-    <form class="v-modal v-form-validate row g-3" @submit.prevent="handlerSubmit">
+    <div>
+        
+    </div>
+</template>
+<script>
+export default {
+    
+}
+</script>
+<style lang="">
+    
+</style>
+
+
+
+
+
+<template>
+    <form class="v-modal v-form-validate row g-3" @submit.prevent="handlerSubmit" method="POST" action="../../../main.php">
         <div class="v-form-block">
             <div class="v-modal-close" @click="closeModal" aria-label="close">
                 <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +32,8 @@
                 <input 
                 type="input" 
                 class="form-control" 
-                id="surname" 
+                id="surname"
+                name="user_surname" 
                 placeholder="Фамилия:"
                 v-model.trim="form.surname"
                 :class="$v.form.surname.$error ? 'is-invalid' : ''"
@@ -32,6 +52,7 @@
                 type="text"
                 class="form-control"
                 id="inputAddress2"
+                name="user_name" 
                 placeholder="Имя:"
                 v-model.trim="form.name"
                 :class="$v.form.name.$error ? 'is-invalid' : ''"
@@ -42,11 +63,12 @@
             </div> 
             <!-- email -->
             <div class="v-form-input  col-md-8">
-                <label for="inputEmail4" class="form-label">Имя:</label>
+                <label for="inputEmail4" class="form-label">email:</label>
                 <input 
                 type="email" 
                 class="form-control" 
                 id="inputEmail4" 
+                name="user_email" 
                 placeholder="email@mail.ru"
                 v-model.trim="form.email"
                 :class="$v.form.email.$error ? 'is-invalid' : ''"
@@ -65,6 +87,7 @@
                 type="tel"
                 class="form-control" 
                 id="inputAddress3" 
+                name="user_phone" 
                 placeholder="+7(000)-000-00-00"
                 v-model.trim="form.phone"
                 v-mask="'##################'"
@@ -84,6 +107,7 @@
                 type="tel"
                 class="form-control" 
                 id="inputAddress3" 
+                name="user_text" 
                 placeholder="Введите текст:"
                 v-model.trim="form.text"           
                 :class="$v.form.text.$error ? 'is-invalid' : ''"                                      
@@ -101,11 +125,12 @@
         <v-overlay/>   
     </form>   
 </template>
-
+<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
 <script>
 import { validationMixin } from 'vuelidate'
 import { required, minLength, email, numeric} from 'vuelidate/lib/validators'
 import vOverlay from '../overlay/v-overlay.vue'
+// import axios from 'axios';
 
 export default {
     name: 'vModal',
@@ -142,9 +167,24 @@ export default {
     },
     closeModal(){
         this.$emit('close')
+    },
+    mounted(){
+        
+        let forms = document.querySelector(".v-modal");
+        console.log(axios)
+        forms.addEventListener('submit', function(e){
+            e.preventDefault();
+            // let elem = e.target
+
+            // let formData ={
+            //     surname: elem.querySelector('[surname="user_surname"]').value
+
+            // }
+        })
     }
     }
 }
+
 </script>
 
 <style scoped>
