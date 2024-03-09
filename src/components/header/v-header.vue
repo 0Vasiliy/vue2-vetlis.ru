@@ -1,5 +1,5 @@
 <template>
-    <section class="v-header col-xl-9 col-md-9 col-10">
+    <section class="v-header col-xl-9 col-md-9 col-10 ">
        <div class="row">
         <div class="container">
             <div class="v-header_block">
@@ -64,6 +64,7 @@ export default {
 <style scoped lang="scss">
 @import '@/assets/css/modul_btn.scss';
     .v-header{
+        margin: 0 auto;
         background: #ECE9E6;
         max-width: 1400px;
         min-height: 200px; 
@@ -82,7 +83,6 @@ export default {
 .v-header_block_logo{
     display: flex;
     align-items: center;
-    margin-left: 0px;
     max-width: 800px;
     height: 80px;
     color: #757575; 
@@ -92,7 +92,6 @@ export default {
     align-items: center;
     max-width: 600px;
     max-height: 80px;
-    margin-right: 0px; 
 }
 .h-logo{
     margin-bottom: 20px;
@@ -100,37 +99,67 @@ export default {
 .h-adress2{
     margin-top: 20px;
 }
-@media (min-width: 1630px){
+
+@media (min-width: 1230px){
     .v-header_block{
         margin-left: 2%;
         margin-right: 2%;
     }
 }
-@media (max-width: 1630px){
+@media (max-width: 1625px){
+    .v-header_block{
+        margin-top: 50px;
+    }
+.v-header_block_logo{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+   height: auto;
+   margin-bottom: 50px;
+}
+.v-header_block_phone{
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+   height: auto;
+}
+.v-button{
+    margin-top: 20px;
+}
+}
+
+@media (max-width: 1100px){
 .v-header{
     height: auto;
-}
+ }
 .v-header_block {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
    align-content: center;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    height: auto;
-   margin-bottom: 70px;
+   margin-bottom: 50px;
 }
 .v-header_block_logo{
-    display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;  
-   align-content: center;
-   align-items: center;
-   margin-left: auto;
-   height: auto; 
+   margin-bottom: 0;
 }
 .v-header_block_phone{
-    margin-top: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.v-button{
+    margin-left: auto;
+    margin-right: auto; 
 }
 .h-adress{
     margin-top: 20px;
@@ -154,4 +183,5 @@ export default {
     margin-top: 20px;
 }
 }
+
 </style>

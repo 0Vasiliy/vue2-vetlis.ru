@@ -31,4 +31,5 @@ export default {
     .v-header_block_phone_link_new{
     margin-top: 20px;
 }
+
 </style>

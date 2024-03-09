@@ -1,7 +1,7 @@
 <template>
     <section class="v-recommendations col-xl-9 col-md-9 col-10" id="recomendation">
        <div class="container">
-        <h1 class="v-recommendations-title">Рекомендации ветеринара</h1>
+        <h1 class="v-recommendations-title">Рекомендации <span>ветеринара</span></h1>
         <div class="v-recommendations-block card">       
             <div class="card v-recommendations-link col">           
                 <img src="../../assets/images/recommendations/rec1.jpg" class="card-img-top" alt="kot-23">
@@ -133,4 +133,10 @@ export default {
             
         }
     }
+    @media (max-width: 550px){
+        span{
+        margin-top: 20px;
+       }      
+    }
+
 </style>
