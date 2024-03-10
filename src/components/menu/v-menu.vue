@@ -200,7 +200,7 @@ export default {
         position: fixed;
         top: 0;
         left: 0;
-        height: 100vh;   
+        // height: 100vh;
         z-index: 999;
         visibility: visible;
         transition: all .6s;
@@ -225,11 +225,11 @@ export default {
         position: relative;
         width: 345px;
         background-color: #e4e0e0e7;
-        height: 100vh;
+        // height: 100vh;
         padding-top: 90px;
         padding-left: 40px;
         padding-right: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
         transition: all .6s;
         z-index: 10;
     }
