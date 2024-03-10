@@ -3,7 +3,7 @@
         <div class="container">
            <div class="v-modul-block">
                <div class="v-modul-block-left">
-                <h1 class="v-modul_title">Вакцинация и чипирование</h1> 
+                <h1 class="v-modul_title">Вакцинация</h1> 
                 <div class="v-modul-subtitle">В ветеринарной клинике ЛИС вы можете сделать вакцинацию (прививку) своему домашнему питомцу. Вакцинация животных, защищает их от целого ряда распространенных инфекций. Мы используем только самые современные вакцины, поэтому в эффективности и, что не менее важно, безопасности процедуры можете не сомневаться.                                   
                     <picture>
                         <source srcset="../../../../assets/images/vaccination/vac.webp" class="card-img-top r-img" type="image/webp">
