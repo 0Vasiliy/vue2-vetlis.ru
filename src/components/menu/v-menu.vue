@@ -200,33 +200,35 @@ export default {
         position: fixed;
         top: 0;
         left: 0;
-        // height: 100vh;
+        height: 100vh;
         z-index: 999;
         visibility: visible;
         transition: all .6s;
         border: 5px solid #723030;
     }
     .v-hamburger-text{
-        font-size: 48px;
+        font-size: 36px;
         color: teal;
     }
     .v-services_item{   
         box-sizing: content-box; 
         display: flex;
-        margin-top: 30px;  
-        height: 80px;
+        margin-top: 22px;  
+        height: 54px;
         border-radius: 20px;  
         border: 1px solid #723030;
+        background: #bdc3c7;
+        background: -webkit-linear-gradient(to right, #abbaab, #bdc3c7);  
+        background: linear-gradient(to right, #abbaab, #bdc3c7); 
         cursor: pointer;
-        align-items: center;   
-            
+        align-items: center;              
     }
     .v-hamburger_menu_block{
         position: relative;
         width: 345px;
         background-color: #e4e0e0e7;
-        // height: 100vh;
-        padding-top: 90px;
+        height: 100%;
+        padding-top: 20px;
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: 40px;
@@ -260,7 +262,7 @@ export default {
    }
     .v-hamburger_menu_social{
         position: absolute;
-        top: 20px;
+        bottom: 5px;
         left: 50%;
         transform: translateX(-50%);
         width: 90px;
