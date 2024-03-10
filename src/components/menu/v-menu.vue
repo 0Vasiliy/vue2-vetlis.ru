@@ -198,7 +198,7 @@ export default {
     //hamburger_menu
     .v-hamburger-menu {
         position: fixed;
-        top: 100px;
+        top: 50px;
         left: 0;
         height: 100vh;   
         z-index: 999;
@@ -214,7 +214,7 @@ export default {
         box-sizing: content-box; 
         display: flex;
         margin-top: 30px;  
-        height: 85px;
+        height: 80px;
         border-radius: 20px;  
         border: 1px solid #723030;
         cursor: pointer;
@@ -226,9 +226,10 @@ export default {
         width: 345px;
         background-color: #e4e0e0e7;
         height: 100vh;
-        padding-top: 140px;
+        padding-top: 90px;
         padding-left: 40px;
         padding-right: 40px;
+        padding-bottom: 20px;
         transition: all .6s;
         z-index: 10;
     }
@@ -251,7 +252,7 @@ export default {
     .col-3 {
     display: flex;
     flex: 0 0 auto;
-    width: 80%;
+    width: 90%;
     }
    .v-hamburger_menu_list{
     display: flex;
