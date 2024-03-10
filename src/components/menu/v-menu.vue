@@ -198,7 +198,7 @@ export default {
     //hamburger_menu
     .v-hamburger-menu {
         position: fixed;
-        top: 50px;
+        top: 0;
         left: 0;
         height: 100vh;   
         z-index: 999;
