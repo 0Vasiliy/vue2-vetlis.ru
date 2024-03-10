@@ -9,6 +9,6 @@ export default {
     name: 'vSocial'
 }
 </script>
-<style lang="">
+<style>
     
 </style>

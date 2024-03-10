@@ -124,10 +124,6 @@ export default {
             flex: 0 0 45%;
             max-width: 45%;
         }
-        // .v-services{
-        //     margin-right: 10%;
-        //     margin-left: 12%;
-        // }
     }
     @media (max-width: 767px){
         .col-3 {

@@ -1,7 +1,7 @@
 <template>
      <aside class="v-sidepanel">
         <a href="https://vk.com/vetlis" class="v-sidepanel_link"> <img src="@/assets/icons/social/vkontakte.svg" alt="vkontakte"></a>
-        <a href="#" class="v-sidepanel_link"> <img src="@/assets/icons/social/telegram.svg" alt="telegram"></a>
+        <a href="https://t.me/vetlissp" class="v-sidepanel_link"> <img src="@/assets/icons/social/telegram.svg" alt="telegram"></a>
         <div class="v-sidepanel_divider"></div>
         <div class="v-sidepanel_text"><span>Социальные сети</span></div>
      </aside>
@@ -52,6 +52,4 @@ export default {
    display: none;
 }
 }
-
-
 </style>

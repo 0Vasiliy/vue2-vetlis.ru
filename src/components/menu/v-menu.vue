@@ -10,12 +10,13 @@
                         <li class="menu_block_item"><a href="#vetart" class="menu_block_link ">Полезные статьи</a></li>
                         <li class="menu_block_item"><a href="#recomendation" class="menu_block_link ">Рекомедации ветрача</a></li>
                         <li class="menu_block_item"><a href="#footer" class="menu_block_link ">Контакты</a></li>
-                    </ul>                                  
+                        
+                    </ul>                                 
                     <!-- hamburger -->                
-                    <div class="v-hamburger">
+                    <div class="v-hamburger" @click.prevent="show = true">
                         <h5>Меню</h5>
                             <img src="../../assets/images/arrows/right-arrows.png">
-                        <div class="v-hamburger-btn" @click.prevent="show = true">
+                        <div class="v-hamburger-btn">
                             <span></span>
                             <span class="long"></span>
                             <span></span>
@@ -30,27 +31,37 @@
                                     <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
                                 </svg>
                             </div>
-                            <nav>
-                                <ul class="v-hamburger_menu_list" id="menu_list_id">
-                                    <li class="v-hamburger_menu_item" @click="close"><a href="#carusel"
-                                        class="v-hamburger_menu_link"
-                                        @mouseover="hover = true"
-                                        @mouseleave="hover = false"
-                                        :class="{ link : hover }"
-                                        >О нас</a></li>
-                                    <li class="v-hamburger_menu_item" @click="close"><a href="#news_action" class="v-hamburger_menu_link">Новости</a></li>
-                                    <li class="v-hamburger_menu_item" @click="close"><a href="#servis" class="v-hamburger_menu_link ">Услуги</a></li>
-                                    <li class="v-hamburger_menu_item" @click="close"><a href="#vetart" class="v-hamburger_menu_link">Полезные статьи</a></li>
-                                    <li class="v-hamburger_menu_item" @click="close"><a href="#recomendation" class="v-hamburger_menu_link link_vet">Рекомендации<br>ветеринара</a></li>
-                                    <li class="v-hamburger_menu_item" @click="close"><a href="#footer" class="v-hamburger_menu_link">Контакты</a></li>
-                                </ul>
-                            </nav>                
-                            <div class="v-hamburger_menu_social">   
-                                <a href="https://vk.com/id1980195" class="sidepanel_link"> <img src="../../assets/icons/social/vkontakte.svg" alt="vkontakte"></a>
-                                <a href="https://t.me/vetlissp" class="sidepanel_link"> <img src="../../assets/icons/social/telegram.svg" alt="telegram"></a>
-                            </div>
+                            <div class="v-hamburger_menu_list">
+                                <div class="v-hamburger_menu_social">   
+                                     <a href="https://vk.com/id1980195" class="sidepanel_link"> <img src="../../assets/icons/social/vkontakte.svg" alt="vkontakte"></a>
+                                    <a href="https://t.me/vetlissp" class="sidepanel_link"> <img src="../../assets/icons/social/telegram.svg" alt="telegram"></a>
+                                 </div>
+                                <h1 class="v-hamburger-text">Меню</h1>
+                                <div class="v-services_item col-3 col">                  
+                                    <a class="v-services_block" href="#carusel" @click="close"
+                                    @mouseover="hover = true"
+                                    @mouseleave="hover = false"
+                                    :class="{ link : hover }"
+                                    ><span>О нас</span></a>          
+                                </div>
+                                <div class="v-services_item col-3 col">                  
+                                    <a class="v-services_block" href="#news_action" @click="close"><span>Новости</span></a>          
+                                </div> 
+                                <div class="v-services_item col-3 col">                  
+                                    <a class="v-services_block" href="#servis" @click="close"><span>Услуги</span></a>          
+                                </div>
+                                <div class="v-services_item col-3 col">                  
+                                    <a class="v-services_block" href="#vetart" @click="close"><span>Полезные статьи</span></a>          
+                                </div>
+                                <div class="v-services_item col-3 col">                  
+                                    <a class="v-services_block" href="#recomendation" @click="close"><span>Рекомендации<br>ветеринара</span></a>
+                                </div>     
+                                <div class="v-services_item col-3 col">                  
+                                    <a class="v-services_block" href="#footer" @click="close"><span>Контакты</span></a>          
+                                </div>     
+                             </div>                            
                         </div>
-                        <v-overlay/>
+                        <v-overlay/> 
                     </div>  
                 </div>                           
             </div>
@@ -77,7 +88,6 @@ export default {
             }
         },
 }
-
 </script>
 <style scoped lang="scss">
 //menu
@@ -196,72 +206,60 @@ export default {
         transition: all .6s;
         border: 5px solid #723030;
     }
+    .v-hamburger-text{
+        font-size: 48px;
+        color: teal;
+    }
+    .v-services_item{   
+        box-sizing: content-box; 
+        display: flex;
+        margin-top: 30px;  
+        height: 85px;
+        border-radius: 20px;  
+        border: 1px solid #723030;
+        cursor: pointer;
+        align-items: center;   
+            
+    }
     .v-hamburger_menu_block{
         position: relative;
         width: 345px;
         background-color: #e4e0e0e7;
-        height: 100%;
+        height: 100vh;
         padding-top: 140px;
         padding-left: 40px;
         padding-right: 40px;
         transition: all .6s;
         z-index: 10;
     }
-    .v-hamburger_menu_list{
-        list-style-type: none;
-         padding-left: 35px;        
-        ul{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: flex-start;
-        }
-    }
-    .v-hamburger_menu_item{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
-      align-content: flex-start;
-    }
-    .v-hamburger_menu_link{
-        position: relative;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 36px;
-        margin-bottom: 15px;
-        text-decoration: none; 
-        color: #757575; 
-    }
-    .v-hamburger_menu_link:hover {
-        transition: all .4s linear;
+    .v-services_block{
         text-decoration: none;
-        color:#103783;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        span{
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+            line-height: 20px;
+            font-family: 'Museo Sans Cyrl';
+            font-weight: 300;
+            color: #757575;
         }
-
-    .v-hamburger_menu_link::before {
-        content: '';
-        position: absolute;
-        left: -35px;
-        top: 10px;
-        width: 15px;
-        height: 15px;
-        border-radius: 100%;
-        border: 1px solid #000000;
-        transition: all 0.6s;
-        }
-    .v-hamburger_menu_link:hover::before{
-        background-color: #6d3b3b;       
     }
-    .link{
-        color: #6d3b3b; 
+    .col-3 {
+    display: flex;
+    flex: 0 0 auto;
+    width: 80%;
     }
-    .v-hamburger_menu_link a{
-        background-color: #723030;
-    }
+   .v-hamburger_menu_list{
+    display: flex;
+    flex-direction: column;
+   }
     .v-hamburger_menu_social{
         position: absolute;
-        bottom: 130px;
+        top: 20px;
         left: 50%;
         transform: translateX(-50%);
         width: 90px;
@@ -319,12 +317,6 @@ export default {
     .v-hamburger_menu_block{
         width: 280px;
     }
-    .v-hamburger_menu_link{
-        font-size: 18px;
-        line-height: 30px;  
-    }
-    .v-hamburger_menu_link::before{
-        top: 8px;
-    }
 }
+
 </style>
