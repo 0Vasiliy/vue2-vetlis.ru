@@ -63,7 +63,6 @@ export default {
         }
     }
    .v-side-right{
-    margin-top: 50px;
     position: fixed;
     display: flex;
     flex-direction: column;
