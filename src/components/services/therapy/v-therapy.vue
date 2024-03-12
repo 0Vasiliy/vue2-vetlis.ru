@@ -18,6 +18,11 @@
                     <router-link  tag="a" to="/vUrolithiasis" class="v-modul_block v-modul_item col-3 col"><span>Мочекаменная болезнь</span></router-link>
                     <router-link  tag="a" to="/vParanal" class="v-modul_block v-modul_item col-3 col"><span>Воспаление параанальных желез</span></router-link>                        
                 </div>
+                <picture>
+                        <source srcset="../../../assets/images/therapy/kot.webp" class="card-img-top r-img" type="image/webp">
+                        <source srcset="../../../assets/images/therapy/kot.jpg" class="card-img-top r-img" type="image/jpeg"> 
+                        <img src="../../../assets/images/therapy/kot.jpg" class="card-img-top r-img" alt="kot">
+                    </picture>
                 </div>               
                 <v-contacts v-if="small"/>             
                 <v-side v-else/>
