@@ -9,7 +9,7 @@
                 <picture>
                     <source srcset="../../../assets/images/ornitolog/ornitolog2.webp" class="card-img-top r-img" type="image/webp">
                     <source srcset="../../../assets/images/ornitolog/ornitolog2.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                    <img src="../../../assets/images/ornitolog/ornitolog2.jpg" class="card-img-top r-img" alt="rodents">
+                    <img src="../../../assets/images/ornitolog/ornitolog2.jpg" class="card-img-top r-img" alt="Орнитолог">
                 </picture>
                 <h1>Основные болезни</h1>
                 <h2>В число самых распространенных птичьих недугов входят:</h2>
@@ -46,7 +46,7 @@
                 <picture>
                     <source srcset="../../../assets/images/ornitolog/ornitolog.webp" class="card-img-top r-img" type="image/webp">
                     <source srcset="../../../assets/images/ornitolog/ornitolog.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                    <img src="../../../assets/images/ornitolog/ornitolog.jpg" class="card-img-top r-img" alt="rodents">
+                    <img src="../../../assets/images/ornitolog/ornitolog.jpg" class="card-img-top r-img" alt="Болезни птиц">
                 </picture>
                 <h1>Диагностика</h1>
                 <h2>Существует огромное множество различных птичьих болезней. При этом симптоматика большинства из них сходна. Поэтому поставить диагноз, а, следовательно, подобрать правильное лечение без лабораторных анализов, специальных знаний и достаточного опыта невозможно.</h2>
@@ -55,7 +55,7 @@
                 <picture>
                     <source srcset="../../../assets/images/ornitolog/ornitolog3.webp" class="card-img-top r-img" type="image/webp">
                     <source srcset="../../../assets/images/ornitolog/ornitolog3.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                    <img src="../../../assets/images/ornitolog/ornitolog3.jpg" class="card-img-top r-img" alt="rodents">
+                    <img src="../../../assets/images/ornitolog/ornitolog3.jpg" class="card-img-top r-img" alt="Лечение птиц">
                 </picture>
                 <h1>Лечение</h1>
                 <h2>В большинстве случаев птиц лечат консервативно. Но в случае необходимости ветеринар прибегнет к операционному вмешательству.</h2>

@@ -8,7 +8,7 @@
                     <picture>
                         <source srcset="../../../assets/images/derma/derma1.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/derma/derma1.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/derma/derma1.jpg" class="card-img-top r-img" alt="derma1">
+                        <img src="../../../assets/images/derma/derma1.jpg" class="card-img-top r-img" alt="Аллергия у животного">
                     </picture>
                     <h2>У нас вы можете получить помощь при аллергических заболеваниях кожи, а также связанных с нарушением обмена веществ, паразитарных заболеваниях кожи (демодекоз  у собак, саркоптоз, псороптоз, блошиная инвазия). Мы делаем микроскопию соскобов кожи, бакпосев с подтитровкой к антибиотикам, микологический посев.</h2>
                     <h1>Аллергия </h1>
@@ -42,7 +42,7 @@
                     <picture>
                         <source srcset="../../../assets/images/derma/derma2.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/derma/derma2.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/derma/derma2.jpg" class="card-img-top r-img" alt="derma1">
+                        <img src="../../../assets/images/derma/derma2.jpg" class="card-img-top r-img" alt="Аллергия">
                     </picture>
                     <h6>Локализация симптомов при пищевой аллергии и атопическом дерматите</h6>
                     <h1>Аллергия на укусы блох</h1>
@@ -55,7 +55,7 @@
                     <picture>
                         <source srcset="../../../assets/images/derma/derma3.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/derma/derma3.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/derma/derma3.jpg" class="card-img-top r-img" alt="derma1">
+                        <img src="../../../assets/images/derma/derma3.jpg" class="card-img-top r-img" alt="Блошиная аллергия">
                     </picture>
                     <h6>Блошиный дерматит</h6>
                     <h1>Пищевая аллергия </h1>
@@ -66,7 +66,7 @@
                         <li>пищевая непереносимость – аномальный физиологический ответ на компоненты пищи, развитие фармакологических, метаболических реакций. Не связано с аллергией.</li>
                         <li>токсические реакции – дозозависимая реакция на токсины</li>
                     </ul>
-                    <h1>Атопический дермати</h1>
+                    <h1>Атопический дерматит</h1>
                     <h2>Атопический дерматит – это неадекватный ответ иммунной системы (немедленная аллергическая реакция), сформированный вследствие унаследованной генетической склонности и вызванный определенными факторами окружающей среды (домашняя пыль, плесень, чешуйки кожи человека, другие животные, пыльца растений).</h2>
                     <h2>Профилактика дерматологических заболеваний:</h2>
                     <ul>

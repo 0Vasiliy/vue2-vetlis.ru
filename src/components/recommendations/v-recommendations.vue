@@ -4,7 +4,7 @@
         <h1 class="v-recommendations-title">Рекомендации <span>ветеринара</span></h1>
         <div class="v-recommendations-block card">       
             <div class="card v-recommendations-link col">           
-                <img src="../../assets/images/recommendations/rec1.jpg" class="card-img-top" alt="kot-23">
+                <img src="../../assets/images/recommendations/rec1.jpg" class="card-img-top" alt="Собрать мочу у кота">
                 <div class="card-body">
                     <h5 class="card-title">Как правильно собрать мочу</h5>
                     <p class="card-text">Очень важным, надежным, относительно недорогим показателем здоровья кошки является анализ мочи, а качественно собрать мочу и быстро доставить ее в клинику не так-то просто...</p>
@@ -12,7 +12,7 @@
                 </div>   
             </div>    
             <div class="card v-recommendations-link vet-cards col">           
-                <img src="../../assets/images/recommendations/pos3.jpg" class="card-img-top" alt="kot-23">
+                <img src="../../assets/images/recommendations/pos3.jpg" class="card-img-top" alt="После операции,ребилитация">
                 <div class="card-body">
                     <h5 class="card-title">Период реабилитации</h5>
                     <p class="card-text">В восстановительный период соблюдение особого режима для животного имеет большое значение. Лечащий врач дает рекомендации, как вести себя в послеоперационный период...</p>
@@ -20,7 +20,7 @@
                 </div>   
             </div>    
             <div class="card v-recommendations-link vet-cards col">           
-                <img src="../../assets/images/recommendations/drip.jpg" class="card-img-top" alt="kot-23">
+                <img src="../../assets/images/recommendations/drip.jpg" class="card-img-top" alt="Капельница">
                 <div class="card-body">
                     <h5 class="card-title">Как поставить капельницу</h5>
                     <p class="card-text">Внутривенная инфузия - это введение в организм растворов.Применяется для животных в тяжёлом состоянии, при быстром и резком обезвоживании, остром течении заболеваний и в других случаях...</p>

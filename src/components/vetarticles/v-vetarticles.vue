@@ -12,7 +12,7 @@
                 </div>   
             </div>
             <div class="card v-vetarticles-card vet-cards col">           
-                <img src="../../assets/images/vetarticles/dog-22.jpg" class="card-img-top" alt="dog-22">
+                <img src="../../assets/images/vetarticles/dog-22.jpg" class="card-img-top" alt="dog">
                 <div class="card-body">
                     <h5 class="card-title">Рвота у собак</h5>
                     <p class="card-text">Рвота у собак — достаточно распространенное явление, с которым сталкиваются многие владельцы. Она может быть вызвана различными причинами, от простого переедания до серьезных заболеваний. Если ...</p>

@@ -8,7 +8,7 @@
                 <picture>
                     <source srcset="@/assets/images/vetarticles/pets.webp" class="card-img-top r-img" type="image/webp">
                     <source srcset="@/assets/images/vetarticles/pets.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                    <img src="@/assets/images/vetarticles/pets.jpg" class="card-img-top r-img" alt="pets">
+                    <img src="@/assets/images/vetarticles/pets.jpg" class="card-img-top r-img" alt="Домашний питомец">
                 </picture>
                 <h1>Что понадобится</h1>
                 <h2>Животное должно прийти в дом, где уже все есть и подготовлено для его появления. Поэтому заранее приобретите все необходимые аксессуары. А именно:</h2>

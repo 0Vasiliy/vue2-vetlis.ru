@@ -8,7 +8,7 @@
                     <picture>
                         <source srcset="../../../assets/images/surgery/surgery.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/surgery/surgery.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/surgery/surgery.jpg" class="card-img-top r-img" alt="surgery">
+                        <img src="../../../assets/images/surgery/surgery.jpg" class="card-img-top r-img" alt="Хирургия">
                     </picture>
                     <h2>В наше ветеринарной клиники мы проводим различные хирургические манипуляции и операции:</h2>
                     <ul>
@@ -34,7 +34,7 @@
                     <picture>
                         <source srcset="../../../assets/images/surgery/surgery2.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/surgery/surgery2.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/surgery/surgery2.jpg" class="card-img-top r-img" alt="surgery">
+                        <img src="../../../assets/images/surgery/surgery2.jpg" class="card-img-top r-img" alt="Хирургия">
                     </picture>         
                 </div>                                                       
                 </div>               

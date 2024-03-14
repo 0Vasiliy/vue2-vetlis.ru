@@ -10,7 +10,7 @@
                     <picture>
                         <source srcset="../../../assets/images/teeth/stom1.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/teeth/stom1.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/teeth/stom1.jpg" class="card-img-top r-img" alt="stom1">
+                        <img src="../../../assets/images/teeth/stom1.jpg" class="card-img-top r-img" alt="Зубной камень у собак и кошек">
                     </picture> 
                     <h2> Данная проблема лечится только ультразвуковой чисткой, различные препараты не способны растворить зубной камень. Зубной камень у собак и кошек,  может негативно сказываться на общем самочувствии животного. Питомцы могут испытывать боль при пережевывании пищи и часто даже отказываться от еды, становиться беспокойным и апатичным.</h2>
                     <h2>Зубной камень в запущенной форме может привести к полной потере зубов. Поэтому мы рекомендуем посещать ветеринара-стоматолога при первых признаках заболевания зубов и десен:</h2>
@@ -28,7 +28,7 @@
                     <picture>
                         <source srcset="../../../assets/images/teeth/stom3.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/teeth/stom3.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/teeth/stom3.jpg" class="card-img-top r-img" alt="stom3">
+                        <img src="../../../assets/images/teeth/stom3.jpg" class="card-img-top r-img" alt="Ультразвуковая чистка зубов">
                     </picture> 
                     <h2> Пациентам из группы риска перед проведением плановой санации ротовой полости мы рекомендуем пройти полное обследование, чтобы свести к минимуму возможные риски.</h2>
                     <h1>Причины возникновения зубного камня</h1>
@@ -48,7 +48,7 @@
                     <picture>
                         <source srcset="../../../assets/images/teeth/stom2.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/teeth/stom2.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/teeth/stom2.jpg" class="card-img-top r-img" alt="stom1">
+                        <img src="../../../assets/images/teeth/stom2.jpg" class="card-img-top r-img" alt="Профилактика образования зубного камня у животных">
                     </picture> 
                     <h2>На скорость появления зубного налёта и камня влияют рацион и активность питомца. В природе хищники используют зубы для захвата, удержания добычи и пережёвывания костей, жил и т.д. Поэтому, если животное получает в качестве корма вместо твёрдой пищи исключительно мягкую и измельчённую (консервы, паучи, каши, супы), зубы не очищаются как следует.</h2>
                     <h2>Важна нагрузка на все группы зубов, поэтому в рационе собак и кошек должны быть продукты, которые они могут грызть, жевать, кусать и т.д. Также, согласно исследованиям, физические нагрузки, благодаря своему влиянию на водно-солевой обмен, профилактируют образование зубного налёта и камня, поэтому выгуливать собаку необходимо чаще.</h2>

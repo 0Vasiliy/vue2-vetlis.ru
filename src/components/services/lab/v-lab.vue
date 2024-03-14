@@ -8,7 +8,7 @@
                     <picture>
                         <source srcset="../../../assets/images/lab/lab1.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/lab/lab1.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/lab/lab1.jpg" class="card-img-top r-img" alt="lab1">
+                        <img src="../../../assets/images/lab/lab1.jpg" class="card-img-top r-img" alt="Лабораторная диагностика">
                     </picture>
                     <h1>Общий клинический анализ крови</h1>
                     <h2>Общий клинический анализ крови может показать степень развития воспалительного процесса, имеется ли анемия, обезвоживание, а также есть ли новообразования в системе крови, или нет. Также не нужно забывать о скрытых (хронических) инфекционных, инвазионных или каких-либо других процессах неинфекционного характера в организме, которые также можно обнаружить при исследовании крови как одного из методов диагностики. </h2>
@@ -77,7 +77,7 @@
                     <picture>
                         <source srcset="../../../assets/images/lab/lab2.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/lab/lab2.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/lab/lab2.jpg" class="card-img-top r-img" alt="lab2">
+                        <img src="../../../assets/images/lab/lab2.jpg" class="card-img-top r-img" alt="Анализы">
                     </picture>
                     <h1>Биохимический анализ крови</h1>
                     <h2>Глюкоза считается очень информативным показателем, т.к. указывает на работу сложной ферментативной системы в организме, включая отдельные органы. В круговороте глюкозы задействовано 8 различных гормонов и 4 сложных ферментативных процесса. Патологией считается, как рост уровня сахара в крови у кошки, так и его падение</h2>

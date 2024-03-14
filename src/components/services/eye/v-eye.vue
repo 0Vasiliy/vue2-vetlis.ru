@@ -10,7 +10,7 @@
                     <picture>
                         <source srcset="../../../assets/images/eye/oko2.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/eye/oko2.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/eye/oko2.jpg" class="card-img-top r-img" alt="oko2">
+                        <img src="../../../assets/images/eye/oko2.jpg" class="card-img-top r-img" alt="Лечение глаза">
                     </picture>
                     <h2>Основными клиническими проявлениями заболевания глаз вашего питомца являются:</h2>
                     <ul>
@@ -25,7 +25,7 @@
                     <picture>
                         <source srcset="../../../assets/images/eye/oko1.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/eye/oko1.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/eye/oko1.jpg" class="card-img-top r-img" alt="oko1">
+                        <img src="../../../assets/images/eye/oko1.jpg" class="card-img-top r-img" alt="Лечение глаза">
                     </picture>
                     <h2>Инфекционные заболевания, при которых поражаются органы зрения:</h2>
                     <ul>
@@ -64,7 +64,7 @@
                     <picture>
                         <source srcset="../../../assets/images/eye/oko3.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/eye/oko3.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/eye/oko3.jpg" class="card-img-top r-img" alt="oko3">
+                        <img src="../../../assets/images/eye/oko3.jpg" class="card-img-top r-img" alt="Слёзная железа">
                     </picture>
                     <h6>Выпадение слезной железы Гарднера</h6>
                     <h2>Для некоторых представителей перечисленных пород собак и кошек и многих других, также весьма характерны такие явления как пролапс железы третьего века (выпадение слезной железы), дистихиаз, эктопия ресниц, конъюнктивальный или корнеальный дермоид, корнеальный секвестр у кошек, аномалии развития носослезной системы. Все эти состояния требуют оперативного лечения, и чем более своевременно оно начато, тем благоприятней прогноз исхода болезни.</h2>

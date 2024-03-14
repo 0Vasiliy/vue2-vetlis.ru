@@ -18,7 +18,7 @@
                         <h1 class="v-button-title">Запись на приём</h1>
                     </button>               
                     </div>
-                    <img src="../../assets/images/news/fon_vet_old.jpg">               
+                    <img src="../../assets/images/news/fon_vet_old.jpg" alt="Ветклиника ЛИС новости">               
                </div>
                <v-modal v-if="isModalOpen" @close="isModalOpen = false"/>
             </div>

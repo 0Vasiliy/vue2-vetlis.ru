@@ -8,7 +8,7 @@
                     <picture>
                         <source srcset="../../../assets/images/kardio/kardio.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/kardio/kardio.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/kardio/kardio.jpg" class="card-img-top r-img" alt="stom2">
+                        <img src="../../../assets/images/kardio/kardio.jpg" class="card-img-top r-img" alt="Кардиология">
                     </picture>
                     <h1>ГКМП </h1>
                     <h2>ГКМП самое частое заболевание сердца, ему подвержены как молодые, так и возрастные животные. Опасно тем, что длительное время протекает незаметно, внезапная смерть иногда бывает единственным симптомом. Другие проявления болезни тоже развиваются стремительно: отек легких, выпот жидкости в грудную полость, тромбоз крупных артерий. Животное  беспокоится, не спит, дышит с открытым ртом, язык приобретает синюшный оттенок. При тромбозе артерий появляется острый болевой синдром и паралич конечностей.</h2>

@@ -8,7 +8,7 @@
                     <picture>
                         <source srcset="../../../assets/images/recommendations/drip2.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/recommendations/drip2.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/recommendations/drip2.jpg" class="card-img-top r-img" alt="drip2">
+                        <img src="../../../assets/images/recommendations/drip2.jpg" class="card-img-top r-img" alt="Капельница">
                     </picture>
                     <h2>Подготовка к постановке:</h2>
                    <ul>
@@ -32,7 +32,7 @@
                    <picture>
                         <source srcset="../../../assets/images/recommendations/drip3.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/recommendations/drip3.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/recommendations/drip3.jpg" class="card-img-top r-img" alt="drip2">
+                        <img src="../../../assets/images/recommendations/drip3.jpg" class="card-img-top r-img" alt="Капельница">
                     </picture>
                    <h2>Постановка капельницы:</h2>
                    <ul>

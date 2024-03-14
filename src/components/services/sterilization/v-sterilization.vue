@@ -9,7 +9,7 @@
                     <picture>
                         <source srcset="../../../assets/images/sterilization/st1.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/sterilization/st1.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/sterilization/st1.jpg" class="card-img-top r-img" alt="st1">
+                        <img src="../../../assets/images/sterilization/st1.jpg" class="card-img-top r-img" alt="Стерилизация">
                     </picture>
                     <h2>Существует множество мнений по поводу кастраций и стерилизаций животных. Под термином кастрация и стерилизация понимается искусственное нарушение репродуктивной способности организма.</h2>
                     <h1>Стерилизация</h1>
@@ -21,7 +21,7 @@
                     <picture>
                         <source srcset="../../../assets/images/sterilization/st2.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/sterilization/st2.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/sterilization/st2.jpg" class="card-img-top r-img" alt="st2">
+                        <img src="../../../assets/images/sterilization/st2.jpg" class="card-img-top r-img" alt="Кастрация">
                     </picture>
                     <h2>Продолжительность жизни стерилизованных животных в среднем дольше на 1, 5-2 года</h2>
                     <ul>
@@ -33,7 +33,7 @@
                     <picture>
                         <source srcset="../../../assets/images/sterilization/st3.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/sterilization/st3.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/sterilization/st3.jpg" class="card-img-top r-img" alt="st3">
+                        <img src="../../../assets/images/sterilization/st3.jpg" class="card-img-top r-img" alt="Стерилизация и кастрация">
                     </picture>
                 </div>                                       
                 </div>               

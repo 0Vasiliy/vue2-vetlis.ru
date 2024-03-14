@@ -8,7 +8,7 @@
                 <picture>
                     <source srcset="@/assets/images/vetarticles/kot-23.webp" class="card-img-top r-img" type="image/webp">
                     <source srcset="@/assets/images/vetarticles/kot-23.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                    <img src="@/assets/images/vetarticles/kot-23.jpg" class="card-img-top r-img" alt="kot-23"> 
+                    <img src="@/assets/images/vetarticles/kot-23.jpg" class="card-img-top r-img" alt="Рвота у кошек"> 
                 </picture>           
                 <h1>Что такое тошнота и рвота </h1>
                 <h2>Тошнота у кошки — неприятное ощущение в области желудка, часто предшествует рвоте. Рвота — сложный рефлекторный процесс, контролируемый рвотным центром, который находится в продолговатом мозге. Его возбуждение происходит по разным причинам:</h2> 

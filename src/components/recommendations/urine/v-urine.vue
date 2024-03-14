@@ -8,7 +8,7 @@
                     <picture>
                         <source srcset="../../../assets/images/recommendations/rec1.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/recommendations/rec1.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/recommendations/rec1.jpg" class="card-img-top r-img" alt="rec">
+                        <img src="../../../assets/images/recommendations/rec1.jpg" class="card-img-top r-img" alt="Собрать мочу">
                     </picture>
                     <h1>Моча должна быть свежей</h1>
                     <h2>Идеальным вариантом является исследование мочи в течение 30 мин после отбора. Хранение мочи более 2 час. вызывает интенсивный бактериальный рост (соответственно изменение pH мочи), разрушает клеточные элементы осадка, приводит к спонтанному выпадению кристаллов, увеличению плотности.</h2>
@@ -18,7 +18,7 @@
                     <picture>
                         <source srcset="../../../assets/images/recommendations/rec2.webp" class="card-img-top r-img" type="image/webp">
                         <source srcset="../../../assets/images/recommendations/rec2.jpg" class="card-img-top r-img" type="image/jpeg"> 
-                        <img src="../../../assets/images/recommendations/rec2.jpg" class="card-img-top r-img" alt="rec">
+                        <img src="../../../assets/images/recommendations/rec2.jpg" class="card-img-top r-img" alt="Собрать мочу">
                     </picture>
                     <h1>Моча должна быть чистой</h1>
                     <h2>Лоток необходимо хорошо вымыть и сполоснуть кипятком. Полученную порцию мочи набрать в одноразовый шприц и перелить в пробирку.</h2>
