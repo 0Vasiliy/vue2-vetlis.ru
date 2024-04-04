@@ -5,19 +5,10 @@ import VueMask from 'v-mask'
 import 'bootstrap/dist/css/bootstrap.css'
 import VueRouter from 'vue-router'
 import router from './router'
-// import axios from 'axios'
-// import VueAxios from 'vue-axios'
-// import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-// import 'bootstrap-vue/dist/bootstrap-vue.css'
-// import VueStickyDirective from '@renatodeleao/vue-sticky-directive'
-// Vue.use(VueStickyDirective)
-// Vue.use(BootstrapVue)
-// Vue.use(IconsPlugin)
 
 Vue.use(Vuelidate)
 Vue.use(VueMask)
 Vue.use(VueRouter)
-// Vue.use(VueAxios, axios)
 
 Vue.config.productionTip = false
 
@@ -44,19 +35,3 @@ Vue.directive('phone',{
       }
   },
 })  
-
-// Vue.directive('modal',{
-//    mounted() {
-//     let forms = document.querySelector(".v-modal");
-//     forms.addEventListener('submit', function(e){
-//         console.log(axios)
-//         e.preventDefault();
-//         // let elem = e.target
-
-//         // let formData ={
-//         //     surname: elem.querySelector('[surname="user_surname"]').value
-
-//         // }
-//     })
-//    }, 
-// })

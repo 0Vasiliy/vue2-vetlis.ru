@@ -149,8 +149,8 @@ export default {
             this.$emit('close');
         }
       emailjs
-        .sendForm('service_lh0i3lo', 'template_fxjjdz5', this.$refs.form, {
-          publicKey: 'TZTo2urQDYWvGL1aU',
+        .sendForm('service_*****', 'template_******', this.$refs.form, {
+          publicKey: '*************',
         
         })
         .then(
