@@ -4,7 +4,7 @@
         <h1 class="v-vetaricles-title">Полезные статьи</h1>
            <div class="v-vetarticles-card-block">
             <div class="card v-vetarticles-card col">           
-                <img src="../../assets/images/vetarticles/kot-23.jpg" class="card-img-top" alt="kot-23">
+                <img src="../../assets/images/vetarticles/kot-23.jpg" class="card-img-top" alt="Рвота у кошек">
                 <div class="card-body">
                     <h5 class="card-title">Рвота у кошек</h5>
                     <p class="card-text">Рвота у кошек — достаточно распространенное явление, вызываемое различными факторами. Рефлекторное извержение содержимого желудка через рот — не болезнь, а симптом, указывающий на нарушение...</p>
@@ -12,7 +12,7 @@
                 </div>   
             </div>
             <div class="card v-vetarticles-card vet-cards col">           
-                <img src="../../assets/images/vetarticles/dog-22.jpg" class="card-img-top" alt="dog">
+                <img src="../../assets/images/vetarticles/dog-22.jpg" class="card-img-top" alt="Рвота у собак">
                 <div class="card-body">
                     <h5 class="card-title">Рвота у собак</h5>
                     <p class="card-text">Рвота у собак — достаточно распространенное явление, с которым сталкиваются многие владельцы. Она может быть вызвана различными причинами, от простого переедания до серьезных заболеваний. Если ...</p>
@@ -20,7 +20,7 @@
                 </div>   
             </div>
             <div class="card v-vetarticles-card vet-cards col">           
-                <img src="../../assets/images/vetarticles/pets.jpg" class="card-img-top" alt="pets">
+                <img src="../../assets/images/vetarticles/pets.jpg" class="card-img-top" alt="Домашний питомец">
                 <div class="card-body">
                     <h5 class="card-title">Готовимся к появлению домашнего питомца</h5>
                     <p class="card-text">Маленькие четвероногие друзья — полноправные члены нашей семьи. Если семейный совет одобрил нового жителя, на примете есть хороший ветеринар, самое время заняться подготовкой ...</p>

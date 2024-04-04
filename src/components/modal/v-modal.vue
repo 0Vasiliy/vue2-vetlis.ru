@@ -1,271 +1,5 @@
-
 <template>
-    <form class="v-modal v-form-validate row g-3" @submit.prevent="handlerSubmit">
-        <div class="v-form-block">
-            <div class="v-modal-close" @click="closeModal" aria-label="close">
-                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
-                </svg>
-            </div>
-            <div class="v-form-group">
-                 <div class="form-selected">
-                    <h4>По техническим причинам, запись онлайн времено не работает.</h4>
-                    <hr>
-                    <h4>Производиться настройка и отладка формы отправки данных.</h4>
-                    <hr>
-                    <h4>Приносим свои извинения за временные неудобства.</h4>
-                    <hr>
-                    <h4>Для записи на приём воспользуйтесь телефонами на сайте!</h4>
-                 </div>
-            </div>  
-        </div> 
-        <v-overlay/>   
-    </form>   
-</template>
-
-<script>
-import vOverlay from '../overlay/v-overlay.vue'
-
-export default {
-    name: 'vModal',
-    components:{
-        vOverlay
-    },
-    
-    methods:{
-    closeModal(){
-        this.$emit('close')
-    },    
-    }
-}
-
-</script>
-
-<style scoped>
-    .v-form-validate{
-        position: fixed;
-        top:70px;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        max-width: 600px;
-        margin: 0 auto;  
-        z-index: 998;
-    }
-    .v-form-block{
-        z-index: 10;
-    }
-    .v-form-group{
-        margin-left: 50px;
-        margin-right: 50px;
-        padding: 70px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 4px solid #2f4f4f;
-        background-color: white;
-     
-    }
-
-    .v-modal-close{
-        position: absolute;
-        top: -20px;
-        left: 550px;
-        cursor: pointer;
-  } 
-    @media(max-width: 1200px){
-
-        .v-form-group{
-            padding: 10px;
-        }
-    
-    }
-    @media(max-width: 767px){
-        .form-selected {
-        flex: 0 0 50%;
-        width: 50%;
-        }
-    }
-    @media(max-width: 600px){
-        .v-modal-close{
-        top: -15px;
-    }
-    }
-    @media(max-width: 585px){
-        .form-selected {
-        flex: 0 0 55%;
-        width: 55%;
-        }
-        .v-modal-close{
-        top: -13px;
-        left: 520px;
-        }
-    }
-    @media(max-width: 555px){
-        .form-selected {
-        flex: 0 0 57%;
-        width: 57%;
-        }
-        .v-modal-close{
-        left: 500px;
-        }
-    }
-    @media(max-width: 540px){
-        .form-selected {
-        flex: 0 0 60%;
-        width: 60%;
-        }
-        .v-modal-close{
-        left: 480px;
-        }
-    }
-    @media(max-width: 510px){
-        .form-selected {
-        flex: 0 0 62%;
-        width: 62%;
-        }
-        .v-modal-close{
-        left: 455px;
-        }
-    }
-    @media(max-width: 500px){
-        .form-selected {
-        flex: 0 0 65%;
-        width: 65%;
-        }
-        .v-modal-close{
-        left: 435px;
-        }
-    }
-    @media(max-width: 490px){
-        .form-selected {
-        flex: 0 0 67%;
-        width: 67%;
-        }
-        .v-modal-close{
-        left: 430px;
-        }
-    }
-    @media(max-width: 470px){
-        .form-selected {
-        flex: 0 0 71%;
-        width: 71%;
-        }
-        .v-modal-close{
-        left: 410px;
-        }
-    }
-    @media(max-width: 460px){
-        .form-selected {
-        flex: 0 0 73%;
-        width: 73%;
-        }
-        .v-modal-close{
-        left: 405px;
-        }
-    }
-    @media(max-width: 450px){
-        .form-selected {
-        flex: 0 0 80%;
-        width: 80%;
-        }
-        .v-modal-close{
-        left: 390px;
-        }
-    }
-    @media(max-width: 430px){
-        .form-selected {
-        flex: 0 0 82%;
-        width: 82%;
-        }
-        .v-modal-close{
-        left: 370px;
-        }
-    }
-    @media(max-width: 411px){
-        .form-selected {
-        flex: 0 0 85%;
-    }
-    .v-modal-close{
-        left: 355px;
-        }
-    @media(max-width: 400px){
-        .form-selected {
-        flex: 0 0 75%;
-        width: 75%;
-        }
-    }
-        .v-modal-close{
-        left: 345px;
-        }
-    }
-    @media(max-width: 380px){
-        .form-selected {
-        flex: 0 0 78%;
-        width: 78%;
-        }
-        .v-modal-close{
-        left: 325px;
-        }
-    }
-    @media(max-width: 370px){
-        .form-selected {
-        flex: 0 0 84%;
-        width: 84%;
-        }
-        .v-modal-close{
-        left: 320px;
-        }
-    }
-    @media(max-width: 355px){
-        .v-modal-close{
-        left: 310px;
-        }
-    }
-    @media(max-width: 350px){
-        .form-selected {
-        flex: 0 0 90%;
-        width: 90%;
-        }
-        .v-modal-close{
-        left: 300px;
-        }
-       
-       
-    }
-    @media(max-width: 340px){
-        .form-selected {
-        flex: 0 0 100%;
-        width: 100%;
-        }
-        .v-modal-close{
-        left: 290px;
-        }
-    }
-    @media(max-width: 325px){
-        .v-modal-close{
-        left: 285px;
-        }
-    }
-    @media(max-width: 300px){  
-        .v-modal-close{
-        left: 280px;
-        }
-    }
-    @media(max-width: 260px){
-        
-    
-    }
-</style>
-
-
-<!-- 
- Рабочая форма отправки без axios // производиться тестирование и настройка-->
-
-<!-- 
-<template>
-    <form class="v-modal v-form-validate row g-3" @submit.prevent="handlerSubmit" method="POST" action="../../../main.php">
+    <form class="v-modal v-form-validate row g-3" ref="form" @submit.prevent="sendEmail">
         <div class="v-form-block">
             <div class="v-modal-close" @click="closeModal" aria-label="close">
                 <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -280,7 +14,7 @@ export default {
                 type="input" 
                 class="form-control" 
                 id="surname"
-                name="user_surname" 
+                name="surname" 
                 placeholder="Фамилия:"
                 v-model.trim="form.surname"
                 :class="$v.form.surname.$error ? 'is-invalid' : ''"
@@ -298,8 +32,8 @@ export default {
                 <input 
                 type="text"
                 class="form-control"
-                id="inputAddress2"
-                name="user_name" 
+                id="name"
+                name="name" 
                 placeholder="Имя:"
                 v-model.trim="form.name"
                 :class="$v.form.name.$error ? 'is-invalid' : ''"
@@ -314,8 +48,8 @@ export default {
                 <input 
                 type="email" 
                 class="form-control" 
-                id="inputEmail4" 
-                name="user_email" 
+                id="email" 
+                name="email" 
                 placeholder="email@mail.ru"
                 v-model.trim="form.email"
                 :class="$v.form.email.$error ? 'is-invalid' : ''"
@@ -333,8 +67,8 @@ export default {
                 <input
                 type="tel"
                 class="form-control" 
-                id="inputAddress3" 
-                name="user_phone" 
+                id="phone" 
+                name="phone" 
                 placeholder="+7(000)-000-00-00"
                 v-model.trim="form.phone"
                 v-mask="'##################'"
@@ -351,10 +85,10 @@ export default {
             <div class="v-form-input col-md-8">
                 <label for="inputAddress3" class="form-label">Опишите вашу проблему:</label>
                 <textarea
-                type="tel"
+                type="text"
                 class="form-control" 
-                id="inputAddress3" 
-                name="user_text" 
+                id="text" 
+                name="text" 
                 placeholder="Введите текст:"
                 v-model.trim="form.text"           
                 :class="$v.form.text.$error ? 'is-invalid' : ''"                                      
@@ -365,19 +99,18 @@ export default {
             </div>
              
             <div class="v-form-input col-md-8">
-                <button type="submit" class="v-form-btn btn btn-primary">Записасться на приём</button>
+                <button type="submit" class="v-form-btn btn btn-primary" >Записасться на приём</button>
             </div>       
             </div>  
         </div> 
         <v-overlay/>   
     </form>   
 </template>
-<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
 <script>
 import { validationMixin } from 'vuelidate'
 import { required, minLength, email, numeric} from 'vuelidate/lib/validators'
 import vOverlay from '../overlay/v-overlay.vue'
-import axios from 'axios';
+import emailjs from '@emailjs/browser';
 
 export default {
     name: 'vModal',
@@ -390,9 +123,9 @@ export default {
             form:{
                 surname: '',
                 name: '',
+                email: '',
                 phone: '',
                 text: '',
-                email: '',
             },           
         }
     },
@@ -406,30 +139,30 @@ export default {
       }
     },
     methods:{
-        handlerSubmit(){
-            this.$v.form.$touch()
-        if (!this.$v.form.$error) {
-          console.log('Валидация прошла успешно')
-        }
-    },
     closeModal(){
         this.$emit('close')
     },
-    mounted(){
+    sendEmail() {
+        this.$v.form.$touch()
+        if (!this.$v.form.$error) {
+                alert( 'Ваша заявка отправлена! В ближайшее время с вами свяжутся'),
+            this.$emit('close');
+        }
+      emailjs
+        .sendForm('service_lh0i3lo', 'template_fxjjdz5', this.$refs.form, {
+          publicKey: 'TZTo2urQDYWvGL1aU',
         
-        let forms = document.querySelector(".v-modal");
-        console.log(axios)
-        forms.addEventListener('submit', function(e){
-            e.preventDefault();
-            let elem = e.target
-
-            let formData ={
-                surname: elem.querySelector('[surname="user_surname"]').value
-
-            }
         })
-    }
-    }
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    },
+  },
 }
 
 </script>
@@ -731,4 +464,4 @@ export default {
             font-size: 8px;
         }
     }
-</style> -->
+</style>

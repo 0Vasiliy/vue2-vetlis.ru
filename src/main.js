@@ -5,8 +5,8 @@ import VueMask from 'v-mask'
 import 'bootstrap/dist/css/bootstrap.css'
 import VueRouter from 'vue-router'
 import router from './router'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+// import axios from 'axios'
+// import VueAxios from 'vue-axios'
 // import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 // import 'bootstrap-vue/dist/bootstrap-vue.css'
 // import VueStickyDirective from '@renatodeleao/vue-sticky-directive'
@@ -17,7 +17,7 @@ import VueAxios from 'vue-axios'
 Vue.use(Vuelidate)
 Vue.use(VueMask)
 Vue.use(VueRouter)
-Vue.use(VueAxios, axios)
+// Vue.use(VueAxios, axios)
 
 Vue.config.productionTip = false
 
