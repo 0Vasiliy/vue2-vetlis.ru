@@ -54,6 +54,8 @@ export default {
     background: -webkit-linear-gradient(to right,#B2FEFA, #0ED2F7,);
     background: linear-gradient(to right, #B2FEFA, #0ED2F7,);
     max-width: 100%;   
+    // flex: 0 0 100%;
+    // max-width: 100%;
     border-radius: 20px; 
 }
     img{
@@ -93,11 +95,11 @@ export default {
         color: white;
     }
 }
-@media (min-width: 1600px){
-    .container {
-    max-width: 1400px
-}
-}
+// @media (min-width: 1600px){
+//     .container {
+//     max-width: 1400px
+// }
+// }
 @media (max-width: 1250px){
    .v-news_block{
     align-content: center;

@@ -30,6 +30,7 @@ import vUrine  from '@/components/recommendations/urine/v-urine.vue'
 import vRehabilitation  from '@/components/recommendations/rehabilitation/v-rehabilitation.vue'
 import vDrip  from '@/components/recommendations/drip/v-drip.vue'
 import vOrnitolog  from '@/components/services/ornitolog/v-ornitolog.vue'
+import vCarouselMain from '@/components/slider/v-Carousel-main.vue'
 
     export default new VueRouter({  
     mode: 'history',
@@ -162,6 +163,11 @@ import vOrnitolog  from '@/components/services/ornitolog/v-ornitolog.vue'
             path: '/vOrnitolog',
             component: vOrnitolog   
         },
+        {
+            path: '/vCarouselMain',
+            component: vCarouselMain   
+        },
+        
     ],
     scrollBehavior() {
         return { x: 0, y: 0 }

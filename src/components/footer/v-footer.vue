@@ -34,7 +34,7 @@
                         <a class="v-footer-contacts-phone-link-new" href="tel:+79313732942"><img src="@/assets/icons/phone.png" alt="#">+7 (931) 373 29 42</a>
                    </div>
                    <div class="v-footer-contacts-adress">
-                        <h5>ул.Русановская д.19 к.4</h5>
+                        <h5>г. Санкт-Петербург<br>ул.Русановская д.19 к.4<br>с 10.00-21.00</h5>
                    </div>
                   <v-social class="v-footer-contacts-social"/>
                 </div>
@@ -183,17 +183,18 @@ export default {
     }
 .v-footer-contacts-social{
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .v-footer-contacts-adress{
     margin-top: 15px;
     display: flex;
     margin-left: 0;
     h5{
+    text-align: left;
     text-decoration: none;
     font-size: 20px;
     font-weight: 300;
-    line-height: 21px;
+    line-height: 28px;
     font-family: 'Museo Sans Cyrl';
     font-weight: 400;
     color: gray

@@ -10,7 +10,6 @@
                 </div>
                 <div class="col v-header_adress">
                     <v-header-adress class="h-adress"/>
-                    <v-header-adress-num class="h-adress h-adress2"/>
                 </div>
                 <div class="col v-header_block_phone">
                     <div class="v-header_block_phone_link">
@@ -32,7 +31,6 @@ import vHeaderLogo from '@/components/header/header-logo/v-header-logo.vue'
 import vHeaderLis from '@/components/header/header-lis/v-header-lis.vue'
 import vHeaderVet from '@/components/header/header-vet/v-header-vet.vue'
 import vHeaderAdress from '@/components/header/header-adress/v-header-adress.vue'
-import vHeaderAdressNum from '@/components/header/header-adress-num/v-header-adress-num.vue'
 import vHeaderPhone from '@/components/header/header-phone/v-header-phone.vue'
 import vModal from '@/components/modal/v-modal.vue'
 
@@ -43,7 +41,6 @@ export default {
         vHeaderLis,
         vHeaderVet,
         vHeaderAdress,
-        vHeaderAdressNum,
         vHeaderPhone,
         vModal,
     },
@@ -65,8 +62,12 @@ export default {
 @import '@/assets/css/modul_btn.scss';
     .v-header{
         margin: 0 auto;
-        background: #ECE9E6;
-        max-width: 1400px;
+        background-image: url('../../assets/images/header/header.jpg');
+        // max-width: 1400px;
+        // flex: 0 0 80%;
+        // max-width: 80%;
+        max-width: 74%;
+        width: 1320px;
         min-height: 200px; 
         border-radius: 20px;
     &_block{   
@@ -74,6 +75,7 @@ export default {
         align-items: center;
         justify-content: space-between;
         margin-top: 70px;
+        margin-bottom: 50px;
         &_title{
             margin-left: 50px;
         }
@@ -170,6 +172,11 @@ export default {
 .h-vet{
     margin-top: 10px;
 }
+}
+@media (max-width: 768px){
+   .v-header{
+    max-width: 80%;
+   }
 }
 @media(max-width:500px){
 .v-header_block_phone{

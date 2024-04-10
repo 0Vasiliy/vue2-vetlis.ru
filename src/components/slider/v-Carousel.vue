@@ -1,6 +1,6 @@
 <template>
     <div class="v-carousel col-md-4 col-sm-8">
-        <div class="v-carousel-heading">Специализированная ветеринарная помощь для вашего питомца</div>
+        <div class="v-carousel-heading">Ветеринарная клиника "ЛИС"</div>
             <div class="v-carousel-slide" :style="{'margin-left': '-' + (100 * currentSlideindex) + '%'}">
             <vCarouselItem
             v-for="item in carousel_data"
@@ -85,9 +85,9 @@ export default {
         }
     }
     .v-carousel-heading{
-        margin-top: 100px;
-        margin-bottom: -70px;
-        font-size: 34px;
+        margin-top: 4%;
+        margin-bottom: -50px;
+        font-size: 38px;
         text-align: center;
         line-height: 45px;
         font-family: 'Museo Sans Cyrl';
@@ -120,8 +120,7 @@ export default {
         max-width: 500px;
     }
     .v-carousel-heading{
-        margin-top: 50px;
-        line-height: 35px;
+        margin-bottom: -60px;
     }
     .v-carousel-slide{
         margin-bottom: 50px;
@@ -139,7 +138,7 @@ export default {
             max-width: 300px;
         }
         .v-carousel-heading{
-            font-size: 24px;
+            font-size: 28px;
             line-height: 30px;
         }
     }

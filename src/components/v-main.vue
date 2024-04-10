@@ -3,7 +3,7 @@
       <v-sidepanel/>
       <v-header/>
       <v-menu/>
-      <v-carousel-main/>
+      <v-about/>
       <v-line/>
       <v-news/>
       <v-line/>
@@ -27,7 +27,7 @@
 import vHeader from './header/v-header.vue'
 import vNews from './news/v-news.vue'
 import vSidepanel from './sidepanel/v-sidepanel.vue'
-import vCarouselMain from './slider/v-Carousel-main.vue'
+import vAbout from './about/v-about.vue'
 import vServices from './services/v-services.vue'
 import vMenu from './menu/v-menu.vue'
 import vVetarticles from './vetarticles/v-vetarticles.vue'
@@ -43,7 +43,7 @@ export default {
   components:{
     vHeader,
     vSidepanel,
-    vCarouselMain,
+    vAbout,
     vNews,
     vServices,
     vMenu,
@@ -63,7 +63,7 @@ export default {
 
 <style>
 .v-mainapp{
-  min-width: 320px;
+  min-width: 300px;
 }
  @import '@/assets/css/animate.css';
 </style>

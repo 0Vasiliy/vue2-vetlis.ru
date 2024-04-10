@@ -92,8 +92,8 @@ export default {
 <style scoped lang="scss">
 //menu
     .v-menu{ 
-    max-width:1400px;
-    width: 75%;
+    max-width:1300px;
+    width: 74%;
     margin-top: 35px; 
     padding-left: 0px;
     border: 1px solid #723030;
@@ -312,9 +312,9 @@ export default {
         margin-left: auto;
         margin-right: auto;
     }
-    .v-menu{
-        padding-left: 30px;
-    }
+    // .v-menu{
+    //     padding-left: 30px;
+    // }
 }
 @media(max-width: 400px){
     .v-hamburger_menu_block{

@@ -3,9 +3,10 @@
         <div class="v-side-right" id="side2">
             <v-header-logo class="side-comp side-logo"/>
             <v-header-lis class="side-comp"/>
-            <v-header-vet class="side-comp"/>
-            <v-header-adress class="side-comp"/>
-            <v-header-adress-num class="side-comp"/>
+            <v-header-vet class="side-comp side-vet"/>
+            <div class="line-mini"></div>
+            <v-header-adress class="side-adress"/>
+            <div class="line-mini"></div>
             <v-header-phone class="side-comp"/>
             <button type="button" class="v-button side-comp" id="phone_btn" @click="openModal">
                 <h1 class="v-button-title">Запись на приём</h1>
@@ -19,9 +20,9 @@ import vHeaderLogo from '@/components/header/header-logo/v-header-logo.vue'
 import vHeaderLis from '@/components/header/header-lis/v-header-lis.vue'
 import vHeaderVet from '@/components/header/header-vet/v-header-vet.vue'
 import vHeaderAdress from '@/components/header/header-adress/v-header-adress.vue'
-import vHeaderAdressNum from '@/components/header/header-adress-num/v-header-adress-num.vue'
 import vHeaderPhone from '@/components/header/header-phone/v-header-phone.vue'
 import vModal from '@/components/modal/v-modal.vue'
+
 
 export default {
     name: 'v-side',
@@ -30,7 +31,7 @@ export default {
         vHeaderLis,
         vHeaderVet,
         vHeaderAdress,
-        vHeaderAdressNum,
+        // vHeaderAdressNum,
         vHeaderPhone,
         vModal,
     },
@@ -62,6 +63,11 @@ export default {
             border-radius: 20px;
         }
     }
+    .line-mini{
+        width:100%;
+        height: 2px;
+        background: teal;
+    }
    .v-side-right{
     position: fixed;
     display: flex;
@@ -71,8 +77,14 @@ export default {
     align-content: center;
     margin-left: 3%;
    }
+   .side-adress{
+    margin-top: 10px;
+   }
    .side-comp{
     margin-top: 20px;
+   }
+   .side-vet{
+    margin-bottom: 10px;
    }
    @media (max-width: 1400px){
     .v-side-right{
@@ -84,4 +96,6 @@ export default {
         margin-left: -0.8%;
     }
    }
+
+
 </style>
