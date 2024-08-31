@@ -23,7 +23,7 @@
                 Введите фамилию
                 </p>
                 <p v-if="$v.form.surname.$dirty && !$v.form.surname.minLength" class="invalid-feedback">
-                Здесь должно быть менее 3-х символов
+                Здесь должно быть не менее 3-х символов
                 </p>
             </div>
               
@@ -131,7 +131,7 @@ export default {
     },
     validations: {
       form: {
-        surname: { required, minLength: minLength(5)},
+        surname: { required, minLength: minLength(3)},
         name: {required},
         email: { required, email },
         phone: {required, numeric},
@@ -149,8 +149,8 @@ export default {
             this.$emit('close');
         }
       emailjs
-        .sendForm('service_*****', 'template_*****', this.$refs.form, {
-          publicKey: '*********',
+        .sendForm('service_********', 'template_*********', this.$refs.form, {
+          publicKey: '****************',
         
         })
         .then(
