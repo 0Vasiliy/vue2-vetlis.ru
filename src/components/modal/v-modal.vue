@@ -99,7 +99,7 @@
             </div>
              
             <div class="v-form-input col-md-8">
-                <button type="submit" class="v-form-btn btn btn-primary" >Записасться на приём</button>
+                <button type="submit" class="v-form-btn btn btn-primary">Запись на приём</button>
             </div>       
             </div>  
         </div> 
