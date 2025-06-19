@@ -10,6 +10,7 @@
                     <source srcset="@/assets/images/vetarticles/pets.jpg" class="card-img-top r-img" type="image/jpeg"> 
                     <img src="@/assets/images/vetarticles/pets.jpg" class="card-img-top r-img" alt="Домашний питомец">
                 </picture>
+                <!-- <div id="yandex_rtb_R-A-11783043-1"></div> -->
                 <h1>Что понадобится</h1>
                 <h2>Животное должно прийти в дом, где уже все есть и подготовлено для его появления. Поэтому заранее приобретите все необходимые аксессуары. А именно:</h2>
                     <ul>
@@ -49,13 +50,25 @@
 import resize from  '@/mixins/resize'
 import vSide from '@/components/side/v-side.vue'
 import vContacts from '@/components/contacts/v-contacts.vue'
+// import { onMounted } from 'vue'
+
 export default {
     name: 'v-pets',
     components: {
         vSide,
         vContacts,
     },
-    mixins: [resize]
+    mixins: [resize],
+//     setup(){
+//         onMounted(()=>{
+//             window.yaContextCb.push(() => {
+//             Ya.Context.AdvManager.render({
+//             "blockId": "R-A-11783043-1",
+//             "renderTo": "yandex_rtb_R-A-11783043-1"
+//     })
+// })
+//         })
+//     }
 }
 </script>
 

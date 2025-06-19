@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :app="app">
       <v-main/>  
       <router-view/>  
   </div>
@@ -9,7 +9,6 @@
 
 export default {
   name: 'App',
-
 }
 </script>
 
@@ -29,7 +28,8 @@ export default {
 
 html {
     box-sizing: border-box;
-    height: 100%;
+    /* height: 100%; */
+      /* margin-bottom: 60px !important; */
 }
 
 body{

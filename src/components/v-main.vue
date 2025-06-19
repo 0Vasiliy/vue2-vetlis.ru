@@ -20,6 +20,7 @@
       <v-map/>
       <v-line/>
       <v-footer/>
+      <v-cookie/>
   </div>
 </template>
 
@@ -37,6 +38,7 @@ import vLineAnimate from './line-animate/v-line-animate.vue'
 import vLine from './line/v-line.vue'
 import vMap from './map/v-map.vue'
 import vFooter from './footer/v-footer.vue'
+import vCookie from './cookie/v-cookie.vue'
 
 export default {
   name: 'v-mainapp',
@@ -53,7 +55,8 @@ export default {
     vLineAnimate,
     vLine,
     vMap,
-    vFooter
+    vFooter,
+    vCookie
   },
   props: {
    

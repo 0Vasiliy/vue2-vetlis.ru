@@ -6,7 +6,7 @@
                 <img src="../../assets/images/about/1.jpg" alt="">
                 <div class="slideshow-item-text">
                     <h5>Ветеринарная клиника "ЛИС"</h5>
-                    <p>Помогает животным с 2013 года.<br> 11 лет результативной работы.</p>
+                    <p>Помогает животным с 2013 года.<br> 12 лет результативной работы.</p>
                 </div>
             </div>
             <div class="slideshow-item">
@@ -31,13 +31,22 @@
                 </div>
              </div>
         </div>
+        <v-yan2/>
         <h2>Ветеринарная клиника "ЛИС" предлагает полный комплекс ветеринарных услуг для поддержания здоровья и красоты Ваших питомцев. Регулярное посещение ветеринарного врача позволит следить за здоровьем Вашего питомца и диагностировать заболевания на ранних стадиях развития для начала своевременного лечения.</h2>
-        <router-link  tag="a" to="/vCarouselMain" class="v-button-slider"><span class="v-button-title">Подробнее о нас</span></router-link>
+        <!-- <div class="v-about-btn">
+            <button  @click="$router.push({path: '/vCarouselMain'})" class="v-button-slider"><span class="v-button-title">Подробнее о нас</span></button>
+        </div> -->
+        <!-- <router-link tag="a" to="/vCarouselMain" class="v-button-slider"><span class="v-button-title">Подробнее о нас</span></router-link> -->
+        <a href="/vCarouselMain" class="v-button-slider"><span class="v-button-title">Подробнее о нас</span></a>
     </section>
 </template>
 <script>
+// import vYan2 from '../yan/v-yan2.vue'
 export default {
-    name: 'vAbout'
+    name: 'vAbout',
+    // components:{
+    //     vYan2,
+    // },
 }
 </script>
 <style scoped>
@@ -48,6 +57,11 @@ export default {
     border-radius: 20px;
     margin-top: 30px;
     background: hsla(186, 33%, 94%, 1);
+   }
+   .v-about-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
    }
    .v-button-slider{
       display: flex;

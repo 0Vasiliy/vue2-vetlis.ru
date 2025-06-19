@@ -9,8 +9,14 @@
                         <li class="menu_block_item"><a href="#servis" class="menu_block_link ">Услуги</a></li>
                         <li class="menu_block_item"><a href="#vetart" class="menu_block_link ">Полезные статьи</a></li>
                         <li class="menu_block_item"><a href="#recomendation" class="menu_block_link ">Рекомедации ветрача</a></li>
-                        <li class="menu_block_item"><a href="#footer" class="menu_block_link ">Контакты</a></li>
-                        
+                        <li class="menu_block_item">
+                            <select class="menu_block_select" @change="handleContactSelect">
+                                <option value="" disabled selected>Контактная информация</option>
+                                <option value="contact">Наши контакты</option>
+                                <option value="contact-info">Мы находимся на карте</option>
+                                <option value="privacy-policy">Приватная политика</option>
+                            </select>
+                        </li>
                     </ul>                                 
                     <!-- hamburger -->                
                     <div class="v-hamburger" @click.prevent="show = true">
@@ -80,13 +86,28 @@ export default {
     return{
         show: false,
         hover: false,
+        privacyConsent: false
         }  
     },
     methods: {
-            close: function () {
-                this.show = false
-            }
+        close: function () {
+            this.show = false
         },
+        handleContactSelect(event) {
+            const value = event.target.value;
+            switch(value) {
+                case 'contact':
+                    window.location.href = '#footer';
+                    break;
+                case 'contact-info':
+                    window.location.href = '#map';
+                    break;
+                case 'privacy-policy':
+                    window.location.href = '/vPrivacyPolicy';
+                    break;
+            }
+        }
+    },
 }
 </script>
 <style scoped lang="scss">
@@ -141,7 +162,28 @@ export default {
             color: #103783;
         }
     }
- 
+    &_select {
+        color: #757575;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Museo Sans Cyrl';
+        background: transparent;
+        border: none !important;
+        cursor: pointer;
+        padding: 5px;
+        outline: none;
+        transition: all .4s linear;
+        
+        &:hover {
+            color: #103783;
+        }
+        
+        option {
+            background: #fff;
+            color: #757575;
+            padding: 10px;
+        }
+    }
 }
 .menu_block_line{
     span {
@@ -321,5 +363,37 @@ export default {
         width: 280px;
     }
 }
-
+.privacy-consent {
+    flex-direction: column;
+    height: auto !important;
+    padding: 10px;
+}
+.privacy-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    input[type="checkbox"] {
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+    
+    label {
+        font-size: 14px;
+        color: #757575;
+        cursor: pointer;
+    }
+}
+.privacy-link {
+    color: #103783;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all .4s linear;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
 </style>

@@ -19,7 +19,7 @@
                         <h3>Популярные статьи</h3>
                    </div>
                    <router-link  tag="a" to="/vVomitingCats"  class="v-footer-vet-mini"><span>Рвота у кошек</span></router-link>
-                   <router-link  tag="a" to="/vVomitingDog"  class="v-footer-vet-mini"><span>Рвота у собак</span></router-link>
+                   <router-link  tag="a" to="/vVomitingDogs"  class="v-footer-vet-mini"><span>Рвота у собак</span></router-link>
                    <router-link  tag="a" to="/vPets"  class="v-footer-vet-mini"><span>Готовимся к появлениию питомца</span></router-link>
                    <router-link  tag="a" to="/vUrine"  class="v-footer-vet-mini"><span>Как правильно собрать мочу</span></router-link>
                    <router-link  tag="a" to="/vRehabilitation"  class="v-footer-vet-mini"><span>Период реабилитации</span></router-link>

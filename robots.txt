@@ -1,0 +1,3 @@
+User-agent: *
+Host: www.vetlis.ru
+Sitemap: https://vetlis.ru/sitemap.xml

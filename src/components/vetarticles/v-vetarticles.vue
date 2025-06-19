@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Рвота у кошек</h5>
                     <p class="card-text">Рвота у кошек — достаточно распространенное явление, вызываемое различными факторами. Рефлекторное извержение содержимого желудка через рот — не болезнь, а симптом, указывающий на нарушение...</p>
-                    <router-link  tag="a" to="/vVomitingCats"  class="btn btn-primary v-button-card"><p>Подробнее</p></router-link>
+                    <router-link  tag="a" to="/vVomitingCats" class="btn btn-primary v-button-card"><p>Подробнее</p></router-link>
                 </div>   
             </div>
             <div class="card v-vetarticles-card vet-cards col">           
@@ -16,7 +16,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Рвота у собак</h5>
                     <p class="card-text">Рвота у собак — достаточно распространенное явление, с которым сталкиваются многие владельцы. Она может быть вызвана различными причинами, от простого переедания до серьезных заболеваний. Если ...</p>
-                    <router-link  tag="a" to="/vVomitingDogs"  class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
+                    <router-link  tag="a" to="/vVomitingDogs" class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
                 </div>   
             </div>
             <div class="card v-vetarticles-card vet-cards col">           
@@ -24,19 +24,24 @@
                 <div class="card-body">
                     <h5 class="card-title">Готовимся к появлению домашнего питомца</h5>
                     <p class="card-text">Маленькие четвероногие друзья — полноправные члены нашей семьи. Если семейный совет одобрил нового жителя, на примете есть хороший ветеринар, самое время заняться подготовкой ...</p>
-                    <router-link  tag="a" to="/vPets"  class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
+                    <router-link  tag="a" to="/vPets" class="buttons-card btn btn-primary v-button-card"><p>Подробнее</p></router-link>
                 </div>   
             </div>
            </div>
+         <v-yan/>
         <!-- <a href="#" class="buttons-cards btn btn-primary">Больше интересных статей</a>   -->
        </div>
+
     </section>
 
 </template>
 <script>
-
+import vYan from '../yan/v-yan.vue'
 export default {
     name: 'vVetarticles',
+    components:{
+        vYan,
+    }
 }
 </script>
 <style scoped lang="scss">

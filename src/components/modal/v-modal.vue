@@ -1,5 +1,5 @@
 <template>
-    <form class="v-modal v-form-validate row g-3" ref="form" @submit.prevent="sendEmail">
+    <form class="v-modal v-form-validate row g-3" ref="form" @submit.prevent="createPost">
         <div class="v-form-block">
             <div class="v-modal-close" @click="closeModal" aria-label="close">
                 <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,13 +16,13 @@
                 id="surname"
                 name="surname" 
                 placeholder="Фамилия:"
-                v-model.trim="form.surname"
-                :class="$v.form.surname.$error ? 'is-invalid' : ''"
+                v-model.trim="post.surname"
+                :class="$v.post.surname.$error ? 'is-invalid' : ''"
                 >
-                <p v-if="$v.form.surname.$dirty && !$v.form.surname.required" class="invalid-feedback">
+                <p v-if="$v.post.surname.$dirty && !$v.post.surname.required" class="invalid-feedback">
                 Введите фамилию
                 </p>
-                <p v-if="$v.form.surname.$dirty && !$v.form.surname.minLength" class="invalid-feedback">
+                <p v-if="$v.post.surname.$dirty && !$v.post.surname.minLength" class="invalid-feedback">
                 Здесь должно быть не менее 3-х символов
                 </p>
             </div>
@@ -35,10 +35,10 @@
                 id="name"
                 name="name" 
                 placeholder="Имя:"
-                v-model.trim="form.name"
-                :class="$v.form.name.$error ? 'is-invalid' : ''"
+                v-model.trim="post.name"
+                :class="$v.post.name.$error ? 'is-invalid' : ''"
                 >
-                <p v-if="$v.form.name.$dirty && !$v.form.name.required" class="invalid-feedback">
+                <p v-if="$v.post.name.$dirty && !$v.post.name.required" class="invalid-feedback">
                 Введите Имя
                 </p>
             </div> 
@@ -51,13 +51,13 @@
                 id="email" 
                 name="email" 
                 placeholder="email@mail.ru"
-                v-model.trim="form.email"
-                :class="$v.form.email.$error ? 'is-invalid' : ''"
+                v-model.trim="post.email"
+                :class="$v.post.email.$error ? 'is-invalid' : ''"
                 >
-                <p v-if="$v.form.email.$dirty && !$v.form.email.required" class="invalid-feedback">
+                <p v-if="$v.post.email.$dirty && !$v.post.email.required" class="invalid-feedback">
                 Введите email
                 </p>
-                <p v-if="$v.form.email.$dirty && !$v.form.email.email" class="invalid-feedback">
+                <p v-if="$v.post.email.$dirty && !$v.post.email.email" class="invalid-feedback">
                 Email неккоректный
                 </p>
             </div>          
@@ -70,14 +70,14 @@
                 id="phone" 
                 name="phone" 
                 placeholder="+7(000)-000-00-00"
-                v-model.trim="form.phone"
+                v-model.trim="post.phone"
                 v-mask="'##################'"
-                :class="$v.form.phone.$error ? 'is-invalid' : ''"                
+                :class="$v.post.phone.$error ? 'is-invalid' : ''"                
                 maxlength="18"
                 minlength="18" 
                 v-phone           
                 >
-                <p v-if="$v.form.phone.$dirty && !$v.form.phone.required" class="invalid-feedback">
+                <p v-if="$v.post.phone.$dirty && !$v.post.phone.required" class="invalid-feedback">
                 Введите номер телефона
                 </p>
             </div> 
@@ -90,12 +90,28 @@
                 id="text" 
                 name="text" 
                 placeholder="Введите текст:"
-                v-model.trim="form.text"           
-                :class="$v.form.text.$error ? 'is-invalid' : ''"                                      
+                v-model.trim="post.body"           
+                :class="$v.post.body.$error ? 'is-invalid' : ''"                                      
                 />
-                <p v-if="$v.form.text.$dirty && !$v.form.text.required" class="invalid-feedback">
+                <p v-if="$v.post.body.$dirty && !$v.post.body.required" class="invalid-feedback">
                 Поле не должно быть пустым
                 </p>
+            </div>
+
+            <div class="v-form-input col-md-8 privacy-consent privacy-consent-checkbox">
+                <div class="privacy-checkbox">
+                    <input 
+                        type="checkbox" 
+                        id="privacy" 
+                        v-model.trim="post.privacyConsent"
+                        :class="$v.post.privacyConsent.$error ? 'is-invalid' : ''"
+                    >
+                    <label for="privacy">Я согласен на обработку<br>персональных данных</label>
+                </div>
+                <p v-if="$v.post.privacyConsent.$dirty && !$v.post.privacyConsent.required" class="invalid-feedback">
+                    Необходимо дать согласие на обработку персональных данных
+                </p>
+                <a href="/vPrivacyPolicy" class="privacy-link" target="_blank">Политика конфиденциальности</a>
             </div>
              
             <div class="v-form-input col-md-8">
@@ -107,6 +123,7 @@
     </form>   
 </template>
 <script>
+import axios from 'axios' 
 import { validationMixin } from 'vuelidate'
 import { required, minLength, email, numeric} from 'vuelidate/lib/validators'
 import vOverlay from '../overlay/v-overlay.vue'
@@ -120,49 +137,74 @@ export default {
     mixins: [validationMixin],      
     data(){
         return{
-            form:{
+            post:{
                 surname: '',
                 name: '',
                 email: '',
                 phone: '',
-                text: '',
+                body: '',
+                privacyConsent: false,
             },           
         }
     },
     validations: {
-      form: {
-        surname: { required, minLength: minLength(3)},
-        name: {required},
-        email: { required, email },
-        phone: {required, numeric},
-        text: {required,},
+        post: {
+            surname: { required, minLength: minLength(3)},
+            name: {required},
+            email: { required, email },
+            phone: {required, numeric},
+            body: {required,},
+            privacyConsent: {required},
       }
     },
     methods:{
     closeModal(){
         this.$emit('close')
     },
-    sendEmail() {
-        this.$v.form.$touch()
-        if (!this.$v.form.$error) {
-                alert( 'Ваша заявка отправлена! В ближайшее время с вами свяжутся'),
-            this.$emit('close');
-        }
-      emailjs
-        .sendForm('service_********', 'template_*********', this.$refs.form, {
+    createPost() {
+        this.post.id = Date.now();
+        this.$emit("create", this.post);
+        this.fetchPostsPost();
+        },
+    fetchPostsPost(){  
+        this.$v.post.$touch()
+        if (!this.$v.post.$error) {
+        alert( 'Ваша заявка отправлена! В ближайшее время с вами свяжутся'),
+        this.$emit('close');
+        }   
+        axios
+            .post('************************', this.post,
+           {
+            surname: this.surname,
+            name: this.name,
+            email: this.email,
+            phone: this.phone,
+            body: this.body,
+            date: this.date,
+            time: this.time            
+            }
+            )
+            .then(response => {
+              console.log(response);
+              })
+            .catch(error => {
+            console.log(error); 
+            });
+
+        emailjs
+            .sendForm('*******', '***************', this.$refs.form, {
           publicKey: '****************',
         
         })
-        .then(
-          () => {
+            .then(
+            () => {
             console.log('SUCCESS!');
-          },
+            },
           (error) => {
             console.log('FAILED...', error.text);
           },
-        );
-    },
-  },
+        )}
+    }
 }
 
 </script>
@@ -224,12 +266,13 @@ export default {
     label{
         display: flex;
         color: #2f4f4f;  
+        white-space: pre-wrap;
     }
     input{
-        border: 3px solid teal;;
+        border: 3px solid teal;
     }
     select{
-        border: 3px solid teal;;
+        border: 3px solid teal;
     }
     option{
         color: #2f4f4f;
@@ -237,10 +280,16 @@ export default {
         font-size: 14px;
     }
     textarea{
-        border: 3px solid teal;;
+        border: 3px solid teal;
     }
     p{
         height: 5px;
+    }
+    .privacy-checkbox input[type="checkbox"]{
+        border: 3px solid teal !important;
+        color: teal !important;
+        width: 25px !important;
+        height: 25px !important;
     }
     .v-modal-close{
         position: absolute;
@@ -365,8 +414,22 @@ export default {
         .form-selected {
         flex: 0 0 85%;
     }
-    .v-modal-close{
-        left: 355px;
+        .v-modal-close{
+            left: 355px;
+            }
+        .privacy-checkbox input[type="checkbox"]{
+            padding: 0px;
+            width: 18px !important;
+            height: 18px !important;
+        }
+        .privacy-consent-checkbox{
+           max-width: 168px;
+        }
+        .privacy-checkbox label{
+            font-size: 10px !important;
+        }
+        .privacy-link{
+           font-size: 10px !important; 
         }
     @media(max-width: 400px){
         .form-selected {
@@ -463,5 +526,32 @@ export default {
             max-width: 100px;
             font-size: 8px;
         }
+    }
+    .privacy-consent {
+        margin-top: 20px;
+    }
+    .privacy-checkbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .privacy-checkbox input[type="checkbox"] {
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+    .privacy-checkbox label {
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .privacy-link {
+        color: #2f4f4f;
+        text-decoration: none;
+        font-size: 14px;
+        transition: all .4s linear;
+    }
+    .privacy-link:hover {
+        text-decoration: underline;
     }
 </style>

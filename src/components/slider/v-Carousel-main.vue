@@ -1,5 +1,5 @@
 <template>
-    <section class="v-carousel-main  col-xl-9 col-md-9 col-10">      
+    <section class="v-carousel-main  col-xl-9 col-md-9 col-10" :key="forceRenderKey">   
       <div class="container">
        <div class="v-carousel-block">
         <v-carousel
@@ -11,6 +11,7 @@
             <h2>Мы помогаем с 2013г.</h2>
           </div>
        </div>
+       <v-yan2/>
        <div class="v-carousel-content">
           <h2>Мы предоставляем широкий спектр ветеринарных услуг, включая хирургию, терапию, дерматологию, кардиологию, стоматологию, УЗИ и многое другое. Независимо от потребностей вашего питомца, у нас есть все необходимое для его полноценного лечения и ухода.</h2>
           <h2>Цены на ветеринарные услуги в нашей клинике являются демократичными, несмотря на высокий уровень профессионализма и качества обслуживания.</h2>
@@ -63,16 +64,19 @@
 import vCarousel from './v-Carousel.vue';
 import vCarouselItem from './v-Carousel-item.vue';
 import vSocial from '../social/v-social.vue'
+import vYan2 from '../yan/v-yan2.vue'
 
 export default {
     name: 'vCarouselMain',
     components: {
     vCarousel,
     vCarouselItem, 
-    vSocial 
+    vSocial,
+    vYan2,
   },
   data(){
     return{
+      forceRenderKey: 0,
       sliderItems:[
         {id:1, name: 'img1', img:'1.jpg'},
         {id:2, name: 'img2', img:'2.jpg'},
@@ -81,9 +85,13 @@ export default {
         {id:5, name: 'img5', img:'5.jpg'},
       ]
     }
+  },
+  methods: {
+    reRender() {
+      this.forceRenderKey++;
+    }
   }
 }
-
 </script>
 <style scoped lang="scss">
 

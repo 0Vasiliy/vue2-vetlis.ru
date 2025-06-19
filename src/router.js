@@ -31,6 +31,7 @@ import vRehabilitation  from '@/components/recommendations/rehabilitation/v-reha
 import vDrip  from '@/components/recommendations/drip/v-drip.vue'
 import vOrnitolog  from '@/components/services/ornitolog/v-ornitolog.vue'
 import vCarouselMain from '@/components/slider/v-Carousel-main.vue'
+import vPrivacyPolicy from '@/components/privacy-policy/v-privacy-policy.vue'
 
     export default new VueRouter({  
     mode: 'history',
@@ -165,12 +166,17 @@ import vCarouselMain from '@/components/slider/v-Carousel-main.vue'
         },
         {
             path: '/vCarouselMain',
-            component: vCarouselMain   
-        },
-        
+            component: vCarouselMain ,  
+            name: vCarouselMain
+        },  
+        {
+            path: '/vPrivacyPolicy',
+            component: vPrivacyPolicy,
+            name: vPrivacyPolicy
+        },        
     ],
     scrollBehavior() {
         return { x: 0, y: 0 }
-      }
+      },
+      
 })
-
